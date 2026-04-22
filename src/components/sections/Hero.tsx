@@ -17,7 +17,7 @@ export function Hero() {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-green-900/40 rounded-full blur-[100px]" />
       </div>
 
-      <div className="container relative z-10 mx-auto px-6 text-center max-w-5xl">
+      <div className="container relative z-10 mx-auto px-4 md:px-6 text-center max-w-5xl">
         <div className="inline-flex items-center gap-4 bg-gradient-to-br from-primary to-[#b8902f] text-black px-8 py-2.5 rounded-sm font-bold text-[10px] tracking-[0.3em] uppercase mb-8 shadow-xl shadow-primary/20">
           <div className="w-8 h-[1px] bg-black/50" />
           Edição Premium 2026
@@ -35,7 +35,7 @@ export function Hero() {
           A maior biblioteca de plantas de sítios do Brasil com +100 projetos profissionais com medidas reais, divisões estratégicas e layouts prontos para executar, mesmo que você nunca tenha planejado nada rural na vida.
         </p>
 
-        <div className="relative mx-auto max-w-3xl mb-12">
+        <div className="relative mx-auto max-w-5xl mb-12">
           {heroMockup && (
             <Image 
               src={heroMockup.imageUrl} 
