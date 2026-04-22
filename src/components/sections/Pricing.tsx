@@ -86,7 +86,6 @@ export function Pricing() {
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> <strong>+100 projetos completos</strong></li>
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> Acesso imediato após compra</li>
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> Garantia de 7 dias</li>
-              <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> 10 projetos especiais</li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground opacity-50"><X className="text-muted-foreground flex-shrink-0" size={16} /> 4 Bônus Estratégicos</li>
             </ul>
             <Button variant="outline" className="w-full h-auto py-5 font-black uppercase tracking-[0.2em] rounded-sm hover:bg-foreground hover:text-black transition-all">
@@ -130,7 +129,7 @@ export function Pricing() {
               <span className="text-muted-foreground line-through text-sm block mb-1">De R$ 425,00 por</span>
               <div className="flex items-start gold-gradient-text">
                 <span className="text-2xl font-black mt-2 mr-1">R$</span>
-                <span className="text-7xl font-black font-headline">+100</span>
+                <span className="text-7xl font-black font-headline">115</span>
                 <span className="text-2xl font-black mt-2">,90</span>
               </div>
               <p className="text-muted-foreground text-[10px] mt-2 tracking-widest uppercase">Pagamento único · Acesso vitalício + Bônus</p>
