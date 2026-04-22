@@ -1,9 +1,7 @@
 
 "use client";
 
-import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import React from 'react';
 import { Hero } from './sections/Hero';
 import { Problem } from './sections/Problem';
 import { ProductShowcase } from './sections/ProductShowcase';
@@ -16,7 +14,6 @@ import { Guarantee } from './sections/Guarantee';
 import { FAQ } from './sections/FAQ';
 import { FinalCTA } from './sections/FinalCTA';
 import { Footer } from './sections/Footer';
-import { AIRecommender } from './ai-recommender';
 
 export function LandingPage() {
   return (
@@ -28,10 +25,6 @@ export function LandingPage() {
 
       <Hero />
       
-      <div className="container mx-auto px-6 py-12">
-        <AIRecommender />
-      </div>
-
       <Problem />
       <ProductShowcase />
       <Samples />
