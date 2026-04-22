@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: 'Qual a diferença entre o Essencial e o Pro?',
-    a: 'Ambos os planos incluem os 115 projetos completos. A diferença está nos 4 bônus exclusivos do plano Pro: Pack de Construções Rurais, Planilha de ROI, Guia de Plantas Companheiras e Manual de Energia Solar Rural.'
+    a: 'Ambos os planos incluem os +100 projetos completos. A diferença está nos 4 bônus exclusivos do plano Pro: Pack de Construções Rurais, Planilha de ROI, Guia de Plantas Companheiras e Manual de Energia Solar Rural.'
   },
   {
     q: 'Preciso ter experiência em agricultura para usar?',
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: 'Em que formato o material é entregue?',
-    a: 'Todos os 115 projetos são entregues em PDF de alta qualidade, formato A4. Você pode visualizar no celular, tablet, computador ou imprimir. Os bônus do Plano Pro vêm em PDF e Excel.'
+    a: 'Todos os +100 projetos são entregues em PDF de alta qualidade, formato A4. Você pode visualizar no celular, tablet, computador ou imprimir. Os bônus do Plano Pro vêm em PDF e Excel.'
   },
   {
     q: 'E se eu tiver um terreno de tamanho diferente?',

@@ -27,13 +27,13 @@ export function Hero() {
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-[1.05]">
           A Coleção Definitiva de<br />
           <span className="gold-gradient-text block mt-2 text-5xl md:text-7xl lg:text-8xl">
-            115 Projetos
+            +100 Projetos
           </span>
           de Sítios Produtivos
         </h1>
 
         <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed font-light">
-          A maior biblioteca de plantas de sítios do Brasil — 115 projetos dimensionados com medidas, divisões e layouts prontos para executar. De 0,5 a 5 hectares.
+          A maior biblioteca de plantas de sítios do Brasil — +100 projetos dimensionados com medidas, divisões e layouts prontos para executar. De 0,5 a 5 hectares.
         </p>
 
         <div className="relative mx-auto max-w-4xl mb-12 group">

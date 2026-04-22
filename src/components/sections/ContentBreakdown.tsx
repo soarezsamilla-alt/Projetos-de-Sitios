@@ -34,7 +34,7 @@ export function ContentBreakdown() {
             O Que Você <span className="text-primary">Vai Receber</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            115 projetos organizados em 4 grandes categorias para você encontrar exatamente o que precisa, seja qual for o seu tamanho, vocação ou região.
+            +100 projetos organizados em 4 grandes categorias para você encontrar exatamente o que precisa, seja qual for o seu tamanho, vocação ou região.
           </p>
         </div>
 

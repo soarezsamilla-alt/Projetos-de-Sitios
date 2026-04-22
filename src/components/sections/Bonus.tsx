@@ -46,7 +46,7 @@ export function Bonus() {
             Bônus <span className="text-primary">Premium Inclusos</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-            Quem garantir o Plano Pro leva também estes 4 bônus estratégicos que complementam os 115 projetos.
+            Quem garantir o Plano Pro leva também estes 4 bônus estratégicos que complementam os +100 projetos.
           </p>
         </div>
 

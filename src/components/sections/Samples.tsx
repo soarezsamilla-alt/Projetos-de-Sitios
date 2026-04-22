@@ -67,7 +67,7 @@ export function Samples() {
             <h4 className="text-primary font-bold uppercase tracking-widest text-sm">Observação Importante</h4>
           </div>
           <p className="text-muted-foreground text-sm leading-relaxed">
-            Todos os 115 projetos seguem o mesmo padrão editorial premium que você vê nas amostras acima — com medidas visíveis, zonas identificadas, elementos produtivos bem posicionados e legendas profissionais.
+            Todos os +100 projetos seguem o mesmo padrão editorial premium que você vê nas amostras acima — com medidas visíveis, zonas identificadas, elementos produtivos bem posicionados e legendas profissionais.
           </p>
         </div>
       </div>

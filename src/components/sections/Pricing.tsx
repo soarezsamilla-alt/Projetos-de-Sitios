@@ -83,7 +83,7 @@ export function Pricing() {
               <p className="text-muted-foreground text-[10px] mt-2 tracking-widest uppercase">Pagamento único · Acesso vitalício</p>
             </div>
             <ul className="space-y-4 flex-grow mb-10">
-              <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> <strong>115 projetos completos</strong></li>
+              <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> <strong>+100 projetos completos</strong></li>
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> Acesso Imediato</li>
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> 35 projetos por vocação</li>
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> 20 projetos por bioma</li>

@@ -7,7 +7,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CheckCircle2 } from 'lucide-react';
 
 const features = [
-  '115 plantas ilustradas em alta qualidade',
+  '+100 plantas ilustradas em alta qualidade',
   'De 0,5 a 5 hectares — tem para o seu terreno',
   '7 vocações produtivas especializadas',
   'Adaptado aos 4 biomas brasileiros',
@@ -24,7 +24,7 @@ export function ProductShowcase() {
         <div className="text-center mb-16">
           <span className="text-primary font-bold text-xs tracking-[0.4em] uppercase mb-4 block">A Solução</span>
           <h2 className="text-3xl md:text-5xl font-black mb-6">
-            Conheça o <span className="text-primary">Pack +115 Projetos</span>
+            Conheça o <span className="text-primary">Pack +100 Projetos</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
             Não é um curso. Não é um manual teórico. É uma biblioteca visual completa de projetos prontos para você escolher, imprimir e executar.
@@ -55,7 +55,7 @@ export function ProductShowcase() {
               Projetos <span className="text-primary">Dimensionados</span>,<br />Não Ideias Vagas
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Cada um dos 115 projetos foi desenhado como uma planta profissional — com medidas reais em metros, divisão das zonas produtivas, posicionamento de casa, galpões, tanques, cultivos e animais.
+              Cada um dos +100 projetos foi desenhado como uma planta profissional — com medidas reais em metros, divisão das zonas produtivas, posicionamento de casa, galpões, tanques, cultivos e animais.
             </p>
             <ul className="space-y-4">
               {features.map((item, i) => (

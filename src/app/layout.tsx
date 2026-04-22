@@ -3,8 +3,8 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Pack +115 Projetos de Sítios Produtivos | Edição Premium 2026',
-  description: 'A coleção definitiva de projetos de sítios produtivos do Brasil. 115 plantas dimensionadas com medidas, divisões e layouts prontos para executar.',
+  title: 'Pack +100 Projetos de Sítios Produtivos | Edição Premium 2026',
+  description: 'A coleção definitiva de projetos de sítios produtivos do Brasil. +100 plantas dimensionadas com medidas, divisões e layouts prontos para executar.',
 };
 
 export default function RootLayout({

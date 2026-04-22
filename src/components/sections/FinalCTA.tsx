@@ -15,7 +15,7 @@ export function FinalCTA() {
           Um <span className="text-primary">Sítio Produtivo de Verdade</span>
         </h2>
         <p className="text-muted-foreground text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
-          115 projetos profissionais. Medidas reais. Layouts prontos. A decisão mais inteligente que você pode tomar hoje pela sua propriedade.
+          +100 projetos profissionais. Medidas reais. Layouts prontos. A decisão mais inteligente que você pode tomar hoje pela sua propriedade.
         </p>
 
         <Button 
