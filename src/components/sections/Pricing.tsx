@@ -60,7 +60,7 @@ export function Pricing() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 max-w-5xl mx-auto items-start">
           {/* Plan Basic */}
-          <div className="bg-card border border-border p-8 rounded-sm flex flex-col relative group hover:border-muted-foreground/50 transition-all">
+          <div className="bg-card border border-border p-6 md:p-8 rounded-sm flex flex-col relative group hover:border-muted-foreground/50 transition-all">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-muted text-muted-foreground px-6 py-1.5 rounded-sm text-[10px] font-black tracking-widest uppercase border border-border">
               Plano Básico
             </div>
@@ -69,9 +69,9 @@ export function Pricing() {
                 <Image 
                   src={planBasicImg.imageUrl} 
                   alt="Plano Básico" 
-                  width={400} 
-                  height={300} 
-                  className="w-full h-auto max-w-[320px] drop-shadow-[0_10px_30px_rgba(212,168,75,0.1)] transition-transform group-hover:scale-105" 
+                  width={600} 
+                  height={450} 
+                  className="w-full h-auto max-w-full drop-shadow-[0_10px_30px_rgba(212,168,75,0.1)] transition-transform group-hover:scale-105" 
                   data-ai-hint="book cover" 
                 />
               ) : (
@@ -130,9 +130,9 @@ export function Pricing() {
                 <Image 
                   src={planProImg.imageUrl} 
                   alt="Plano Pro" 
-                  width={400} 
-                  height={300} 
-                  className="w-full h-auto max-w-[320px] drop-shadow-[0_10px_30px_rgba(212,168,75,0.3)]" 
+                  width={600} 
+                  height={450} 
+                  className="w-full h-auto max-w-full drop-shadow-[0_10px_30px_rgba(212,168,75,0.3)] transition-transform group-hover:scale-105" 
                 />
               ) : (
                 <div className="aspect-video bg-gradient-to-br from-background to-card border-2 border-dashed border-primary/40 rounded-sm w-full flex items-center justify-center">
