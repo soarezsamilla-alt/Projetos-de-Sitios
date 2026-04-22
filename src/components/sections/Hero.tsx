@@ -24,7 +24,7 @@ export function Hero() {
           <div className="w-8 h-[1px] bg-black/50" />
         </div>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-[1.1]">
+        <h1 className="text-[26px] font-black mb-6 leading-[1.1]">
           <span className="gold-gradient-text block mb-2">
             +100 Projetos de Sítios Produtivos
           </span>
