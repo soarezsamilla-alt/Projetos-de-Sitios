@@ -129,7 +129,7 @@ export function Pricing() {
               <span className="text-muted-foreground line-through text-sm block mb-1">De R$ 425,00 por</span>
               <div className="flex items-start gold-gradient-text">
                 <span className="text-2xl font-black mt-2 mr-1">R$</span>
-                <span className="text-7xl font-black font-headline">115</span>
+                <span className="text-7xl font-black font-headline">24</span>
                 <span className="text-2xl font-black mt-2">,90</span>
               </div>
               <p className="text-muted-foreground text-[10px] mt-2 tracking-widest uppercase">Pagamento único · Acesso vitalício + Bônus</p>
