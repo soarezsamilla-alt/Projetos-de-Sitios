@@ -12,10 +12,10 @@ import {
 const faqs = [
   {
     q: 'Como recebo o pack após a compra?',
-    a: 'O acesso é liberado automaticamente após a confirmação do pagamento. Você recebe um email com o link e pode baixar tudo em formato PDF. No PIX, a liberação é em até 5 minutos. Em cartão, quase instantâneo.'
+    a: 'O acesso é liberado automaticamente após a confirmação do pagamento. Você recebe um email com le link e pode baixar tudo em formato PDF. No PIX, a liberação é em até 5 minutos. Em cartão, quase instantâneo.'
   },
   {
-    q: 'Qual a diferença entre o Essencial e o Pro?',
+    q: 'Qual a diferença entre o Básico e o Pro?',
     a: 'Ambos os planos incluem os +100 projetos completos. A diferença está nos 4 bônus exclusivos do plano Pro: Pack de Construções Rurais, Planilha de ROI, Guia de Plantas Companheiras e Manual de Energia Solar Rural.'
   },
   {
@@ -42,7 +42,7 @@ export function FAQ() {
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="text-center mb-16">
           <span className="text-primary font-bold text-xs tracking-[0.4em] uppercase mb-4 block">Dúvidas Frequentes</span>
-          <h2 className="text-3xl md:text-5xl font-black mb-6">
+          <h2 className="text-2xl md:text-4xl font-black mb-6">
             Perguntas <span className="text-primary">Frequentes</span>
           </h2>
         </div>
@@ -50,10 +50,10 @@ export function FAQ() {
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, idx) => (
             <AccordionItem key={idx} value={`item-${idx}`} className="bg-card border border-border px-8 rounded-sm overflow-hidden hover:border-primary/50 transition-colors">
-              <AccordionTrigger className="text-lg font-bold hover:no-underline py-6 font-body text-foreground text-left">
+              <AccordionTrigger className="text-base font-bold hover:no-underline py-6 font-body text-foreground text-left">
                 {faq.q}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-8">
+              <AccordionContent className="text-muted-foreground text-sm leading-relaxed pb-8">
                 {faq.a}
               </AccordionContent>
             </AccordionItem>
