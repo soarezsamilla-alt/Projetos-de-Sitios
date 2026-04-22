@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -87,7 +88,7 @@ export function Pricing() {
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> Garantia de 7 dias</li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground opacity-50"><X className="text-muted-foreground flex-shrink-0" size={16} /> 4 Bônus Estratégicos</li>
             </ul>
-            <Button variant="outline" className="w-full h-auto py-5 font-black uppercase tracking-[0.2em] rounded-sm hover:bg-foreground hover:text-black transition-all">
+            <Button variant="outline" className="w-full h-auto py-3.5 md:py-4 font-black uppercase tracking-[0.2em] rounded-sm hover:bg-foreground hover:text-black transition-all text-xs md:text-sm">
               Garantir Básico
             </Button>
           </div>
@@ -141,7 +142,7 @@ export function Pricing() {
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> <strong>BÔNUS 4:</strong> Energia Solar Rural</li>
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> Atualizações Gratuitas</li>
             </ul>
-            <Button className="shine-effect gold-gradient-bg text-black font-black uppercase tracking-[0.2em] h-auto py-5 text-lg rounded-sm shadow-2xl shadow-primary/40 hover:scale-105 transition-all">
+            <Button className="shine-effect gold-gradient-bg text-black font-black uppercase tracking-[0.2em] h-auto py-3.5 md:py-4 text-sm md:text-base rounded-sm shadow-2xl shadow-primary/40 hover:scale-105 transition-all w-full">
               Quero o Plano Pro
             </Button>
           </div>

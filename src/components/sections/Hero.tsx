@@ -56,7 +56,7 @@ export function Hero() {
           <Button 
             asChild
             size="lg"
-            className="shine-effect gold-gradient-bg hover:scale-105 transition-transform duration-300 text-black font-black uppercase tracking-[0.2em] h-auto py-5 px-12 text-lg shadow-2xl shadow-primary/30"
+            className="shine-effect gold-gradient-bg hover:scale-105 transition-transform duration-300 text-black font-black uppercase tracking-[0.2em] h-auto py-3.5 px-8 md:py-4 md:px-10 text-sm md:text-base shadow-2xl shadow-primary/30"
           >
             <a href="#pricing">Garantir Meu Acesso</a>
           </Button>
