@@ -31,8 +31,8 @@ export function Hero() {
           que transformam terra parada em fonte de renda
         </h1>
 
-        <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed font-light">
-          A maior biblioteca de plantas de sítios do Brasil — +100 projetos dimensionados com medidas, divisões e layouts prontos para executar. De 0,5 a 5 hectares.
+        <p className="text-muted-foreground text-lg md:text-xl max-w-4xl mx-auto mb-10 leading-relaxed font-light">
+          A maior biblioteca de plantas de sítios do Brasil com +100 projetos profissionais com medidas reais, divisões estratégicas e layouts prontos para executar, mesmo que você nunca tenha planejado nada rural na vida.
         </p>
 
         <div className="relative mx-auto max-w-4xl mb-12 group">
@@ -55,7 +55,7 @@ export function Hero() {
           <Button 
             asChild
             size="lg"
-            className="shine-effect gold-gradient-bg hover:scale-105 transition-transform duration-300 text-black font-black uppercase tracking-[0.2em] h-auto py-3.5 px-8 md:py-4 md:px-10 text-sm md:text-base shadow-2xl shadow-primary/30"
+            className="shine-effect gold-gradient-bg hover:scale-105 transition-transform duration-300 text-black font-black uppercase tracking-[0.2em] h-auto py-3 px-6 md:py-3.5 md:px-8 text-xs md:text-sm shadow-2xl shadow-primary/30"
           >
             <a href="#pricing">Garantir Meu Acesso</a>
           </Button>
