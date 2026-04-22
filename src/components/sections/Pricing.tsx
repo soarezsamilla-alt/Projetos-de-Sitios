@@ -69,9 +69,9 @@ export function Pricing() {
                 <Image 
                   src={planBasicImg.imageUrl} 
                   alt="Plano Básico" 
-                  width={300} 
-                  height={400} 
-                  className="w-full h-auto max-w-[240px] drop-shadow-[0_10px_30px_rgba(212,168,75,0.1)] transition-transform group-hover:scale-105" 
+                  width={400} 
+                  height={300} 
+                  className="w-full h-auto max-w-[320px] drop-shadow-[0_10px_30px_rgba(212,168,75,0.1)] transition-transform group-hover:scale-105" 
                   data-ai-hint="book cover" 
                 />
               ) : (
