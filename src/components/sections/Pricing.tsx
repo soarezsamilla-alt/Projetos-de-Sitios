@@ -126,7 +126,7 @@ export function Pricing() {
             <h3 className="text-3xl font-black mb-2 font-headline gold-gradient-text">Pro</h3>
             <p className="text-muted-foreground text-sm mb-8">O pack completo + 4 bônus exclusivos que potencializam tudo.</p>
             <div className="mb-10 pb-10 border-b border-border">
-              <span className="text-muted-foreground line-through text-sm block mb-1">De R$ 425,00 por</span>
+              <span className="text-muted-foreground line-through text-sm block mb-1">De R$ 197,00 por</span>
               <div className="flex items-start gold-gradient-text">
                 <span className="text-2xl font-black mt-2 mr-1">R$</span>
                 <span className="text-7xl font-black font-headline">24</span>
