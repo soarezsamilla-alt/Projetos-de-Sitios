@@ -96,7 +96,7 @@ export function Pricing() {
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> Garantia de 7 dias</li>
               <li className="flex items-center gap-2 text-xs text-muted-foreground opacity-50"><X className="text-muted-foreground flex-shrink-0" size={14} /> 4 Bônus Estratégicos</li>
             </ul>
-            <Button variant="outline" className="w-full h-auto py-3 font-black uppercase tracking-[0.2em] rounded-sm hover:bg-foreground hover:text-black transition-all text-xs">
+            <Button variant="outline" className="pulse-attention w-full h-auto py-3 font-black uppercase tracking-[0.2em] rounded-sm hover:bg-foreground hover:text-black transition-all text-xs">
               Garantir Básico
             </Button>
           </div>
@@ -157,7 +157,7 @@ export function Pricing() {
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 3:</strong> Plantas Companheiras</li>
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 4:</strong> Energia Solar Rural</li>
             </ul>
-            <Button className="shine-effect gold-gradient-bg text-black font-black uppercase tracking-[0.2em] h-auto py-3.5 text-xs rounded-sm shadow-2xl shadow-primary/40 hover:scale-105 transition-all w-full">
+            <Button className="shine-effect pulse-attention gold-gradient-bg text-black font-black uppercase tracking-[0.2em] h-auto py-3.5 text-xs rounded-sm shadow-2xl shadow-primary/40 hover:scale-105 transition-all w-full">
               Quero o Plano Pro
             </Button>
           </div>

@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from 'react';
@@ -54,7 +53,7 @@ export function Hero() {
           <Button 
             asChild
             size="lg"
-            className="shine-effect gold-gradient-bg hover:scale-105 transition-transform duration-300 text-black font-black uppercase tracking-[0.2em] h-auto py-3 px-6 md:py-3.5 md:px-8 text-xs md:text-sm shadow-2xl shadow-primary/30"
+            className="shine-effect pulse-attention gold-gradient-bg hover:scale-105 transition-transform duration-300 text-black font-black uppercase tracking-[0.2em] h-auto py-3 px-6 md:py-3.5 md:px-8 text-xs md:text-sm shadow-2xl shadow-primary/30"
           >
             <a href="#pricing">Garantir Meu Acesso</a>
           </Button>
