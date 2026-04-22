@@ -150,7 +150,7 @@ export function Pricing() {
         </div>
 
         <p className="text-center mt-20 text-muted-foreground text-[10px] tracking-[0.2em] uppercase">
-          🔒 Pagamento 100% seguro · 💳 Cartão, PIX ou Boleto · ⚡ Acesso imediato
+          🔒 Pagamento 100% seguro  ⚡ Acesso imediato
         </p>
       </div>
     </section>
