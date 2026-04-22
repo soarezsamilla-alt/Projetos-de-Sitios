@@ -21,7 +21,7 @@ export function FinalCTA() {
         <Button 
           asChild
           size="lg"
-          className="shine-effect gold-gradient-bg text-black font-black uppercase tracking-[0.2em] h-auto py-6 px-16 text-xl rounded-sm shadow-2xl shadow-primary/30 hover:scale-105 transition-all"
+          className="shine-effect gold-gradient-bg text-black font-black uppercase tracking-[0.2em] h-auto py-4 px-8 text-sm md:py-5 md:px-12 md:text-lg rounded-sm shadow-2xl shadow-primary/30 hover:scale-105 transition-all"
         >
           <a href="#pricing">Ver Planos e Garantir Acesso</a>
         </Button>
