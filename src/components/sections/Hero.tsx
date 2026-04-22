@@ -35,20 +35,18 @@ export function Hero() {
           A maior biblioteca de plantas de sítios do Brasil com +100 projetos profissionais com medidas reais, divisões estratégicas e layouts prontos para executar, mesmo que você nunca tenha planejado nada rural na vida.
         </p>
 
-        <div className="relative mx-auto max-w-4xl mb-12 group">
-          <div className="absolute -inset-1 bg-primary/20 rounded-lg blur-lg group-hover:bg-primary/30 transition duration-500" />
-          <div className="relative border-2 border-dashed border-primary/50 rounded-lg overflow-hidden bg-card/50 p-6 md:p-12 aspect-[16/10] flex items-center justify-center">
-            {heroMockup && (
-              <Image 
-                src={heroMockup.imageUrl} 
-                alt={heroMockup.description}
-                width={1200}
-                height={800}
-                className="object-contain w-full h-full"
-                data-ai-hint="ebook mockup"
-              />
-            )}
-          </div>
+        <div className="relative mx-auto max-w-3xl mb-12">
+          {heroMockup && (
+            <Image 
+              src={heroMockup.imageUrl} 
+              alt={heroMockup.description}
+              width={1200}
+              height={800}
+              className="w-full h-auto drop-shadow-[0_20px_50px_rgba(212,168,75,0.15)]"
+              priority
+              data-ai-hint="ebook mockup"
+            />
+          )}
         </div>
 
         <div className="flex flex-col items-center gap-4">
