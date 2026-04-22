@@ -140,6 +140,8 @@ export function Pricing() {
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> <strong>BÔNUS 3:</strong> Plantas Companheiras</li>
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> <strong>BÔNUS 4:</strong> Energia Solar Rural</li>
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> Atualizações Semanais</li>
+              <li className="flex items-center gap-3 text-sm font-bold text-foreground"><Check className="text-primary flex-shrink-0" size={16} /> Acesso prioritário a novos projetos</li>
+              <li className="flex items-center gap-3 text-sm font-bold text-foreground"><Check className="text-primary flex-shrink-0" size={16} /> Garantia estendida de 7 dias</li>
             </ul>
             <Button className="shine-effect gold-gradient-bg text-black font-black uppercase tracking-[0.2em] h-auto py-3 md:py-3.5 text-xs md:text-sm rounded-sm shadow-2xl shadow-primary/40 hover:scale-105 transition-all w-full">
               Quero o Plano Pro
