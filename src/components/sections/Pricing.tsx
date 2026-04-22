@@ -71,7 +71,7 @@ export function Pricing() {
                 <span className="text-primary text-[10px] font-black uppercase tracking-widest">Capa Plano Básico</span>
               )}
             </div>
-            <h3 className="text-3xl font-black mb-2 font-headline">Essencial</h3>
+            <h3 className="text-3xl font-black mb-2 font-headline">Básico</h3>
             <p className="text-muted-foreground text-sm mb-8">Tudo que você precisa para planejar seu sítio do zero.</p>
             <div className="mb-10 pb-10 border-b border-border">
               <span className="text-muted-foreground line-through text-sm block mb-1">De R$ 97,00 por</span>
@@ -91,7 +91,7 @@ export function Pricing() {
               <li className="flex items-center gap-3 text-sm text-muted-foreground opacity-50"><X className="text-muted-foreground flex-shrink-0" size={16} /> 4 Bônus Estratégicos</li>
             </ul>
             <Button variant="outline" className="w-full h-auto py-5 font-black uppercase tracking-[0.2em] rounded-sm hover:bg-foreground hover:text-black transition-all">
-              Garantir Essencial
+              Garantir Básico
             </Button>
           </div>
 
@@ -137,7 +137,7 @@ export function Pricing() {
               <p className="text-muted-foreground text-[10px] mt-2 tracking-widest uppercase">Pagamento único · Acesso vitalício + Bônus</p>
             </div>
             <ul className="space-y-4 flex-grow mb-10">
-              <li className="flex items-center gap-3 text-sm font-bold text-foreground"><Check className="text-primary flex-shrink-0" size={16} /> Tudo do Essencial</li>
+              <li className="flex items-center gap-3 text-sm font-bold text-foreground"><Check className="text-primary flex-shrink-0" size={16} /> Tudo do Básico</li>
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> <strong>BÔNUS 1:</strong> Construções Rurais</li>
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> <strong>BÔNUS 2:</strong> Planilha ROI Editável</li>
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> <strong>BÔNUS 3:</strong> Plantas Companheiras</li>
