@@ -31,7 +31,7 @@ export function Hero() {
           que transformam terra parada em fonte de renda
         </h1>
 
-        <p className="text-muted-foreground text-[18px] max-w-4xl mx-auto mb-10 leading-relaxed font-light">
+        <p className="text-muted-foreground text-[16px] max-w-4xl mx-auto mb-10 leading-relaxed font-light">
           A maior biblioteca de plantas de sítios do Brasil com +100 projetos profissionais com medidas reais, divisões estratégicas e layouts prontos para executar, mesmo que você nunca tenha planejado nada rural na vida.
         </p>
 
