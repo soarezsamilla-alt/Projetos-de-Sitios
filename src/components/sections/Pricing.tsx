@@ -85,7 +85,7 @@ export function Pricing() {
             <ul className="space-y-4 flex-grow mb-10">
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> <strong>+100 projetos completos</strong></li>
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> Acesso imediato após compra</li>
-              <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> 35 projetos por vocação</li>
+              <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> Garantia de 7 dias</li>
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> 20 projetos por bioma</li>
               <li className="flex items-center gap-3 text-sm"><Check className="text-primary flex-shrink-0" size={16} /> 10 projetos especiais</li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground opacity-50"><X className="text-muted-foreground flex-shrink-0" size={16} /> 4 Bônus Estratégicos</li>
