@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -115,11 +116,20 @@ export function Pricing() {
               </div>
             </div>
 
-            <div className="aspect-video bg-gradient-to-br from-background to-card border-2 border-dashed border-primary/40 rounded-sm mb-8 flex flex-col items-center justify-center p-6 text-center">
+            <div className="relative mb-8 text-center flex justify-center">
               {planProImg ? (
-                <Image src={planProImg.imageUrl} alt="Plan Pro" width={400} height={300} className="object-contain w-full h-full" data-ai-hint="premium book" />
+                <Image 
+                  src={planProImg.imageUrl} 
+                  alt="Plan Pro" 
+                  width={400} 
+                  height={300} 
+                  className="w-full h-auto drop-shadow-[0_10px_30px_rgba(212,168,75,0.3)]" 
+                  data-ai-hint="premium book mockup" 
+                />
               ) : (
-                <span className="text-primary text-[10px] font-black uppercase tracking-widest">Capa Plano Pro</span>
+                <div className="aspect-video bg-gradient-to-br from-background to-card border-2 border-dashed border-primary/40 rounded-sm w-full flex items-center justify-center">
+                   <span className="text-primary text-[10px] font-black uppercase tracking-widest">Capa Plano Pro</span>
+                </div>
               )}
             </div>
             <h3 className="text-3xl font-black mb-2 font-headline gold-gradient-text">Pro</h3>
