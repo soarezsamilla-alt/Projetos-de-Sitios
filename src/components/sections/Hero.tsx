@@ -24,12 +24,11 @@ export function Hero() {
           <div className="w-8 h-[1px] bg-black/50" />
         </div>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-[1.05]">
-          A Coleção Definitiva de<br />
-          <span className="gold-gradient-text block mt-2 text-5xl md:text-7xl lg:text-8xl">
-            +100 Projetos
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-[1.1]">
+          <span className="gold-gradient-text block mb-2">
+            +100 Projetos de Sítios Produtivos
           </span>
-          de Sítios Produtivos
+          que transformam terra parada em fonte de renda
         </h1>
 
         <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed font-light">
