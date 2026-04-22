@@ -1,3 +1,88 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-mockup",
+      "description": "Capa do eBook principal mockup 3D",
+      "imageUrl": "https://picsum.photos/seed/sitio1/1200/800",
+      "imageHint": "ebook mockup"
+    },
+    {
+      "id": "product-mockup",
+      "description": "eBook aberto em perspectiva 3D",
+      "imageUrl": "https://picsum.photos/seed/sitio2/600/700",
+      "imageHint": "open book"
+    },
+    {
+      "id": "sample-1",
+      "description": "Projeto de sítio 2ha café e animais",
+      "imageUrl": "https://picsum.photos/seed/sample1/600/800",
+      "imageHint": "farm blueprint"
+    },
+    {
+      "id": "sample-2",
+      "description": "Projeto de sítio 1ha hortifruti comercial",
+      "imageUrl": "https://picsum.photos/seed/sample2/600/800",
+      "imageHint": "agriculture plan"
+    },
+    {
+      "id": "sample-3",
+      "description": "Projeto amazônico com açaí e cupuaçu",
+      "imageUrl": "https://picsum.photos/seed/sample3/600/800",
+      "imageHint": "tropical farm"
+    },
+    {
+      "id": "sample-4",
+      "description": "Capa de divisória de seção",
+      "imageUrl": "https://picsum.photos/seed/sample4/600/800",
+      "imageHint": "book divider"
+    },
+    {
+      "id": "sample-5",
+      "description": "Sumário organizado do eBook",
+      "imageUrl": "https://picsum.photos/seed/sample5/600/800",
+      "imageHint": "table contents"
+    },
+    {
+      "id": "sample-6",
+      "description": "Projeto semiárido com cisternas",
+      "imageUrl": "https://picsum.photos/seed/sample6/600/800",
+      "imageHint": "dryland irrigation"
+    },
+    {
+      "id": "bonus-1",
+      "description": "Pack 10 plantas de galinheiros prontos",
+      "imageUrl": "https://picsum.photos/seed/bonus1/400/300",
+      "imageHint": "chicken coop"
+    },
+    {
+      "id": "bonus-2",
+      "description": "Planilha de cálculo de ROI por projeto",
+      "imageUrl": "https://picsum.photos/seed/bonus2/400/300",
+      "imageHint": "spreadsheet chart"
+    },
+    {
+      "id": "bonus-3",
+      "description": "Guia de plantas companheiras",
+      "imageUrl": "https://picsum.photos/seed/bonus3/400/300",
+      "imageHint": "gardening guide"
+    },
+    {
+      "id": "bonus-4",
+      "description": "Manual de energia solar rural",
+      "imageUrl": "https://picsum.photos/seed/bonus4/400/300",
+      "imageHint": "solar panels"
+    },
+    {
+      "id": "plan-basic",
+      "description": "Capa do plano básico",
+      "imageUrl": "https://picsum.photos/seed/plan1/400/300",
+      "imageHint": "book cover"
+    },
+    {
+      "id": "plan-pro",
+      "description": "Capa do plano premium",
+      "imageUrl": "https://picsum.photos/seed/plan2/400/300",
+      "imageHint": "premium book"
+    }
+  ]
 }

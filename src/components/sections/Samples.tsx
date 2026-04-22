@@ -1,0 +1,76 @@
+
+"use client";
+
+import React from 'react';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Star } from 'lucide-react';
+
+const samples = [
+  { id: 'sample-1', label: 'AMOSTRA 01', desc: 'Sítio 2ha café e animais' },
+  { id: 'sample-2', label: 'AMOSTRA 02', desc: 'Sítio 1ha hortifruti comercial' },
+  { id: 'sample-3', label: 'AMOSTRA 03', desc: 'Projeto amazônico açaí/cupuaçu' },
+  { id: 'sample-4', label: 'AMOSTRA 04', desc: 'Capa de divisória de seção' },
+  { id: 'sample-5', label: 'AMOSTRA 05', desc: 'Sumário organizado' },
+  { id: 'sample-6', label: 'AMOSTRA 06', desc: 'Projeto semiárido com cisternas' }
+];
+
+export function Samples() {
+  return (
+    <section className="bg-card/20 py-24 border-t border-border">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <span className="text-primary font-bold text-xs tracking-[0.4em] uppercase mb-4 block">Veja Por Dentro</span>
+          <h2 className="text-3xl md:text-5xl font-black mb-6">
+            Amostras do <span className="text-primary">Material Premium</span>
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Veja abaixo exemplos reais das páginas que você vai receber — cada projeto entregue com padrão editorial profissional.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {samples.map((sample) => {
+            const imgData = PlaceHolderImages.find(img => img.id === sample.id);
+            return (
+              <div key={sample.id} className="relative group overflow-hidden bg-card border-2 border-dashed border-primary/30 aspect-[3/4] rounded-sm p-6 flex flex-col items-center justify-center text-center cursor-pointer hover:border-primary hover:-translate-y-2 transition-all duration-300">
+                <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-primary text-black font-black flex items-center justify-center text-sm z-10">
+                  {sample.id.split('-')[1]}
+                </div>
+                {imgData ? (
+                  <Image 
+                    src={imgData.imageUrl} 
+                    alt={sample.desc}
+                    width={600}
+                    height={800}
+                    className="object-cover w-full h-full opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+                    data-ai-hint="farm blueprint"
+                  />
+                ) : (
+                  <div className="flex flex-col items-center gap-2">
+                    <span className="text-primary font-black tracking-widest uppercase">{sample.label}</span>
+                    <span className="text-muted-foreground text-xs">{sample.desc}</span>
+                  </div>
+                )}
+                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black to-transparent">
+                   <p className="text-primary text-xs font-bold uppercase tracking-widest">{sample.label}</p>
+                   <p className="text-foreground text-sm font-semibold">{sample.desc}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="mt-12 p-8 bg-[#0d1f10] border-l-4 border-primary rounded-sm shadow-xl">
+          <div className="flex items-center gap-3 mb-2">
+            <Star className="text-primary fill-primary" size={18} />
+            <h4 className="text-primary font-bold uppercase tracking-widest text-sm">Observação Importante</h4>
+          </div>
+          <p className="text-muted-foreground text-sm leading-relaxed">
+            Todos os 115 projetos seguem o mesmo padrão editorial premium que você vê nas amostras acima — com medidas visíveis, zonas identificadas, elementos produtivos bem posicionados e legendas profissionais.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
