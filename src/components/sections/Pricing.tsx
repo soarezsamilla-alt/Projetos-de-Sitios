@@ -64,11 +64,20 @@ export function Pricing() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-muted text-muted-foreground px-6 py-1.5 rounded-sm text-[10px] font-black tracking-widest uppercase border border-border">
               Plano Básico
             </div>
-            <div className="aspect-video bg-gradient-to-br from-[#0d1f10] to-card border-2 border-dashed border-primary/20 rounded-sm mb-6 flex flex-col items-center justify-center p-4 text-center">
+            <div className="relative mb-6 text-center flex justify-center">
               {planBasicImg ? (
-                <Image src={planBasicImg.imageUrl} alt="Plan Essential" width={300} height={200} className="object-contain w-full h-full opacity-60" data-ai-hint="book cover" />
+                <Image 
+                  src={planBasicImg.imageUrl} 
+                  alt="Plano Básico" 
+                  width={300} 
+                  height={400} 
+                  className="w-full h-auto max-w-[240px] drop-shadow-[0_10px_30px_rgba(212,168,75,0.1)] transition-transform group-hover:scale-105" 
+                  data-ai-hint="book cover" 
+                />
               ) : (
-                <span className="text-primary text-[10px] font-black uppercase tracking-widest">Capa Plano Básico</span>
+                <div className="aspect-video bg-gradient-to-br from-[#0d1f10] to-card border-2 border-dashed border-primary/20 rounded-sm w-full flex items-center justify-center">
+                  <span className="text-primary text-[10px] font-black uppercase tracking-widest">Capa Plano Básico</span>
+                </div>
               )}
             </div>
             <h3 className="text-2xl font-black mb-1 font-headline">Básico</h3>
@@ -120,7 +129,7 @@ export function Pricing() {
               {planProImg ? (
                 <Image 
                   src={planProImg.imageUrl} 
-                  alt="Plan Pro" 
+                  alt="Plano Pro" 
                   width={400} 
                   height={300} 
                   className="w-full h-auto max-w-[320px] drop-shadow-[0_10px_30px_rgba(212,168,75,0.3)]" 
