@@ -44,7 +44,6 @@ export function Hero() {
               height={800}
               className="w-full h-auto drop-shadow-[0_20px_50px_rgba(212,168,75,0.15)]"
               priority
-              data-ai-hint="ebook mockup"
             />
           )}
         </div>

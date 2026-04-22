@@ -124,7 +124,6 @@ export function Pricing() {
                   width={400} 
                   height={300} 
                   className="w-full h-auto drop-shadow-[0_10px_30px_rgba(212,168,75,0.3)]" 
-                  data-ai-hint="premium book mockup" 
                 />
               ) : (
                 <div className="aspect-video bg-gradient-to-br from-background to-card border-2 border-dashed border-primary/40 rounded-sm w-full flex items-center justify-center">
