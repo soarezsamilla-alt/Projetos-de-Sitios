@@ -5,6 +5,13 @@ import React from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Star } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const samples = [
   { id: 'sample-1', label: 'AMOSTRA 01', desc: 'Sítio 2ha café e animais' },
@@ -29,32 +36,48 @@ export function Samples() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {samples.map((sample) => {
-            const imgData = PlaceHolderImages.find(img => img.id === sample.id);
-            return (
-              <div key={sample.id} className="relative overflow-hidden bg-card border-2 border-dashed border-primary/30 aspect-[3/4] rounded-sm p-0 flex flex-col items-center justify-center text-center">
-                <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-primary text-black font-black flex items-center justify-center text-sm z-10">
-                  {sample.id.split('-')[1]}
-                </div>
-                {imgData ? (
-                  <Image 
-                    src={imgData.imageUrl} 
-                    alt={sample.desc}
-                    width={600}
-                    height={800}
-                    className="object-cover w-full h-full opacity-100"
-                    data-ai-hint="farm blueprint"
-                  />
-                ) : (
-                  <div className="flex flex-col items-center gap-2 p-6">
-                    <span className="text-primary font-black tracking-widest uppercase">{sample.label}</span>
-                    <span className="text-muted-foreground text-xs">{sample.desc}</span>
-                  </div>
-                )}
-              </div>
-            );
-          })}
+        <div className="relative max-w-5xl mx-auto px-4">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-4">
+              {samples.map((sample) => {
+                const imgData = PlaceHolderImages.find(img => img.id === sample.id);
+                return (
+                  <CarouselItem key={sample.id} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                    <div className="relative overflow-hidden bg-card border-2 border-dashed border-primary/30 aspect-[3/4] rounded-sm p-0 flex flex-col items-center justify-center text-center">
+                      <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-primary text-black font-black flex items-center justify-center text-sm z-10">
+                        {sample.id.split('-')[1]}
+                      </div>
+                      {imgData ? (
+                        <Image 
+                          src={imgData.imageUrl} 
+                          alt={sample.desc}
+                          width={600}
+                          height={800}
+                          className="object-cover w-full h-full opacity-100"
+                          data-ai-hint="farm blueprint"
+                        />
+                      ) : (
+                        <div className="flex flex-col items-center gap-2 p-6">
+                          <span className="text-primary font-black tracking-widest uppercase">{sample.label}</span>
+                          <span className="text-muted-foreground text-xs">{sample.desc}</span>
+                        </div>
+                      )}
+                    </div>
+                  </CarouselItem>
+                );
+              })}
+            </CarouselContent>
+            <div className="hidden md:block">
+              <CarouselPrevious className="-left-12 border-primary/30 text-primary hover:bg-primary/10 hover:text-primary" />
+              <CarouselNext className="-right-12 border-primary/30 text-primary hover:bg-primary/10 hover:text-primary" />
+            </div>
+          </Carousel>
         </div>
 
         <div className="mt-12 p-8 bg-[#0d1f10] border-l-4 border-primary rounded-sm shadow-xl">
