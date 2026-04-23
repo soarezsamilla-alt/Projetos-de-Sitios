@@ -5,6 +5,7 @@ import React from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Star } from 'lucide-react';
+import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
   CarouselContent,
@@ -23,6 +24,10 @@ const samples = [
 ];
 
 export function Samples() {
+  const plugin = React.useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: false })
+  );
+
   return (
     <section className="bg-card/20 py-24 border-t border-border">
       <div className="container mx-auto px-6">
@@ -38,34 +43,33 @@ export function Samples() {
 
         <div className="relative max-w-5xl mx-auto px-4">
           <Carousel
+            plugins={[plugin.current]}
             opts={{
               align: "start",
               loop: true,
             }}
             className="w-full"
+            onMouseEnter={plugin.current.stop}
+            onMouseLeave={plugin.current.reset}
           >
             <CarouselContent className="-ml-4">
               {samples.map((sample) => {
                 const imgData = PlaceHolderImages.find(img => img.id === sample.id);
                 return (
                   <CarouselItem key={sample.id} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
-                    <div className="relative overflow-hidden bg-card border-2 border-dashed border-primary/30 aspect-[3/4] rounded-sm p-0 flex flex-col items-center justify-center text-center">
-                      <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-primary text-black font-black flex items-center justify-center text-sm z-10">
-                        {sample.id.split('-')[1]}
-                      </div>
+                    <div className="relative overflow-hidden bg-card border border-border aspect-[3/4] rounded-sm p-0 flex flex-col items-center justify-center text-center">
                       {imgData ? (
                         <Image 
                           src={imgData.imageUrl} 
                           alt={sample.desc}
                           width={600}
                           height={800}
-                          className="object-cover w-full h-full opacity-100"
+                          className="object-cover w-full h-full"
                           data-ai-hint="farm blueprint"
                         />
                       ) : (
-                        <div className="flex flex-col items-center gap-2 p-6">
-                          <span className="text-primary font-black tracking-widest uppercase">{sample.label}</span>
-                          <span className="text-muted-foreground text-xs">{sample.desc}</span>
+                        <div className="bg-muted w-full h-full flex items-center justify-center">
+                          <span className="text-muted-foreground text-[10px] uppercase tracking-widest">Carregando Amostra...</span>
                         </div>
                       )}
                     </div>
