@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -58,7 +57,7 @@ export function Pricing() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-48 max-w-7xl mx-auto items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto items-start">
           {/* Plan Basic */}
           <div className="bg-card border border-border p-6 md:p-8 rounded-sm flex flex-col relative group hover:border-muted-foreground/50 transition-all">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-muted text-muted-foreground px-6 py-1.5 rounded-sm text-[10px] font-black tracking-widest uppercase border border-border">
@@ -67,6 +66,7 @@ export function Pricing() {
             
             <h3 className="text-2xl font-black mb-1 font-headline text-center">Básico</h3>
             <p className="text-muted-foreground text-xs mb-6 text-center">Tudo que você precisa para planejar seu sítio do zero.</p>
+            
             <div className="mb-6 pb-6 border-b border-border text-center">
               <span className="text-muted-foreground line-through text-xs block mb-1">De R$ 97,00 por</span>
               <div className="flex items-start justify-center text-foreground">
@@ -111,6 +111,9 @@ export function Pricing() {
               ★ MAIS ESCOLHIDO ★
             </div>
 
+            <h3 className="text-2xl font-black mb-1 font-headline gold-gradient-text text-center">Pro</h3>
+            <p className="text-muted-foreground text-xs mb-6 text-center">O pack completo + 4 bônus exclusivos.</p>
+
             {/* Countdown Box */}
             <div className="bg-accent/10 border border-primary/30 p-3 rounded-sm mb-6 shine-effect">
               <span className="text-[9px] font-black tracking-widest uppercase text-foreground/70 mb-2 block text-center">⚡ Oferta Expira Em:</span>
@@ -128,8 +131,6 @@ export function Pricing() {
               </div>
             </div>
 
-            <h3 className="text-2xl font-black mb-1 font-headline gold-gradient-text text-center">Pro</h3>
-            <p className="text-muted-foreground text-xs mb-6 text-center">O pack completo + 4 bônus exclusivos.</p>
             <div className="mb-6 pb-6 border-b border-border text-center">
               <span className="text-muted-foreground line-through text-xs block mb-1">De R$ 197,00 por</span>
               <div className="flex items-start justify-center gold-gradient-text">
