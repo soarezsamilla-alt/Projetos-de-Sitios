@@ -1,6 +1,18 @@
 {
   "placeholderImages": [
     {
+      "id": "sample-new-1",
+      "description": "Novo Projeto de Sítio 01",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1776913031389-57f03be7-295a-49e0-8827-73dc33fc82db.blob",
+      "imageHint": "farm layout"
+    },
+    {
+      "id": "sample-new-2",
+      "description": "Novo Projeto de Sítio 02",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1776913093680-a637d64e-f27f-40cc-8ad8-23fe50d0fbf2.blob",
+      "imageHint": "rural plan"
+    },
+    {
       "id": "hero-mockup",
       "description": "Capa do eBook principal mockup 3D",
       "imageUrl": "https://www.image2url.com/r2/default/images/1776898548797-9f3c9412-dc86-4968-b14c-a26a2b23bff4.png",

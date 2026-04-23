@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from 'react';
@@ -15,6 +14,8 @@ import {
 } from "@/components/ui/carousel";
 
 const samples = [
+  { id: 'sample-new-1', label: 'AMOSTRA DESTAQUE 01', desc: 'Projeto Inovador 01' },
+  { id: 'sample-new-2', label: 'AMOSTRA DESTAQUE 02', desc: 'Projeto Inovador 02' },
   { id: 'sample-1', label: 'AMOSTRA 01', desc: 'Sítio 2ha café e animais' },
   { id: 'sample-2', label: 'AMOSTRA 02', desc: 'Sítio 1ha hortifruti comercial' },
   { id: 'sample-3', label: 'AMOSTRA 03', desc: 'Projeto amazônico açaí/cupuaçu' },
@@ -77,9 +78,9 @@ export function Samples() {
                 );
               })}
             </CarouselContent>
-            {/* Setas de Navegação */}
-            <CarouselPrevious className="left-0 md:-left-12 bg-background/50 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
-            <CarouselNext className="right-0 md:-right-12 bg-background/50 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
+            {/* Setas de Navegação - Posicionadas mais para fora em telas grandes */}
+            <CarouselPrevious className="left-0 md:-left-16 bg-background/50 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
+            <CarouselNext className="right-0 md:-right-16 bg-background/50 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
           </Carousel>
         </div>
 
