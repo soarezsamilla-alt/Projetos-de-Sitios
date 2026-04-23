@@ -59,7 +59,7 @@ export function Samples() {
                 const imgData = PlaceHolderImages.find(img => img.id === sample.id);
                 return (
                   <CarouselItem key={sample.id} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
-                    <div className="relative overflow-hidden bg-card border border-border aspect-[3/4] rounded-sm p-0 flex flex-col items-center justify-center text-center">
+                    <div className="relative aspect-[3/4] flex items-center justify-center p-0">
                       {imgData ? (
                         <Image 
                           src={imgData.imageUrl} 
@@ -70,7 +70,7 @@ export function Samples() {
                           data-ai-hint="farm blueprint"
                         />
                       ) : (
-                        <div className="bg-muted w-full h-full flex items-center justify-center">
+                        <div className="w-full h-full flex items-center justify-center">
                           <span className="text-muted-foreground text-[10px] uppercase tracking-widest">Carregando Amostra...</span>
                         </div>
                       )}
