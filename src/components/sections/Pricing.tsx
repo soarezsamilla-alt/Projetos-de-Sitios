@@ -64,6 +64,19 @@ export function Pricing() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-muted text-muted-foreground px-6 py-1.5 rounded-sm text-[10px] font-black tracking-widest uppercase border border-border">
               Plano Básico
             </div>
+            
+            <h3 className="text-2xl font-black mb-1 font-headline text-center">Básico</h3>
+            <p className="text-muted-foreground text-xs mb-6 text-center">Tudo que você precisa para planejar seu sítio do zero.</p>
+            <div className="mb-6 pb-6 border-b border-border text-center">
+              <span className="text-muted-foreground line-through text-xs block mb-1">De R$ 97,00 por</span>
+              <div className="flex items-start justify-center text-foreground">
+                <span className="text-xl font-black mt-1 mr-1">R$</span>
+                <span className="text-6xl font-black font-headline">9</span>
+                <span className="text-xl font-black mt-1">,90</span>
+              </div>
+              <p className="text-muted-foreground text-[9px] mt-1 tracking-widest uppercase">Pagamento único · Acesso vitalício</p>
+            </div>
+
             <div className="relative mb-6 text-center flex justify-center">
               {planBasicImg ? (
                 <Image 
@@ -80,17 +93,7 @@ export function Pricing() {
                 </div>
               )}
             </div>
-            <h3 className="text-2xl font-black mb-1 font-headline text-center">Básico</h3>
-            <p className="text-muted-foreground text-xs mb-6 text-center">Tudo que você precisa para planejar seu sítio do zero.</p>
-            <div className="mb-6 pb-6 border-b border-border text-center">
-              <span className="text-muted-foreground line-through text-xs block mb-1">De R$ 97,00 por</span>
-              <div className="flex items-start justify-center text-foreground">
-                <span className="text-xl font-black mt-1 mr-1">R$</span>
-                <span className="text-6xl font-black font-headline">9</span>
-                <span className="text-xl font-black mt-1">,90</span>
-              </div>
-              <p className="text-muted-foreground text-[9px] mt-1 tracking-widest uppercase">Pagamento único · Acesso vitalício</p>
-            </div>
+
             <ul className="space-y-3 flex-grow mb-8">
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> <strong>+100 projetos completos</strong></li>
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> Acesso imediato após compra</li>
@@ -125,6 +128,18 @@ export function Pricing() {
               </div>
             </div>
 
+            <h3 className="text-2xl font-black mb-1 font-headline gold-gradient-text text-center">Pro</h3>
+            <p className="text-muted-foreground text-xs mb-6 text-center">O pack completo + 4 bônus exclusivos.</p>
+            <div className="mb-6 pb-6 border-b border-border text-center">
+              <span className="text-muted-foreground line-through text-xs block mb-1">De R$ 197,00 por</span>
+              <div className="flex items-start justify-center gold-gradient-text">
+                <span className="text-xl font-black mt-1 mr-1">R$</span>
+                <span className="text-6xl font-black font-headline">24</span>
+                <span className="text-xl font-black mt-1">,90</span>
+              </div>
+              <p className="text-muted-foreground text-[9px] mt-1 tracking-widest uppercase">Pagamento único · Acesso vitalício + Bônus</p>
+            </div>
+
             <div className="relative mb-6 text-center flex justify-center">
               {planProImg ? (
                 <Image 
@@ -140,17 +155,7 @@ export function Pricing() {
                 </div>
               )}
             </div>
-            <h3 className="text-2xl font-black mb-1 font-headline gold-gradient-text text-center">Pro</h3>
-            <p className="text-muted-foreground text-xs mb-6 text-center">O pack completo + 4 bônus exclusivos.</p>
-            <div className="mb-6 pb-6 border-b border-border text-center">
-              <span className="text-muted-foreground line-through text-xs block mb-1">De R$ 197,00 por</span>
-              <div className="flex items-start justify-center gold-gradient-text">
-                <span className="text-xl font-black mt-1 mr-1">R$</span>
-                <span className="text-6xl font-black font-headline">24</span>
-                <span className="text-xl font-black mt-1">,90</span>
-              </div>
-              <p className="text-muted-foreground text-[9px] mt-1 tracking-widest uppercase">Pagamento único · Acesso vitalício + Bônus</p>
-            </div>
+
             <ul className="space-y-2.5 flex-grow mb-8">
               <li className="flex items-center gap-2 text-xs font-bold text-foreground"><Check className="text-primary flex-shrink-0" size={14} /> Tudo do Básico</li>
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 1:</strong> Construções Rurais</li>
