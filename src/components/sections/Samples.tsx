@@ -33,7 +33,7 @@ export function Samples() {
           {samples.map((sample) => {
             const imgData = PlaceHolderImages.find(img => img.id === sample.id);
             return (
-              <div key={sample.id} className="relative group overflow-hidden bg-card border-2 border-dashed border-primary/30 aspect-[3/4] rounded-sm p-6 flex flex-col items-center justify-center text-center cursor-pointer hover:border-primary hover:-translate-y-2 transition-all duration-300">
+              <div key={sample.id} className="relative overflow-hidden bg-card border-2 border-dashed border-primary/30 aspect-[3/4] rounded-sm p-0 flex flex-col items-center justify-center text-center">
                 <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-primary text-black font-black flex items-center justify-center text-sm z-10">
                   {sample.id.split('-')[1]}
                 </div>
@@ -43,19 +43,15 @@ export function Samples() {
                     alt={sample.desc}
                     width={600}
                     height={800}
-                    className="object-cover w-full h-full opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+                    className="object-cover w-full h-full opacity-100"
                     data-ai-hint="farm blueprint"
                   />
                 ) : (
-                  <div className="flex flex-col items-center gap-2">
+                  <div className="flex flex-col items-center gap-2 p-6">
                     <span className="text-primary font-black tracking-widest uppercase">{sample.label}</span>
                     <span className="text-muted-foreground text-xs">{sample.desc}</span>
                   </div>
                 )}
-                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black to-transparent">
-                   <p className="text-primary text-xs font-bold uppercase tracking-widest">{sample.label}</p>
-                   <p className="text-foreground text-sm font-semibold">{sample.desc}</p>
-                </div>
               </div>
             );
           })}
