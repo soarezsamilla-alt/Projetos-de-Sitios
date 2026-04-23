@@ -77,9 +77,10 @@ export function Samples() {
                 );
               })}
             </CarouselContent>
+            {/* Setas de Navegação */}
             <div className="hidden md:block">
-              <CarouselPrevious className="-left-12 border-primary/30 text-primary hover:bg-primary/10 hover:text-primary" />
-              <CarouselNext className="-right-12 border-primary/30 text-primary hover:bg-primary/10 hover:text-primary" />
+              <CarouselPrevious className="-left-12 border-primary/30 text-primary hover:bg-primary/10 hover:text-primary transition-all" />
+              <CarouselNext className="-right-12 border-primary/30 text-primary hover:bg-primary/10 hover:text-primary transition-all" />
             </div>
           </Carousel>
         </div>
