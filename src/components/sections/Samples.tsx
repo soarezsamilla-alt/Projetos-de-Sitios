@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from 'react';
@@ -65,7 +66,7 @@ export function Samples() {
                           alt={sample.desc}
                           width={600}
                           height={800}
-                          className="object-cover w-full h-full"
+                          className="object-contain w-full h-full"
                           data-ai-hint="farm blueprint"
                         />
                       ) : (
