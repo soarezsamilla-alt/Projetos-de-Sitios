@@ -37,12 +37,12 @@ export function Problem() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {problems.map((prob, idx) => (
-            <div key={idx} className="bg-card border border-border border-l-4 border-l-accent p-8 rounded-sm hover:-translate-y-2 transition-all duration-300 group hover:border-l-primary">
-              <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
-                <X className="text-accent group-hover:text-primary transition-colors" size={20} />
+            <div key={idx} className="bg-card border border-border border-l-4 border-l-accent p-6 rounded-sm hover:-translate-y-2 transition-all duration-300 group hover:border-l-primary flex flex-col">
+              <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
+                <X className="text-accent group-hover:text-primary transition-colors" size={16} />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-foreground font-body">{prob.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{prob.desc}</p>
+              <h3 className="text-lg font-bold mb-2 text-foreground font-body leading-tight">{prob.title}</h3>
+              <p className="text-muted-foreground text-xs leading-relaxed">{prob.desc}</p>
             </div>
           ))}
         </div>
