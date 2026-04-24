@@ -10,7 +10,7 @@ const bonuses = [
     tag: 'BÔNUS 01',
     title: 'Pack de Construções Rurais',
     desc: '10 plantas prontas de galinheiros, chiqueiros e tanques com medidas e materiais necessários para construção.',
-    val: '97,00'
+    val: '37,90'
   },
   {
     id: 'bonus-2',
