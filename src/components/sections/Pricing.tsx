@@ -267,11 +267,19 @@ export function Pricing() {
                 <span className="text-[9px] uppercase font-black tracking-tighter text-muted-foreground">Única oportunidade · Acesso Vitalício</span>
               </div>
 
-              <Button className="w-full gold-gradient-bg text-black font-black uppercase tracking-widest h-14 shine-effect shadow-xl shadow-primary/20 text-xs">
-                QUERO O PLANO PRO COM DESCONTO
-              </Button>
+              <div className="flex flex-col gap-3">
+                <Button className="w-full gold-gradient-bg text-black font-black uppercase tracking-widest h-14 shine-effect shadow-xl shadow-primary/20 text-xs">
+                  QUERO O PLANO PRO COM DESCONTO
+                </Button>
+                <button 
+                  onClick={() => setShowUpsell(false)}
+                  className="text-[10px] text-muted-foreground hover:text-foreground transition-colors uppercase font-bold tracking-widest underline decoration-dotted"
+                >
+                  Não, obrigado. Prefiro continuar com o Plano Básico
+                </button>
+              </div>
               
-              <div className="mt-4 flex items-center justify-center gap-2 opacity-50">
+              <div className="mt-6 flex items-center justify-center gap-2 opacity-50 border-t border-border pt-4">
                 <ShieldCheck size={12} />
                 <span className="text-[9px] font-black uppercase">Garantia Blindada de 7 Dias</span>
               </div>
