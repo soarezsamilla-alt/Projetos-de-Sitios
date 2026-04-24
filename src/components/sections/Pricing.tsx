@@ -268,8 +268,10 @@ export function Pricing() {
               </div>
 
               <div className="flex flex-col gap-3">
-                <Button className="w-full gold-gradient-bg text-black font-black uppercase tracking-widest h-14 shine-effect shadow-xl shadow-primary/20 text-xs">
-                  QUERO O PLANO PRO COM DESCONTO
+                <Button asChild className="w-full gold-gradient-bg text-black font-black uppercase tracking-widest h-14 shine-effect shadow-xl shadow-primary/20 text-xs">
+                  <a href="https://pay.wiapy.com/MowpM6rdLB">
+                    QUERO O PLANO PRO COM DESCONTO
+                  </a>
                 </Button>
                 <button 
                   onClick={() => setShowUpsell(false)}
