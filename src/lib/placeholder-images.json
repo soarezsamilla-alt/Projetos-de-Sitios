@@ -95,6 +95,42 @@
       "description": "Capa do plano premium",
       "imageUrl": "https://www.image2url.com/r2/default/images/1776898548797-9f3c9412-dc86-4968-b14c-a26a2b23bff4.png",
       "imageHint": "premium book"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Foto depoimento 01",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1776992778799-8552cf59-7e7a-4fbd-ae34-9e8c0815a3a0.jpg",
+      "imageHint": "person face"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Foto depoimento 02",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1776992794928-8e5e2f02-6e0a-461d-afdc-f483a973efa6.jpg",
+      "imageHint": "person face"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Foto depoimento 03",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1776992621801-3f2f2fea-933f-4451-b6d7-904b5b652364.jpg",
+      "imageHint": "person face"
+    },
+    {
+      "id": "testimonial-4",
+      "description": "Foto depoimento 04",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1776992818889-6c50c10f-1856-461a-bfc3-3df302eb8fbb.jpg",
+      "imageHint": "person face"
+    },
+    {
+      "id": "testimonial-5",
+      "description": "Foto depoimento 05",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1776992863643-f030ca93-a4b9-45c3-9478-f5c63c87d6f9.jpg",
+      "imageHint": "person face"
+    },
+    {
+      "id": "testimonial-6",
+      "description": "Foto depoimento 06",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1776992729923-dcea8498-979c-4202-9807-85cda4778cb7.jpg",
+      "imageHint": "person face"
     }
   ]
 }
