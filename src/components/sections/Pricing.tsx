@@ -1,17 +1,29 @@
+
 "use client";
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
-import { Check, X } from 'lucide-react';
+import { Check, X, Timer, Sparkles, ShieldCheck } from 'lucide-react';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 
 const STORAGE_KEY = 'sitio_countdown_end';
 const DURATION_MS = 24 * 60 * 60 * 1000;
+const UPSELL_TIMER_MS = 15 * 60 * 1000;
 
 export function Pricing() {
   const [timeLeft, setTimeLeft] = useState({ hours: '00', mins: '00', secs: '00' });
+  const [showUpsell, setShowUpsell] = useState(false);
+  const [upsellTime, setUpsellTime] = useState(UPSELL_TIMER_MS);
 
+  // Main countdown for section
   useEffect(() => {
     let endTime = localStorage.getItem(STORAGE_KEY);
     if (!endTime || parseInt(endTime) < Date.now()) {
@@ -40,6 +52,22 @@ export function Pricing() {
 
     return () => clearInterval(timer);
   }, []);
+
+  // Upsell timer countdown
+  useEffect(() => {
+    if (showUpsell && upsellTime > 0) {
+      const timer = setInterval(() => {
+        setUpsellTime(prev => prev - 1000);
+      }, 1000);
+      return () => clearInterval(timer);
+    }
+  }, [showUpsell, upsellTime]);
+
+  const formatUpsellTime = (ms: number) => {
+    const minutes = Math.floor(ms / 60000);
+    const seconds = Math.floor((ms % 60000) / 1000);
+    return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+  };
 
   const planBasicImg = PlaceHolderImages.find(img => img.id === 'plan-basic');
   const planProImg = PlaceHolderImages.find(img => img.id === 'plan-pro');
@@ -100,7 +128,11 @@ export function Pricing() {
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> Garantia de 7 dias</li>
               <li className="flex items-center gap-2 text-xs text-muted-foreground opacity-50"><X className="text-muted-foreground flex-shrink-0" size={14} /> 4 Bônus Estratégicos</li>
             </ul>
-            <Button variant="outline" className="pulse-attention w-full h-auto py-3 font-black uppercase tracking-[0.2em] rounded-sm hover:bg-foreground hover:text-black transition-all text-xs">
+            <Button 
+              variant="outline" 
+              onClick={() => setShowUpsell(true)}
+              className="pulse-attention w-full h-auto py-3 font-black uppercase tracking-[0.2em] rounded-sm hover:bg-foreground hover:text-black transition-all text-xs"
+            >
               Garantir Básico
             </Button>
           </div>
@@ -172,6 +204,80 @@ export function Pricing() {
             </Button>
           </div>
         </div>
+
+        {/* Upsell Dialog */}
+        <Dialog open={showUpsell} onOpenChange={setShowUpsell}>
+          <DialogContent className="max-w-[90vw] md:max-w-[450px] bg-card border-2 border-primary p-0 overflow-hidden">
+            <div className="relative p-6 md:p-8">
+              <button 
+                onClick={() => setShowUpsell(false)}
+                className="absolute top-4 right-4 text-muted-foreground hover:text-primary transition-colors"
+              >
+                <X size={20} />
+              </button>
+
+              <DialogHeader className="mb-6 text-center">
+                <div className="flex justify-center mb-4">
+                  <div className="bg-primary/10 p-3 rounded-full">
+                    <Sparkles className="text-primary animate-pulse" size={32} />
+                  </div>
+                </div>
+                <DialogTitle className="text-2xl font-black uppercase tracking-tight leading-tight">
+                  ESPERE! <span className="text-primary">OFERTA ÚNICA</span>
+                </DialogTitle>
+                <DialogDescription className="text-foreground font-medium text-sm mt-2">
+                  Por que levar apenas o básico se você pode ter a <span className="font-black text-primary">experiência completa</span> por quase o mesmo preço?
+                </DialogDescription>
+              </DialogHeader>
+
+              {/* Countdown Timer */}
+              <div className="bg-accent/10 border border-primary/30 py-2 px-4 rounded-sm flex items-center justify-center gap-3 mb-6">
+                <Timer size={16} className="text-primary animate-bounce" />
+                <span className="text-[10px] font-black uppercase tracking-widest text-foreground">A oferta expira em:</span>
+                <span className="font-mono text-primary font-black text-lg">{formatUpsellTime(upsellTime)}</span>
+              </div>
+
+              <div className="space-y-4 mb-8">
+                <p className="text-xs text-muted-foreground text-center italic">
+                  O Plano Pro é a escolha de 92% dos nossos alunos por ser o único que entrega o planejamento financeiro e estrutural completo.
+                </p>
+                <ul className="space-y-2 bg-background/50 p-4 rounded-sm border border-border">
+                  <li className="flex items-center gap-2 text-[11px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={14} /> +100 Projetos + 4 Bônus Exclusivos
+                  </li>
+                  <li className="flex items-center gap-2 text-[11px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={14} /> Planilha de ROI (Lucro Estimado)
+                  </li>
+                  <li className="flex items-center gap-2 text-[11px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={14} /> Plantas de Construções Rurais
+                  </li>
+                  <li className="flex items-center gap-2 text-[11px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={14} /> Atualizações Semanais Gratuitas
+                  </li>
+                </ul>
+              </div>
+
+              <div className="text-center mb-6">
+                <span className="text-muted-foreground line-through text-xs">De R$ 197,00</span>
+                <div className="flex items-center justify-center gap-1 gold-gradient-text">
+                  <span className="text-lg font-black mt-1">POR R$</span>
+                  <span className="text-5xl font-black font-headline">19</span>
+                  <span className="text-lg font-black mt-1">,90</span>
+                </div>
+                <span className="text-[9px] uppercase font-black tracking-tighter text-muted-foreground">Única oportunidade · Acesso Vitalício</span>
+              </div>
+
+              <Button className="w-full gold-gradient-bg text-black font-black uppercase tracking-widest h-14 shine-effect shadow-xl shadow-primary/20 text-xs">
+                QUERO O PLANO PRO COM DESCONTO
+              </Button>
+              
+              <div className="mt-4 flex items-center justify-center gap-2 opacity-50">
+                <ShieldCheck size={12} />
+                <span className="text-[9px] font-black uppercase">Garantia Blindada de 7 Dias</span>
+              </div>
+            </div>
+          </DialogContent>
+        </Dialog>
 
         <p className="text-center mt-16 text-muted-foreground text-[9px] tracking-[0.2em] uppercase">
           🔒 Pagamento 100% seguro  ⚡ Acesso imediato
