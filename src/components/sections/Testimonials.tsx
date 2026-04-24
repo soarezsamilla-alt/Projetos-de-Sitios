@@ -61,18 +61,18 @@ export function Testimonials() {
           {testimonials.map((t, idx) => {
             const imgData = PlaceHolderImages.find(img => img.id === t.id);
             return (
-              <div key={idx} className="relative bg-gradient-to-b from-card to-background border border-border p-10 rounded-sm hover:-translate-y-2 transition-all duration-300">
-                 <div className="absolute top-4 left-6 text-primary/10 text-8xl font-black font-headline select-none">"</div>
-                 <div className="flex gap-1 mb-6 relative z-10">
+              <div key={idx} className="relative bg-gradient-to-b from-card to-background border border-border p-6 rounded-sm hover:-translate-y-2 transition-all duration-300">
+                 <div className="absolute top-4 left-6 text-primary/10 text-7xl font-black font-headline select-none">"</div>
+                 <div className="flex gap-1 mb-4 relative z-10">
                    {[...Array(5)].map((_, i) => (
                      <Star key={i} className="text-primary fill-primary" size={14} />
                    ))}
                  </div>
-                 <p className="text-foreground text-base italic leading-relaxed mb-8 relative z-10">
+                 <p className="text-foreground text-sm italic leading-relaxed mb-6 relative z-10">
                    {t.text}
                  </p>
-                 <div className="flex items-center gap-4 pt-6 border-t border-border relative z-10">
-                   <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-primary/50 relative">
+                 <div className="flex items-center gap-3 pt-4 border-t border-border relative z-10">
+                   <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary/50 relative">
                       {imgData ? (
                         <Image 
                           src={imgData.imageUrl} 
@@ -85,8 +85,8 @@ export function Testimonials() {
                       )}
                    </div>
                    <div>
-                     <h4 className="text-foreground font-black text-sm uppercase tracking-widest">{t.name}</h4>
-                     <p className="text-muted-foreground text-xs">{t.role}</p>
+                     <h4 className="text-foreground font-black text-xs uppercase tracking-widest leading-tight">{t.name}</h4>
+                     <p className="text-muted-foreground text-[10px]">{t.role}</p>
                    </div>
                  </div>
               </div>
