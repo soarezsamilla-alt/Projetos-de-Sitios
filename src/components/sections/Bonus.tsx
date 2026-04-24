@@ -17,7 +17,7 @@ const bonuses = [
     tag: 'BÔNUS 02',
     title: 'Planilha de ROI Produtivo',
     desc: 'Calculadora editável que mostra o retorno financeiro estimado de cada zona do seu sítio. Editável no Excel.',
-    val: '77,00'
+    val: '37,90'
   },
   {
     id: 'bonus-3',
