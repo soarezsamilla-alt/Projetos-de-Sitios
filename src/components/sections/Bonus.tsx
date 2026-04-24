@@ -37,9 +37,9 @@ const bonuses = [
 
 export function Bonus() {
   return (
-    <section className="bg-background py-24 border-t border-border">
+    <section className="bg-background py-20 border-t border-border">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <span className="text-primary font-bold text-xs tracking-[0.4em] uppercase mb-4 block">Exclusivo do Plano Pro</span>
           <h2 className="text-3xl md:text-5xl font-black mb-6">
             Bônus <span className="text-primary">Premium Inclusos</span>
@@ -49,15 +49,15 @@ export function Bonus() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {bonuses.map((bonus) => {
             const imgData = PlaceHolderImages.find(img => img.id === bonus.id);
             return (
               <div key={bonus.id} className="relative bg-card border border-border rounded-sm overflow-hidden group hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-400 flex flex-col">
-                <div className="absolute top-4 right-4 bg-primary text-black font-black text-[10px] px-3 py-1.5 rounded-sm z-10 tracking-widest">
+                <div className="absolute top-3 right-3 bg-primary text-black font-black text-[9px] px-2 py-1 rounded-sm z-10 tracking-widest">
                   {bonus.tag}
                 </div>
-                <div className="aspect-[4/3] bg-gradient-to-br from-[#0d1f10] to-card border-2 border-dashed border-primary/20 m-4 rounded-sm flex items-center justify-center p-6 text-center group-hover:border-primary/40 transition-colors">
+                <div className="aspect-[4/3] bg-gradient-to-br from-[#0d1f10] to-card border-2 border-dashed border-primary/20 m-3 rounded-sm flex items-center justify-center p-4 text-center group-hover:border-primary/40 transition-colors">
                   {imgData ? (
                     <Image 
                       src={imgData.imageUrl} 
@@ -74,12 +74,12 @@ export function Bonus() {
                     </div>
                   )}
                 </div>
-                <div className="p-8 flex flex-col flex-grow">
-                  <h3 className="text-lg font-black mb-4 leading-tight">{bonus.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">{bonus.desc}</p>
+                <div className="p-6 flex flex-col flex-grow">
+                  <h3 className="text-base font-black mb-3 leading-tight">{bonus.title}</h3>
+                  <p className="text-muted-foreground text-xs leading-relaxed mb-5 flex-grow">{bonus.desc}</p>
                   <div className="pt-4 border-t border-border flex items-baseline gap-2">
-                    <span className="text-muted-foreground line-through text-xs font-semibold">R$ {bonus.val}</span>
-                    <span className="text-primary font-black text-sm uppercase tracking-widest">GRÁTIS</span>
+                    <span className="text-muted-foreground line-through text-[10px] font-semibold">R$ {bonus.val}</span>
+                    <span className="text-primary font-black text-xs uppercase tracking-widest">GRÁTIS</span>
                   </div>
                 </div>
               </div>
