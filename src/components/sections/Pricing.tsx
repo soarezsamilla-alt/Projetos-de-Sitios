@@ -239,7 +239,7 @@ export function Pricing() {
 
               <div className="space-y-4 mb-8">
                 <p className="text-xs text-muted-foreground text-center italic">
-                  O Plano Pro é a escolha de 92% dos nossos alunos por ser o único que entrega o planejamento financeiro e estrutural completo.
+                  O Plano Pro é a escolha de 92% das pessoas por ser o único que entrega o planejamento financeiro e estrutural completo.
                 </p>
                 <ul className="space-y-2 bg-background/50 p-4 rounded-sm border border-border">
                   <li className="flex items-center gap-2 text-[11px] font-bold">
