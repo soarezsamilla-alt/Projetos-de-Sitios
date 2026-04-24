@@ -14,6 +14,7 @@ import { Guarantee } from './sections/Guarantee';
 import { FAQ } from './sections/FAQ';
 import { FinalCTA } from './sections/FinalCTA';
 import { Footer } from './sections/Footer';
+import { PurchaseNotification } from './PurchaseNotification';
 
 export function LandingPage() {
   return (
@@ -36,6 +37,9 @@ export function LandingPage() {
       <FAQ />
       <FinalCTA />
       <Footer />
+
+      {/* Social Proof Notifications */}
+      <PurchaseNotification />
     </div>
   );
 }
