@@ -24,7 +24,7 @@ const bonuses = [
     tag: 'BÔNUS 03',
     title: 'Guia de Plantas Companheiras',
     desc: 'Saiba o que plantar junto para aumentar produtividade naturalmente. Pares ideais para café, frutas e hortaliças.',
-    val: '67,00'
+    val: '37,90'
   },
   {
     id: 'bonus-4',
