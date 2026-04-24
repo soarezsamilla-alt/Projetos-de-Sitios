@@ -31,7 +31,7 @@ const bonuses = [
     tag: 'BÔNUS 04',
     title: 'Manual de Energia Solar Rural',
     desc: 'Dimensione sistemas solares para casas rurais, poços artesianos e irrigação. Cálculos passo a passo.',
-    val: '87,00'
+    val: '37,90'
   }
 ];
 
