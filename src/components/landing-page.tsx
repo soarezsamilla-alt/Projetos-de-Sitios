@@ -26,8 +26,8 @@ export function LandingPage() {
       <Hero />
       
       <Problem />
-      <ProductShowcase />
       <Samples />
+      <ProductShowcase />
       <ContentBreakdown />
       <Bonus />
       <Testimonials />
