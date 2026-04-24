@@ -273,12 +273,12 @@ export function Pricing() {
                     QUERO O PLANO PRO COM DESCONTO
                   </a>
                 </Button>
-                <button 
-                  onClick={() => setShowUpsell(false)}
-                  className="text-[10px] text-muted-foreground hover:text-foreground transition-colors uppercase font-bold tracking-widest underline decoration-dotted"
+                <a 
+                  href="https://pay.wiapy.com/rtXyisd1bF"
+                  className="text-[10px] text-muted-foreground hover:text-foreground transition-colors uppercase font-bold tracking-widest underline decoration-dotted text-center block"
                 >
                   Não, obrigado. Prefiro continuar com o Plano Básico
-                </button>
+                </a>
               </div>
               
               <div className="mt-6 flex items-center justify-center gap-2 opacity-50 border-t border-border pt-4">
