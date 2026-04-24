@@ -199,8 +199,8 @@ export function Pricing() {
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> Acesso prioritário a novos projetos</li>
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> Garantia estendida de 7 dias</li>
             </ul>
-            <Button className="shine-effect pulse-attention gold-gradient-bg text-black font-black uppercase tracking-[0.2em] h-auto py-3.5 text-xs rounded-sm shadow-2xl shadow-primary/40 hover:scale-105 transition-all w-full">
-              Quero o Plano Pro
+            <Button asChild className="shine-effect pulse-attention gold-gradient-bg text-black font-black uppercase tracking-[0.2em] h-auto py-3.5 text-xs rounded-sm shadow-2xl shadow-primary/40 hover:scale-105 transition-all w-full">
+              <a href="https://pay.wiapy.com/sOZisMvvt9">Quero o Plano Pro</a>
             </Button>
           </div>
         </div>
