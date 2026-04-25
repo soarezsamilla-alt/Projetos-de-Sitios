@@ -19,8 +19,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-      </head>
-      <body className="font-body antialiased">
+        
         {/* Facebook Pixel */}
         <Script id="fb-pixel" strategy="afterInteractive">
           {`
@@ -36,6 +35,17 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
+      </head>
+      <body className="font-body antialiased">
+        <noscript>
+          <img 
+            height="1" 
+            width="1" 
+            style={{ display: 'none' }}
+            src="https://www.facebook.com/tr?id=2062710850952061&ev=PageView&noscript=1"
+            alt=""
+          />
+        </noscript>
         
         {/* UTMify Pixel Script */}
         <Script id="utmify-pixel" strategy="afterInteractive">
@@ -57,15 +67,6 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
 
-        <noscript>
-          <img 
-            height="1" 
-            width="1" 
-            style={{ display: 'none' }}
-            src="https://www.facebook.com/tr?id=2062710850952061&ev=PageView&noscript=1"
-            alt=""
-          />
-        </noscript>
         {children}
       </body>
     </html>
