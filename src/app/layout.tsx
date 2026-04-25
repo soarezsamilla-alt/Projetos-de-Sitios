@@ -36,6 +36,19 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
+        
+        {/* UTMify Script */}
+        <Script id="utmify-pixel" strategy="afterInteractive">
+          {`
+            window.pixelId = "69ec34d5a9d994ff52a14798";
+            var a = document.createElement("script");
+            a.setAttribute("async", "");
+            a.setAttribute("defer", "");
+            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+            document.head.appendChild(a);
+          `}
+        </Script>
+
         <noscript>
           <img 
             height="1" 
