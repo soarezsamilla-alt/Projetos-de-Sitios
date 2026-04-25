@@ -37,7 +37,7 @@ export default function RootLayout({
           `}
         </Script>
         
-        {/* UTMify Script */}
+        {/* UTMify Pixel Script */}
         <Script id="utmify-pixel" strategy="afterInteractive">
           {`
             window.pixelId = "69ec34d5a9d994ff52a14798";
@@ -48,6 +48,14 @@ export default function RootLayout({
             document.head.appendChild(a);
           `}
         </Script>
+
+        {/* UTMify Latest Script */}
+        <Script 
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck=""
+          data-utmify-prevent-subids=""
+          strategy="afterInteractive"
+        />
 
         <noscript>
           <img 
