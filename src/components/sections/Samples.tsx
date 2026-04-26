@@ -57,7 +57,7 @@ export function Samples() {
                 const imgData = PlaceHolderImages.find(img => img.id === sample.id);
                 return (
                   <CarouselItem key={sample.id} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
-                    <div className="relative aspect-[3/4] flex items-center justify-center p-0">
+                    <div className="relative aspect-[3/4] flex items-center justify-center p-0 overflow-hidden bg-card/50 rounded-sm">
                       {imgData ? (
                         <Image 
                           src={imgData.imageUrl} 
@@ -67,10 +67,11 @@ export function Samples() {
                           className="object-contain w-full h-full"
                           data-ai-hint="farm blueprint"
                           unoptimized={true}
+                          priority={sample.id.includes('new')}
                         />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center">
-                          <span className="text-muted-foreground text-[10px] uppercase tracking-widest">Carregando Amostra...</span>
+                          <span className="text-muted-foreground text-[10px] uppercase tracking-widest italic">Amostra indisponível</span>
                         </div>
                       )}
                     </div>
@@ -78,9 +79,8 @@ export function Samples() {
                 );
               })}
             </CarouselContent>
-            {/* Setas de Navegação - Posicionadas mais para fora em telas grandes */}
-            <CarouselPrevious className="left-0 md:-left-16 bg-background/50 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
-            <CarouselNext className="right-0 md:-right-16 bg-background/50 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
+            <CarouselPrevious className="left-0 md:-left-12 bg-background/80 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
+            <CarouselNext className="right-0 md:-right-12 bg-background/80 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
           </Carousel>
         </div>
 
@@ -90,7 +90,7 @@ export function Samples() {
             <h4 className="text-primary font-bold uppercase tracking-widest text-sm">Observação Importante</h4>
           </div>
           <p className="text-muted-foreground text-sm leading-relaxed">
-            Todos os +100 projetos seguem o mesmo padrão editorial premium que você vê nas amostras acima — com medidas visíveis, zonas identificadas, elementos produtivos bem posicionados e legendas profissionais.
+            Todos os +100 projetos seguem o mesmo padrão editorial premium que você vê nas amostras acima — com medidas visíveis, zonas identificadas e layouts profissionais.
           </p>
         </div>
       </div>

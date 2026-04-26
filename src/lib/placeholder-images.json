@@ -25,18 +25,6 @@
       "imageHint": "product showcase"
     },
     {
-      "id": "sample-1",
-      "description": "Projeto de sítio 2ha café e animais",
-      "imageUrl": "https://www.image2url.com/r2/default/images/1776909522335-4b911f4a-5836-4c27-8a58-21b4d03f7ad8.png",
-      "imageHint": "farm blueprint"
-    },
-    {
-      "id": "sample-2",
-      "description": "Projeto de sítio 1ha hortifruti comercial",
-      "imageUrl": "https://www.image2url.com/r2/default/images/1776910011489-4d0bd8a0-4471-43cd-a824-0cb8c91517ec.png",
-      "imageHint": "agriculture plan"
-    },
-    {
       "id": "sample-3",
       "description": "Projeto amazônico com açaí e cupuaçu",
       "imageUrl": "https://www.image2url.com/r2/default/images/1776910312707-48e0bbe9-8ceb-4fda-9f8d-93163d6ea3d4.png",
