@@ -66,6 +66,7 @@ export function Samples() {
                           height={800}
                           className="object-contain w-full h-full"
                           data-ai-hint="farm blueprint"
+                          unoptimized={true}
                         />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center">
