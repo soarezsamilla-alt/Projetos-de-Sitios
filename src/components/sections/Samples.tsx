@@ -15,8 +15,8 @@ import {
 } from "@/components/ui/carousel";
 
 const samples = [
-  { id: 'sample-1', label: 'AMOSTRA 01', desc: 'Sítio 2ha café e animais' },
-  { id: 'sample-2', label: 'AMOSTRA 02', desc: 'Sítio 1ha hortifruti comercial' },
+  { id: 'sample-new-1', label: 'AMOSTRA 01', desc: 'Projeto Detalhado de Sítio Premium' },
+  { id: 'sample-new-2', label: 'AMOSTRA 02', desc: 'Planta de Layout Rural Produtivo' },
   { id: 'sample-3', label: 'AMOSTRA 03', desc: 'Projeto amazônico açaí/cupuaçu' },
   { id: 'sample-4', label: 'AMOSTRA 04', desc: 'Capa de divisória de seção' },
   { id: 'sample-5', label: 'AMOSTRA 05', desc: 'Sumário organizado' },
