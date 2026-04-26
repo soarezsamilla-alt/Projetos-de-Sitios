@@ -53,7 +53,7 @@ export function Samples() {
             onMouseLeave={plugin.current.reset}
           >
             <CarouselContent className="-ml-4">
-              {samples.map((sample) => {
+              {samples.map((sample, idx) => {
                 const imgData = PlaceHolderImages.find(img => img.id === sample.id);
                 return (
                   <CarouselItem key={sample.id} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
@@ -67,7 +67,8 @@ export function Samples() {
                           className="object-contain w-full h-full"
                           data-ai-hint="farm blueprint"
                           unoptimized={true}
-                          priority={sample.id.includes('new')}
+                          priority={idx < 3}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center">
