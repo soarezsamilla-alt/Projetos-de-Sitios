@@ -31,6 +31,18 @@
       "imageHint": "rural layout"
     },
     {
+      "id": "sample-new-6",
+      "description": "Nova Amostra de Projeto 06",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1777326290465-87cdd7ee-7d0e-49bf-9f14-c2bd33a149f9.blob",
+      "imageHint": "farm plan"
+    },
+    {
+      "id": "sample-new-7",
+      "description": "Nova Amostra de Projeto 07",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1777326963015-ec9779fc-9a3a-427f-ac25-eaf771bce357.blob",
+      "imageHint": "rural technical"
+    },
+    {
       "id": "hero-mockup",
       "description": "Capa do eBook principal mockup 3D",
       "imageUrl": "https://www.image2url.com/r2/default/images/1776898548797-9f3c9412-dc86-4968-b14c-a26a2b23bff4.png",
