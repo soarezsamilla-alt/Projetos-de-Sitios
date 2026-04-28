@@ -1,6 +1,18 @@
 {
   "placeholderImages": [
     {
+      "id": "sample-new-8",
+      "description": "Nova Amostra de Projeto 08",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1777337084037-1f2ff87f-b895-4b37-b711-717bdf832e21.blob",
+      "imageHint": "farm technical"
+    },
+    {
+      "id": "sample-new-9",
+      "description": "Nova Amostra de Projeto 09",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1777337122577-5d6b87ca-fd17-4093-a9c0-2fede5187f55.blob",
+      "imageHint": "rural technical"
+    },
+    {
       "id": "sample-new-1",
       "description": "Novo Projeto de Sítio 01",
       "imageUrl": "https://www.image2url.com/r2/default/images/1777172189294-ce35de3a-6a75-425c-aef7-a9a57c120ea9.blob",

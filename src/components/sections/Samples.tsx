@@ -15,17 +15,19 @@ import {
 } from "@/components/ui/carousel";
 
 const samples = [
-  { id: 'sample-new-6', label: 'AMOSTRA 01', desc: 'Planta de Divisão de Pastagem' },
-  { id: 'sample-new-7', label: 'AMOSTRA 02', desc: 'Layout Técnico Rural' },
-  { id: 'sample-new-1', label: 'AMOSTRA 03', desc: 'Projeto Detalhado de Sítio Premium' },
-  { id: 'sample-new-2', label: 'AMOSTRA 04', desc: 'Planta de Layout Rural Produtivo' },
-  { id: 'sample-new-3', label: 'AMOSTRA 05', desc: 'Layout Estratégico Rural' },
-  { id: 'sample-new-4', label: 'AMOSTRA 06', desc: 'Planta Profissional de Sítio' },
-  { id: 'sample-new-5', label: 'AMOSTRA 07', desc: 'Dimensionamento de Áreas' },
-  { id: 'sample-3', label: 'AMOSTRA 08', desc: 'Projeto amazônico açaí/cupuaçu' },
-  { id: 'sample-4', label: 'AMOSTRA 09', desc: 'Capa de divisória de seção' },
-  { id: 'sample-5', label: 'AMOSTRA 10', desc: 'Sumário organizado' },
-  { id: 'sample-6', label: 'AMOSTRA 11', desc: 'Projeto semiárido com cisternas' }
+  { id: 'sample-new-8', label: 'AMOSTRA 01', desc: 'Projeto Técnico 08' },
+  { id: 'sample-new-9', label: 'AMOSTRA 02', desc: 'Projeto Técnico 09' },
+  { id: 'sample-new-7', label: 'AMOSTRA 03', desc: 'Projeto Técnico Rural' },
+  { id: 'sample-new-6', label: 'AMOSTRA 04', desc: 'Planta de Divisão de Pastagem' },
+  { id: 'sample-new-1', label: 'AMOSTRA 05', desc: 'Projeto Detalhado de Sítio Premium' },
+  { id: 'sample-new-2', label: 'AMOSTRA 06', desc: 'Planta de Layout Rural Produtivo' },
+  { id: 'sample-new-3', label: 'AMOSTRA 07', desc: 'Layout Estratégico Rural' },
+  { id: 'sample-new-4', label: 'AMOSTRA 08', desc: 'Planta Profissional de Sítio' },
+  { id: 'sample-new-5', label: 'AMOSTRA 09', desc: 'Dimensionamento de Áreas' },
+  { id: 'sample-3', label: 'AMOSTRA 10', desc: 'Projeto amazônico açaí/cupuaçu' },
+  { id: 'sample-4', label: 'AMOSTRA 11', desc: 'Capa de divisória de seção' },
+  { id: 'sample-5', label: 'AMOSTRA 12', desc: 'Sumário organizado' },
+  { id: 'sample-6', label: 'AMOSTRA 13', desc: 'Projeto semiárido com cisternas' }
 ];
 
 export function Samples() {
@@ -72,7 +74,7 @@ export function Samples() {
                           className="object-contain w-full h-full"
                           data-ai-hint="farm blueprint"
                           unoptimized={true}
-                          priority={idx < 6}
+                          priority={idx < 9}
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                       ) : (
