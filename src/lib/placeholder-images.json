@@ -128,39 +128,39 @@
     },
     {
       "id": "testimonial-1",
-      "description": "Foto depoimento 01",
-      "imageUrl": "https://www.image2url.com/r2/default/images/1776992778799-8552cf59-7e7a-4fbd-ae34-9e8c0815a3a0.jpg",
-      "imageHint": "person face"
+      "description": "Depoimento 01",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1777679668398-78a5aa8f-abbf-424a-9be0-2b21bb4ede20.blob",
+      "imageHint": "testimonial screenshot"
     },
     {
       "id": "testimonial-2",
-      "description": "Foto depoimento 02",
-      "imageUrl": "https://www.image2url.com/r2/default/images/1776992794928-8e5e2f02-6e0a-461d-afdc-f483a973efa6.jpg",
-      "imageHint": "person face"
+      "description": "Depoimento 02",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1777679736551-c04c9207-9a5a-480b-8f85-6fa72708f3d3.blob",
+      "imageHint": "testimonial screenshot"
     },
     {
       "id": "testimonial-3",
-      "description": "Foto depoimento 03",
-      "imageUrl": "https://www.image2url.com/r2/default/images/1776993033954-6c0cab43-dec5-4f14-a2e9-202f0553876c.jpg",
-      "imageHint": "person face"
+      "description": "Depoimento 03",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1777679786504-0525e41d-779a-4a8a-b1bc-5ebf1e39319d.blob",
+      "imageHint": "testimonial screenshot"
     },
     {
       "id": "testimonial-4",
-      "description": "Foto depoimento 04",
-      "imageUrl": "https://www.image2url.com/r2/default/images/1776992818889-6c50c10f-1856-461a-bfc3-3df302eb8fbb.jpg",
-      "imageHint": "person face"
+      "description": "Depoimento 04",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1777680005359-d715c974-9a8c-465a-93df-c94ff6fd4188.blob",
+      "imageHint": "testimonial screenshot"
     },
     {
       "id": "testimonial-5",
-      "description": "Foto depoimento 05",
-      "imageUrl": "https://www.image2url.com/r2/default/images/1776992863643-f030ca93-a4b9-45c3-9478-f5c63c87d6f9.jpg",
-      "imageHint": "person face"
+      "description": "Depoimento 05",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1777680056366-195be4e9-3f0d-462f-95c4-22fabb0dec66.blob",
+      "imageHint": "testimonial screenshot"
     },
     {
       "id": "testimonial-6",
-      "description": "Foto depoimento 06",
-      "imageUrl": "https://www.image2url.com/r2/default/images/1776992729923-dcea8498-979c-4202-9807-85cda4778cb7.jpg",
-      "imageHint": "person face"
+      "description": "Depoimento 06",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1777680520609-d57224f6-fe53-4513-83d9-70a39dcec8db.blob",
+      "imageHint": "testimonial screenshot"
     }
   ]
 }

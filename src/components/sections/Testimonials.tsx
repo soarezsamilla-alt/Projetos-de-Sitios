@@ -39,6 +39,7 @@ export function Testimonials() {
                      fill
                      className="object-cover"
                      data-ai-hint="testimonial screenshot"
+                     unoptimized={true}
                    />
                  ) : (
                    <div className="w-full h-full bg-muted flex items-center justify-center text-[10px] uppercase tracking-widest">
