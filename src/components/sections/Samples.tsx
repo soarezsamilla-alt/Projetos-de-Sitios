@@ -5,7 +5,7 @@ import React from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Star } from 'lucide-react';
-import Autoplay from "embla-carousel-autoplay";
+import AutoScroll from "embla-carousel-auto-scroll";
 import {
   Carousel,
   CarouselContent,
@@ -32,7 +32,7 @@ const samples = [
 
 export function Samples() {
   const plugin = React.useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: false })
+    AutoScroll({ speed: 1.2, stopOnInteraction: false, stopOnMouseEnter: true })
   );
 
   return (
@@ -56,8 +56,6 @@ export function Samples() {
               loop: true,
             }}
             className="w-full"
-            onMouseEnter={plugin.current.stop}
-            onMouseLeave={plugin.current.reset}
           >
             <CarouselContent className="-ml-4">
               {samples.map((sample, idx) => {
@@ -87,8 +85,8 @@ export function Samples() {
                 );
               })}
             </CarouselContent>
-            <CarouselPrevious className="left-0 md:-left-12 bg-background/80 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
-            <CarouselNext className="right-0 md:-right-12 bg-background/80 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
+            <CarouselPrevious className="hidden md:flex left-0 md:-left-12 bg-background/80 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
+            <CarouselNext className="hidden md:flex right-0 md:-right-12 bg-background/80 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
           </Carousel>
         </div>
 

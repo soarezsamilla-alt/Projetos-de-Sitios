@@ -4,7 +4,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import Autoplay from "embla-carousel-autoplay";
+import AutoScroll from "embla-carousel-auto-scroll";
 import {
   Carousel,
   CarouselContent,
@@ -24,7 +24,7 @@ const testimonials = [
 
 export function Testimonials() {
   const plugin = React.useRef(
-    Autoplay({ delay: 4000, stopOnInteraction: false })
+    AutoScroll({ speed: 1, stopOnInteraction: false, stopOnMouseEnter: true })
   );
 
   return (
@@ -48,15 +48,13 @@ export function Testimonials() {
               loop: true,
             }}
             className="w-full"
-            onMouseEnter={plugin.current.stop}
-            onMouseLeave={plugin.current.reset}
           >
             <CarouselContent className="-ml-4">
               {testimonials.map((t, idx) => {
                 const imgData = PlaceHolderImages.find(img => img.id === t.id);
                 return (
-                  <CarouselItem key={idx} className="pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
-                    <div className="relative aspect-[9/16] bg-card border border-border rounded-sm overflow-hidden shadow-2xl group h-full flex items-center justify-center p-2">
+                  <CarouselItem key={idx} className="pl-4 basis-[70%] sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
+                    <div className="relative aspect-[9/16] bg-card border border-border rounded-sm overflow-hidden shadow-2xl group flex items-center justify-center p-2">
                        <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors z-10 pointer-events-none" />
                        {imgData ? (
                          <div className="relative w-full h-full">
@@ -79,8 +77,8 @@ export function Testimonials() {
                 );
               })}
             </CarouselContent>
-            <CarouselPrevious className="left-0 md:-left-12 bg-background/80 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
-            <CarouselNext className="right-0 md:-right-12 bg-background/80 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
+            <CarouselPrevious className="hidden md:flex left-0 md:-left-12 bg-background/80 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
+            <CarouselNext className="hidden md:flex right-0 md:-right-12 bg-background/80 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
           </Carousel>
         </div>
       </div>
