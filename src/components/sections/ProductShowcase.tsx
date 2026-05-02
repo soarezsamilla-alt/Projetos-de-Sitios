@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from 'react';
@@ -11,7 +12,11 @@ const features = [
   'DIVERSIDADE (7 vocações)',
   'ABRANGÊNCIA (5 biomas)',
   'VALOR ECONÔMICO (economiza R$ 5-15k)',
-  'LUCRO (projeção de renda)'
+  'LUCRO (projeção de renda)',
+  'SEGURANÇA (medidas testadas)',
+  'FACILIDADE (passo a passo)',
+  'ACESSO (imediato + vitalício)',
+  'GARANTIA (7 dias)'
 ];
 
 export function ProductShowcase() {
