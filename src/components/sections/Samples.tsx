@@ -48,7 +48,7 @@ export function Samples() {
           </p>
         </div>
 
-        <div className="relative max-w-5xl mx-auto px-10">
+        <div className="relative max-w-6xl mx-auto px-4 md:px-10">
           <Carousel
             plugins={[plugin.current]}
             opts={{
@@ -61,19 +61,19 @@ export function Samples() {
               {samples.map((sample, idx) => {
                 const imgData = PlaceHolderImages.find(img => img.id === sample.id);
                 return (
-                  <CarouselItem key={sample.id} className="pl-4 basis-[95%] md:basis-[60%] lg:basis-[45%]">
+                  <CarouselItem key={sample.id} className="pl-4 basis-[100%] md:basis-[75%] lg:basis-[60%]">
                     <div className="relative aspect-[3/4] flex items-center justify-center p-0 overflow-hidden bg-card/50 rounded-sm">
                       {imgData ? (
                         <Image 
                           src={imgData.imageUrl} 
                           alt={sample.desc}
-                          width={600}
-                          height={800}
+                          width={800}
+                          height={1066}
                           className="object-contain w-full h-full"
                           data-ai-hint="farm blueprint"
                           unoptimized={true}
-                          priority={idx < 9}
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          priority={idx < 4}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 60vw"
                         />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center">
@@ -85,12 +85,12 @@ export function Samples() {
                 );
               })}
             </CarouselContent>
-            <CarouselPrevious className="flex -left-4 md:-left-12 bg-background/80 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
-            <CarouselNext className="flex -right-4 md:-right-12 bg-background/80 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
+            <CarouselPrevious className="hidden md:flex -left-4 md:-left-12 bg-background/80 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
+            <CarouselNext className="hidden md:flex -right-4 md:-right-12 bg-background/80 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
           </Carousel>
         </div>
 
-        <div className="mt-12 p-8 bg-[#0d1f10] border-l-4 border-primary rounded-sm shadow-xl">
+        <div className="mt-12 p-8 bg-[#0d1f10] border-l-4 border-primary rounded-sm shadow-xl max-w-5xl mx-auto">
           <div className="flex items-center gap-3 mb-2">
             <Star className="text-primary fill-primary" size={18} />
             <h4 className="text-primary font-bold uppercase tracking-widest text-sm">Observação Importante</h4>
