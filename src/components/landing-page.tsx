@@ -30,8 +30,8 @@ export function LandingPage() {
       <Samples />
       <ProductShowcase />
       <ContentBreakdown />
-      <Bonus />
       <Testimonials />
+      <Bonus />
       <Pricing />
       <Guarantee />
       <FAQ />
