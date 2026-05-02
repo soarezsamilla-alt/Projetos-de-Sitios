@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from 'react';
@@ -7,12 +6,12 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CheckCircle2 } from 'lucide-react';
 
 const features = [
-  '+100 plantas ilustradas em alta qualidade',
-  'De 0,5 a 5 hectares — tem para o seu terreno',
-  '7 vocações produtivas especializadas',
-  'Adaptado aos 4 biomas brasileiros',
-  'Formato PDF profissional em A4',
-  'Acesso imediato e vitalício'
+  'QUANTIDADE/PRODUTO (+100 projetos)',
+  'APLICABILIDADE (0,5 a 5 hectares)',
+  'DIVERSIDADE (7 vocações)',
+  'ABRANGÊNCIA (5 biomas)',
+  'VALOR ECONÔMICO (economiza R$ 5-15k)',
+  'LUCRO (projeção de renda)'
 ];
 
 export function ProductShowcase() {
