@@ -61,7 +61,7 @@ export function Samples() {
               {samples.map((sample, idx) => {
                 const imgData = PlaceHolderImages.find(img => img.id === sample.id);
                 return (
-                  <CarouselItem key={sample.id} className="pl-4 basis-[100%] md:basis-[75%] lg:basis-[60%]">
+                  <CarouselItem key={sample.id} className="pl-4 basis-[100%] md:basis-[80%] lg:basis-[70%]">
                     <div className="relative aspect-[3/4] flex items-center justify-center p-0 overflow-hidden bg-card/50 rounded-sm">
                       {imgData ? (
                         <Image 
@@ -85,8 +85,8 @@ export function Samples() {
                 );
               })}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex -left-4 md:-left-12 bg-background/80 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
-            <CarouselNext className="hidden md:flex -right-4 md:-right-12 bg-background/80 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
+            <CarouselPrevious className="flex -left-4 md:-left-12 bg-background/80 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
+            <CarouselNext className="flex -right-4 md:-right-12 bg-background/80 border-primary/30 text-primary hover:bg-primary/20 transition-all z-20" />
           </Carousel>
         </div>
 

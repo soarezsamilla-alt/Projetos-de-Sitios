@@ -40,7 +40,7 @@ export function Testimonials() {
           </p>
         </div>
 
-        <div className="relative max-w-6xl mx-auto px-10">
+        <div className="relative max-w-6xl mx-auto px-4 md:px-10">
           <Carousel
             plugins={[plugin.current]}
             opts={{
@@ -53,7 +53,7 @@ export function Testimonials() {
               {testimonials.map((t, idx) => {
                 const imgData = PlaceHolderImages.find(img => img.id === t.id);
                 return (
-                  <CarouselItem key={idx} className="pl-4 basis-[90%] sm:basis-[60%] md:basis-[50%] lg:basis-[35%]">
+                  <CarouselItem key={idx} className="pl-4 basis-[95%] sm:basis-[70%] md:basis-[60%] lg:basis-[45%]">
                     <div className="relative aspect-[9/16] bg-card border border-border rounded-sm overflow-hidden shadow-2xl group flex items-center justify-center p-2">
                        <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors z-10 pointer-events-none" />
                        {imgData ? (
