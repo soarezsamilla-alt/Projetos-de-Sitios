@@ -53,7 +53,7 @@ export function Testimonials() {
               {testimonials.map((t, idx) => {
                 const imgData = PlaceHolderImages.find(img => img.id === t.id);
                 return (
-                  <CarouselItem key={idx} className="pl-4 basis-[70%] sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <CarouselItem key={idx} className="pl-4 basis-[80%] sm:basis-1/2 md:basis-[40%] lg:basis-[30%]">
                     <div className="relative aspect-[9/16] bg-card border border-border rounded-sm overflow-hidden shadow-2xl group flex items-center justify-center p-2">
                        <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors z-10 pointer-events-none" />
                        {imgData ? (
