@@ -55,7 +55,7 @@ export function ProductShowcase() {
           </div>
 
           <div className="space-y-8">
-            <h3 className="text-3xl md:text-4xl font-black text-foreground leading-tight">
+            <h3 className="text-3xl md:text-4xl font-black text-foreground leading-tight text-center">
               Projetos <span className="text-primary">Dimensionados</span>,<br />Não Ideias Vagas
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed">
