@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from 'react';
@@ -27,7 +26,9 @@ const samples = [
   { id: 'sample-3', label: 'AMOSTRA 10', desc: 'Projeto amazônico açaí/cupuaçu' },
   { id: 'sample-4', label: 'AMOSTRA 11', desc: 'Capa de divisória de seção' },
   { id: 'sample-5', label: 'AMOSTRA 12', desc: 'Sumário organizado' },
-  { id: 'sample-6', label: 'AMOSTRA 13', desc: 'Projeto semiárido com cisternas' }
+  { id: 'sample-6', label: 'AMOSTRA 13', desc: 'Projeto semiárido com cisternas' },
+  { id: 'sample-new-10', label: 'AMOSTRA 14', desc: 'Novo Projeto de Sítio 10' },
+  { id: 'sample-new-11', label: 'AMOSTRA 15', desc: 'Novo Projeto de Sítio 11' }
 ];
 
 export function Samples() {
