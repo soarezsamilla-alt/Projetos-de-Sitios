@@ -78,7 +78,7 @@ export function Bonus() {
                   <h3 className="text-base font-black mb-3 leading-tight">{bonus.title}</h3>
                   <p className="text-muted-foreground text-xs leading-relaxed mb-5 flex-grow">{bonus.desc}</p>
                   <div className="pt-4 border-t border-border flex items-baseline gap-2">
-                    <span className="text-muted-foreground line-through text-[10px] font-semibold">R$ {bonus.val}</span>
+                    <span className="text-muted-foreground line-through text-sm font-semibold">R$ {bonus.val}</span>
                     <span className="text-primary font-black text-xs uppercase tracking-widest">GRÁTIS</span>
                   </div>
                 </div>
