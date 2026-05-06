@@ -11,7 +11,7 @@ import {
 
 const faqs = [
   {
-    q: 'Como recebo o pack após a compra?',
+    q: 'Como vou receber os materias após a compra?',
     a: 'O acesso é liberado automaticamente após a confirmação do pagamento. Você recebe um email com le link e pode baixar tudo em formato PDF. No PIX, a liberação é em até 5 minutos. Em cartão, quase instantâneo.'
   },
   {
