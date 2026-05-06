@@ -27,7 +27,7 @@ export function ProductShowcase() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-black mb-6">
-            Conheça o <span className="text-primary">Pack +100 Projetos</span>
+            Conheça o <span className="text-primary">Material +100 Projetos</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
             Não é um curso. Não é um manual teórico. É uma biblioteca visual completa de projetos prontos para você escolher, imprimir e executar.
