@@ -196,6 +196,9 @@ export function Pricing() {
             <Button asChild className="shine-effect pulse-attention gold-gradient-bg text-black font-black uppercase tracking-[0.2em] h-auto py-3.5 text-xs rounded-sm shadow-2xl shadow-primary/40 hover:scale-105 transition-all w-full">
               <a href="https://pay.wiapy.com/sOZisMvvt9">Quero o Plano Pro</a>
             </Button>
+            <p className="text-[10px] text-primary font-black uppercase tracking-widest text-center mt-3 animate-pulse">
+              Você NÃO vai encontrar esse preço depois.
+            </p>
           </div>
         </div>
 
