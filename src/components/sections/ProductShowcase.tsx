@@ -55,10 +55,10 @@ export function ProductShowcase() {
 
           <div className="space-y-8">
             <h3 className="text-3xl md:text-4xl font-black text-foreground leading-tight text-center">
-              Projetos <span className="text-primary">Altamente Dimensionados Milimétricamente</span>,<br />Não Ideias Vagas
+              Projetos <span className="text-primary">Altamente Dimensionados</span>,<br />Não Ideias Vagas
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed text-center">
-              Cada um dos +100 projetos foi desenhado como uma planta profissional, com medidas reais in metros, divisão das zonas produtivas, posicionamento de casa, galpões, tanques, cultivos e animais.
+              Cada um dos +100 projetos foi desenhado como uma planta profissional, com medidas reais em metros, divisão das zonas produtivas, posicionamento de casa, galpões, tanques, cultivos e animais.
             </p>
             <ul className="space-y-4">
               {features.map((item, i) => (
