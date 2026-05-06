@@ -78,7 +78,7 @@ export function Pricing() {
         <div className="text-center mb-16">
           <span className="text-primary font-bold text-xs tracking-[0.4em] uppercase mb-4 block">Escolha Seu Plano</span>
           <h2 className="text-3xl md:text-5xl font-black mb-6">
-            Acesso Imediato ao <span className="text-primary">Pack Completo</span>
+            Acesso Imediato ao <span className="text-primary">Material Completo</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Ambas opções incluem acesso vitalício e 7 dias de garantia total.
