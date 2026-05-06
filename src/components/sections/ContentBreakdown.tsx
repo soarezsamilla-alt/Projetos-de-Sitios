@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const breakdown = [
@@ -29,7 +28,6 @@ export function ContentBreakdown() {
     <section className="bg-gradient-to-b from-[#0d1f10] to-background py-24 border-t border-border">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-primary font-bold text-xs tracking-[0.4em] uppercase mb-4 block">Conteúdo Completo</span>
           <h2 className="text-3xl md:text-5xl font-black mb-6">
             O Que Você <span className="text-primary">Vai Receber</span>
           </h2>
