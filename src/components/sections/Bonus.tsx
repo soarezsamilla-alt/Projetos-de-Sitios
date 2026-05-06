@@ -40,7 +40,6 @@ export function Bonus() {
     <section className="bg-background py-20 border-t border-border">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <span className="text-primary font-bold text-xs tracking-[0.4em] uppercase mb-4 block">Exclusivo do Plano Pro</span>
           <h2 className="text-3xl md:text-5xl font-black mb-6">
             Bônus <span className="text-primary">Premium Inclusos</span>
           </h2>
