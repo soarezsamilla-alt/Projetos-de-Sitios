@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -206,13 +207,6 @@ export function Pricing() {
         <Dialog open={showUpsell} onOpenChange={setShowUpsell}>
           <DialogContent className="max-w-[95vw] md:max-w-[420px] bg-card border-2 border-primary p-0 overflow-hidden">
             <div className="relative p-4 md:p-6">
-              <button 
-                onClick={() => setShowUpsell(false)}
-                className="absolute top-2 right-2 text-muted-foreground hover:text-primary transition-colors z-20"
-              >
-                <X size={16} />
-              </button>
-
               <DialogHeader className="mb-2 text-center">
                 <div className="flex justify-center mb-1">
                   <div className="bg-primary/10 p-2 rounded-full">
