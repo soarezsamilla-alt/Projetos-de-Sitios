@@ -45,7 +45,7 @@ export function Samples() {
             Amostras do <span className="text-primary">Material Premium</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Veja abaixo exemplos reais das páginas que você vai receber — cada projeto entregue com padrão editorial profissional.
+            Veja abaixo exemplos reais das páginas que você vai receber, cada projeto entregue com padrão editorial profissional.
           </p>
         </div>
 
