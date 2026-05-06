@@ -21,7 +21,8 @@ const showcaseCards = [
   {
     number: '7',
     title: 'VOCAÇÕES PRODUTIVAS',
-    description: 'Café, hortifruti, pecuária, piscicultura, agrofloresta e mais'
+    description: 'Café, hortifruti, pecuária, piscicultura, agrofloresta e mais',
+    imageUrl: 'https://www.image2url.com/r2/default/images/1778111072878-00a5ccee-823c-40ec-8025-1fee7c0555df.blob'
   },
   {
     number: '5',
@@ -36,7 +37,7 @@ const showcaseCards = [
   {
     number: 'R$ 14K',
     title: 'RENDA MENSAL POSSÍVEL',
-    description: 'Projeção realista baseada em casos validados de produtores reais'
+    description: 'Projeção realista baseada em cases validados de produtores reais'
   },
   {
     number: '100%',
