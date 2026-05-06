@@ -13,7 +13,7 @@ export function Guarantee() {
           
           <h3 className="text-2xl md:text-3xl font-black text-primary mb-6 mt-4">Garantia Incondicional</h3>
           <p className="text-foreground text-base leading-relaxed mb-0">
-            Acesse o pack agora. Veja todos os +100 projetos, folheie as páginas, analise a qualidade do material. Se em até 7 dias você achar que não vale o investimento, devolvemos <strong className="text-primary">100% do seu dinheiro</strong>. Sem perguntas. Sem burocracia. O risco é todo nosso.
+            Se em até 7 dias você achar que não vale o investimento, devolvemos <strong className="text-primary">100% do seu dinheiro</strong>. Sem perguntas. Sem burocracia. O risco é todo nosso.
           </p>
         </div>
       </div>
