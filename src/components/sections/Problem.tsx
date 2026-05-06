@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { X } from 'lucide-react';
 
@@ -26,7 +25,6 @@ export function Problem() {
     <section className="bg-card/30 py-24 border-t border-border">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-primary font-bold text-xs tracking-[0.4em] uppercase mb-4 block">O Problema Real</span>
           <h2 className="text-3xl md:text-5xl font-black mb-6">
             Sua Terra Merece Um <span className="text-primary">Projeto Profissional</span>
           </h2>
