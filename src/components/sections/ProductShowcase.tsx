@@ -58,7 +58,7 @@ export function ProductShowcase() {
               Projetos <span className="text-primary">Dimensionados</span>,<br />Não Ideias Vagas
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed text-center">
-              Cada um dos +100 projetos foi desenhado como uma planta profissional — com medidas reais em metros, divisão das zonas produtivas, posicionamento de casa, galpões, tanques, cultivos e animais.
+              Cada um dos +100 projetos foi desenhado como uma planta profissional, com medidas reais em metros, divisão das zonas produtivas, posicionamento de casa, galpões, tanques, cultivos e animais.
             </p>
             <ul className="space-y-4">
               {features.map((item, i) => (
