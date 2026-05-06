@@ -9,7 +9,8 @@ const showcaseCards = [
   {
     number: '+100',
     title: 'PROJETOS COMPLETOS',
-    description: 'Plantas técnicas dimensionadas prontas pra você executar'
+    description: 'Plantas técnicas dimensionadas prontas pra você executar',
+    imageUrl: 'https://www.image2url.com/r2/default/images/1778110068677-a8cd60cb-9894-4bcf-85d7-48e4bb87ae3a.blob'
   },
   {
     number: '0,5-5',
@@ -103,9 +104,18 @@ export function ProductShowcase() {
             >
               {/* Image Area (60%) */}
               <div className="relative aspect-video w-full bg-gradient-to-br from-primary/20 to-[#0F2F1E] flex items-center justify-center overflow-hidden border-b border-primary/20">
-                <span className="text-primary/40 font-black uppercase tracking-[0.2em] text-[10px] animate-pulse">
-                  Imagem em Breve
-                </span>
+                {card.imageUrl ? (
+                  <Image 
+                    src={card.imageUrl}
+                    alt={card.title}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                ) : (
+                  <span className="text-primary/40 font-black uppercase tracking-[0.2em] text-[10px] animate-pulse">
+                    Imagem em Breve
+                  </span>
+                )}
                 <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors" />
               </div>
 
@@ -128,4 +138,3 @@ export function ProductShowcase() {
     </section>
   );
 }
-
