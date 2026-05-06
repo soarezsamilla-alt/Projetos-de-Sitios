@@ -76,7 +76,6 @@ export function Pricing() {
     <section className="bg-gradient-to-b from-background to-[#0d1f10] py-24 border-t border-primary/40 scroll-mt-20" id="pricing">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-primary font-bold text-xs tracking-[0.4em] uppercase mb-4 block">Escolha Seu Plano</span>
           <h2 className="text-3xl md:text-5xl font-black mb-6">
             Acesso Imediato ao <span className="text-primary">Material Completo</span>
           </h2>
