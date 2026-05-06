@@ -32,7 +32,7 @@ export function Testimonials() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-black mb-6">
-            Quem comprou, <span className="text-primary">Recomenda!</span>
+            Quem Comprou, <span className="text-primary">Recomenda!</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Veja o que produtores rurais que já acessaram o pack estão falando sobre o material.
