@@ -23,7 +23,6 @@ export function Pricing() {
   const [showUpsell, setShowUpsell] = useState(false);
   const [upsellTime, setUpsellTime] = useState(UPSELL_TIMER_MS);
 
-  // Main countdown for section
   useEffect(() => {
     let endTime = localStorage.getItem(STORAGE_KEY);
     if (!endTime || parseInt(endTime) < Date.now()) {
@@ -53,7 +52,6 @@ export function Pricing() {
     return () => clearInterval(timer);
   }, []);
 
-  // Upsell timer countdown
   useEffect(() => {
     if (showUpsell && upsellTime > 0) {
       const timer = setInterval(() => {
@@ -85,7 +83,6 @@ export function Pricing() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-5xl mx-auto items-start">
-          {/* Plan Basic */}
           <div className="bg-card border border-border p-6 md:p-8 rounded-sm flex flex-col relative group hover:border-muted-foreground/50 transition-all">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-muted text-muted-foreground px-6 py-1.5 rounded-sm text-[10px] font-black tracking-widest uppercase border border-border">
               Plano Básico
@@ -136,7 +133,6 @@ export function Pricing() {
             </Button>
           </div>
 
-          {/* Plan Pro */}
           <div className="bg-gradient-to-b from-card to-[#0d1f10] border-2 border-primary p-6 md:p-8 rounded-sm flex flex-col relative transform scale-105 shadow-2xl shadow-primary/20 hover:scale-[1.07] transition-all">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 gold-gradient-bg text-black px-6 py-2 rounded-sm text-[10px] font-black tracking-widest uppercase shadow-lg shadow-primary/30">
               ★ MAIS ESCOLHIDO ★
@@ -145,7 +141,6 @@ export function Pricing() {
             <h3 className="text-2xl font-black mb-1 font-headline gold-gradient-text text-center">Pro</h3>
             <p className="text-muted-foreground text-xs mb-6 text-center">O pack completo + 4 bônus exclusivos.</p>
 
-            {/* Countdown Box */}
             <div className="bg-accent/10 border border-primary/30 p-3 rounded-sm mb-6 shine-effect">
               <span className="text-[9px] font-black tracking-widest uppercase text-foreground/70 mb-2 block text-center">⚡ Oferta Expira Em:</span>
               <div className="flex justify-center gap-2">
@@ -204,7 +199,6 @@ export function Pricing() {
           </div>
         </div>
 
-        {/* Upsell Dialog */}
         <Dialog open={showUpsell} onOpenChange={setShowUpsell}>
           <DialogContent className="max-w-[90vw] md:max-w-[450px] bg-card border-2 border-primary p-0 overflow-hidden">
             <div className="relative p-6 md:p-8">
@@ -229,7 +223,6 @@ export function Pricing() {
                 </DialogDescription>
               </DialogHeader>
 
-              {/* Countdown Timer */}
               <div className="bg-accent/10 border border-primary/30 py-2 px-4 rounded-sm flex items-center justify-center gap-3 mb-6">
                 <Timer size={16} className="text-primary animate-bounce" />
                 <span className="text-[10px] font-black uppercase tracking-widest text-foreground">A oferta expira em:</span>
