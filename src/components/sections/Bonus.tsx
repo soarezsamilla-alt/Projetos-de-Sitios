@@ -42,7 +42,7 @@ export function Bonus() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-black mb-6">
-            Você Merece <span className="text-primary">Ainda Mais</span>
+            Você <span className="text-primary">Produtor</span> Merece Ainda Mais
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
             Quem garantir o Plano Pro leva também estes 4 bônus estratégicos que complementam os +100 projetos.
