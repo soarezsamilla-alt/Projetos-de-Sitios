@@ -82,15 +82,16 @@ export function Pricing() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-5xl mx-auto items-start">
-          <div className="bg-card border border-border p-6 md:p-8 rounded-sm flex flex-col relative group hover:border-muted-foreground/50 transition-all">
+          {/* Basic Plan Card */}
+          <div className="bg-card border border-border p-5 md:p-6 rounded-sm flex flex-col relative group hover:border-muted-foreground/50 transition-all">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-muted text-muted-foreground px-6 py-1.5 rounded-sm text-[10px] font-black tracking-widest uppercase border border-border">
               Plano Básico
             </div>
             
             <h3 className="text-2xl font-black mb-1 font-headline text-center">Básico</h3>
-            <p className="text-muted-foreground text-xs mb-6 text-center">Tudo que você precisa para planejar seu sítio do zero.</p>
+            <p className="text-muted-foreground text-xs mb-4 text-center">Tudo que você precisa para planejar seu sítio do zero.</p>
             
-            <div className="mb-6 pb-6 border-b border-border text-center">
+            <div className="mb-4 pb-4 border-b border-border text-center">
               <span className="text-muted-foreground line-through text-xs block mb-1">De R$ 97,00 por</span>
               <div className="flex items-start justify-center text-foreground">
                 <span className="text-xl font-black mt-1 mr-1">R$</span>
@@ -100,7 +101,7 @@ export function Pricing() {
               <p className="text-muted-foreground text-[9px] mt-1 tracking-widest uppercase">Pagamento único · Acesso vitalício</p>
             </div>
 
-            <div className="relative mb-6 text-center flex justify-center">
+            <div className="relative mb-4 text-center flex justify-center">
               {planBasicImg ? (
                 <Image 
                   src={planBasicImg.imageUrl} 
@@ -117,7 +118,7 @@ export function Pricing() {
               )}
             </div>
 
-            <ul className="space-y-3 flex-grow mb-8">
+            <ul className="space-y-3 flex-grow mb-6">
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> <strong>+100 projetos completos</strong></li>
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> Acesso imediato após compra</li>
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> Garantia de 7 dias</li>
@@ -132,6 +133,7 @@ export function Pricing() {
             </Button>
           </div>
 
+          {/* Pro Plan Card */}
           <div className="bg-gradient-to-b from-card to-[#0d1f10] border-2 border-primary p-5 md:p-6 rounded-sm flex flex-col relative transform scale-105 shadow-2xl shadow-primary/20 hover:scale-[1.07] transition-all">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 gold-gradient-bg text-black px-6 py-2 rounded-sm text-[10px] font-black tracking-widest uppercase shadow-lg shadow-primary/30">
               ★ MAIS ESCOLHIDO ★
