@@ -41,7 +41,6 @@ export function FAQ() {
     <section className="bg-card/20 py-24 border-t border-border">
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="text-center mb-16">
-          <span className="text-primary font-bold text-xs tracking-[0.4em] uppercase mb-4 block">Dúvidas Frequentes</span>
           <h2 className="text-2xl md:text-4xl font-black mb-6">
             Perguntas <span className="text-primary">Frequentes</span>
           </h2>
