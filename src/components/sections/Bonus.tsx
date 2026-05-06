@@ -57,7 +57,7 @@ export function Bonus() {
                 <div className="absolute top-3 right-3 bg-primary text-black font-black text-[9px] px-2 py-1 rounded-sm z-10 tracking-widest">
                   {bonus.tag}
                 </div>
-                <div className="aspect-[4/3] bg-gradient-to-br from-[#0d1f10] to-card border-2 border-dashed border-primary/20 m-3 rounded-sm flex items-center justify-center p-4 text-center group-hover:border-primary/40 transition-colors">
+                <div className="aspect-[16/11] bg-gradient-to-br from-[#0d1f10] to-card border-2 border-dashed border-primary/20 m-2 rounded-sm flex items-center justify-center p-3 text-center group-hover:border-primary/40 transition-colors">
                   {imgData ? (
                     <Image 
                       src={imgData.imageUrl} 
@@ -74,12 +74,12 @@ export function Bonus() {
                     </div>
                   )}
                 </div>
-                <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-base font-black mb-3 leading-tight">{bonus.title}</h3>
-                  <p className="text-muted-foreground text-xs leading-relaxed mb-5 flex-grow">{bonus.desc}</p>
-                  <div className="pt-4 border-t border-border flex items-baseline gap-2">
-                    <span className="text-muted-foreground line-through text-sm font-semibold">R$ {bonus.val}</span>
-                    <span className="text-primary font-black text-xs uppercase tracking-widest">GRÁTIS</span>
+                <div className="px-5 pb-5 pt-2 flex flex-col flex-grow">
+                  <h3 className="text-sm font-black mb-1.5 leading-tight">{bonus.title}</h3>
+                  <p className="text-muted-foreground text-[11px] leading-relaxed mb-4 flex-grow">{bonus.desc}</p>
+                  <div className="pt-3 border-t border-border flex items-baseline gap-2">
+                    <span className="text-muted-foreground line-through text-[11px] font-semibold">R$ {bonus.val}</span>
+                    <span className="text-primary font-black text-[10px] uppercase tracking-widest">GRÁTIS</span>
                   </div>
                 </div>
               </div>
