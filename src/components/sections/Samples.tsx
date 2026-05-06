@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from 'react';
@@ -40,7 +41,6 @@ export function Samples() {
     <section className="bg-card/20 py-24 border-t border-border">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-primary font-bold text-xs tracking-[0.4em] uppercase mb-4 block">Veja Por Dentro</span>
           <h2 className="text-3xl md:text-5xl font-black mb-6">
             Amostras do <span className="text-primary">Material Premium</span>
           </h2>
