@@ -75,7 +75,7 @@ export function Pricing() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-black mb-6">
-            Acesso Imediato ao <span className="text-primary">Material Completo</span>
+            Garanta agora com <span className="text-primary">preço especial</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Ambas opções incluem acesso vitalício e 7 dias de garantia total.
