@@ -39,13 +39,13 @@ export function ContentBreakdown() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {breakdown.map((item, idx) => (
-            <div key={idx} className="group relative bg-card border border-border p-10 text-center rounded-sm overflow-hidden hover:-translate-y-2 transition-all duration-300">
+            <div key={idx} className="group relative bg-card border border-border p-6 text-center rounded-sm overflow-hidden hover:-translate-y-2 transition-all duration-300">
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/30 via-primary to-primary/30 scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
-              <div className="gold-gradient-text text-7xl font-black font-headline mb-4 leading-none">
+              <div className="gold-gradient-text text-6xl font-black font-headline mb-3 leading-none">
                 {item.num}
               </div>
-              <h3 className="text-foreground font-bold text-sm tracking-widest uppercase mb-4 leading-tight">{item.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+              <h3 className="text-foreground font-bold text-xs tracking-widest uppercase mb-3 leading-tight">{item.title}</h3>
+              <p className="text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
