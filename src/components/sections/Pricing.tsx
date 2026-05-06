@@ -75,7 +75,7 @@ export function Pricing() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-black mb-6">
-            Garanta Agora Com <span className="text-primary">Preço Especial</span>
+            Garanta Agora Com Preço Especial
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Ambas opções incluem acesso vitalício e 7 dias de garantia total.
@@ -237,17 +237,29 @@ export function Pricing() {
                   O Plano Pro é a escolha de 92% das pessoas por ser o único que entrega o planejamento financeiro e estrutural completo.
                 </p>
                 <ul className="space-y-2 bg-background/50 p-4 rounded-sm border border-border">
-                  <li className="flex items-center gap-2 text-[11px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={14} /> +100 Projetos + 4 Bônus Exclusivos
+                  <li className="flex items-center gap-2 text-[11px] font-bold text-foreground">
+                    <Check className="text-primary flex-shrink-0" size={14} /> Tudo do Básico
                   </li>
                   <li className="flex items-center gap-2 text-[11px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={14} /> Planilha de ROI (Lucro Estimado)
+                    <Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 1:</strong> Construções Rurais
                   </li>
                   <li className="flex items-center gap-2 text-[11px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={14} /> Plantas de Construções Rurais
+                    <Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 2:</strong> Planilha ROI Editável
                   </li>
                   <li className="flex items-center gap-2 text-[11px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={14} /> Atualizações Semanais Gratuitas
+                    <Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 3:</strong> Plantas Companheiras
+                  </li>
+                  <li className="flex items-center gap-2 text-[11px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 4:</strong> Energia Solar Rural
+                  </li>
+                  <li className="flex items-center gap-2 text-[11px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={14} /> Atualizações gratuitas semanal
+                  </li>
+                  <li className="flex items-center gap-2 text-[11px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={14} /> Acesso prioritário a novos projetos
+                  </li>
+                  <li className="flex items-center gap-2 text-[11px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={14} /> Suporte prioritário via WhatsApp
                   </li>
                 </ul>
               </div>
