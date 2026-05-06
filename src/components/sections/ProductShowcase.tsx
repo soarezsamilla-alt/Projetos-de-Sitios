@@ -26,7 +26,6 @@ export function ProductShowcase() {
     <section className="bg-gradient-to-b from-background to-[#0d1f10] py-24 border-t border-border">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-primary font-bold text-xs tracking-[0.4em] uppercase mb-4 block">A Solução</span>
           <h2 className="text-3xl md:text-5xl font-black mb-6">
             Conheça o <span className="text-primary">Pack +100 Projetos</span>
           </h2>
