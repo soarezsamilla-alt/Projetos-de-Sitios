@@ -35,7 +35,7 @@ export function Testimonials() {
             Quem Comprou, <span className="text-primary">Recomenda!</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Veja o que produtores rurais que já acessaram o pack estão falando sobre o material.
+            Veja o que produtores rurais que já utilizam estão dizendo sobre o material.
           </p>
         </div>
 
