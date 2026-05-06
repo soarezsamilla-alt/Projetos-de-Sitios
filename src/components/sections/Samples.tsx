@@ -42,7 +42,7 @@ export function Samples() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-black mb-6">
-            Material Que <span className="text-primary">Você Vai Receber</span>
+            Um Pouco do Material Que <span className="text-primary">Você Vai Receber</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Veja abaixo exemplos reais das páginas que você vai receber, cada projeto entregue com padrão editorial profissional.
