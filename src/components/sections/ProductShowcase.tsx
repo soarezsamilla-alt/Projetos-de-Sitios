@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from 'react';
@@ -25,7 +24,7 @@ export function ProductShowcase() {
   return (
     <section className="bg-gradient-to-b from-background to-[#0d1f10] py-16 border-t border-border">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-6">
+        <div className="text-center mb-2">
           <h2 className="text-3xl md:text-5xl font-black mb-6">
             Conheça o <span className="text-primary">Material +100 Projetos</span>
           </h2>
@@ -35,14 +34,14 @@ export function ProductShowcase() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center py-8">
             {productMockup && (
               <Image 
                 src={productMockup.imageUrl} 
                 alt={productMockup.description}
                 width={600}
                 height={700}
-                className="w-full h-auto max-w-[500px] drop-shadow-[0_20px_50px_rgba(212,168,75,0.2)]"
+                className="w-full h-auto max-w-[420px] md:max-w-[500px] drop-shadow-[0_20px_50px_rgba(212,168,75,0.3)] floating-effect"
                 data-ai-hint="open book"
               />
             )}
@@ -53,7 +52,7 @@ export function ProductShowcase() {
               Projetos <span className="text-primary">Altamente Dimensionados</span>,<br />Não Ideias Vagas
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed text-center lg:text-left">
-              Cada um dos +100 projetos foi desenhado como uma planta profissional, with medidas reais em metros, divisão das zonas produtivas, posicionamento de casa, galpões, tanques, cultivos e animais.
+              Cada um dos +100 projetos foi desenhado como uma planta profissional, com medidas reais em metros, divisão das zonas produtivas, posicionamento de casa, galpões, tanques, cultivos e animais.
             </p>
             <ul className="space-y-3">
               {features.map((item, i) => (

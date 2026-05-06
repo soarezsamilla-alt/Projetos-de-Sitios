@@ -83,3 +83,12 @@
 .gold-gradient-bg {
   background: linear-gradient(135deg, #b8902f 0%, #d4a84b 50%, #e8c472 100%);
 }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.floating-effect {
+  animation: float 3.5s ease-in-out infinite;
+}
