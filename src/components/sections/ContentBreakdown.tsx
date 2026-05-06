@@ -30,7 +30,7 @@ export function ContentBreakdown() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-black mb-6">
-            O Que Você <span className="text-primary">Vai Receber</span>
+            O Que Você <span className="text-primary">Vai Receber Hoje</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             +100 projetos organizados em 4 grandes categorias para você encontrar exatamente o que precisa, seja qual for o seu tamanho, vocação ou região.
