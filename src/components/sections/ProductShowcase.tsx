@@ -4,19 +4,53 @@
 import React from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { CheckCircle2 } from 'lucide-react';
 
-const features = [
-  'QUANTIDADE/PRODUTO (+100 projetos)',
-  'APLICABILIDADE (0,5 a 5 hectares)',
-  'DIVERSIDADE (7 vocações)',
-  'ABRANGÊNCIA (5 biomas)',
-  'VALOR ECONÔMICO (economiza R$ 5-15k)',
-  'LUCRO (projeção de renda)',
-  'SEGURANÇA (medidas testadas)',
-  'FACILIDADE (passo a passo)',
-  'ACESSO (imediato + vitalício)',
-  'GARANTIA (7 dias)'
+const showcaseCards = [
+  {
+    number: '+100',
+    title: 'PROJETOS COMPLETOS',
+    description: 'Plantas técnicas dimensionadas prontas pra você executar'
+  },
+  {
+    number: '0,5-5',
+    title: 'HECTARES COBERTOS',
+    description: 'Tem projeto pro seu tamanho de terreno, não importa qual seja'
+  },
+  {
+    number: '7',
+    title: 'VOCAÇÕES PRODUTIVAS',
+    description: 'Café, hortifruti, pecuária, piscicultura, agrofloresta e mais'
+  },
+  {
+    number: '5',
+    title: 'BIOMAS BRASILEIROS',
+    description: 'Adaptados pra Cerrado, Mata Atlântica, Caatinga, Amazônia e Pampa'
+  },
+  {
+    number: 'R$ 15K',
+    title: 'ECONOMIZADOS',
+    description: 'Equivalente ao que cobraria um arquiteto rural particular'
+  },
+  {
+    number: 'R$ 14K',
+    title: 'RENDA MENSAL POSSÍVEL',
+    description: 'Projeção realista baseada em casos validados de produtores reais'
+  },
+  {
+    number: '100%',
+    title: 'MEDIDAS TESTADAS',
+    description: 'Validadas em campo por mais de 12 mil produtores brasileiros'
+  },
+  {
+    number: 'PASSO',
+    title: 'A PASSO CLARO',
+    description: 'Não precisa ser técnico, é só seguir as plantas e aplicar'
+  },
+  {
+    number: '∞',
+    title: 'ACESSO VITALÍCIO',
+    description: 'Imediato após compra + receba atualizações futuras gratuitas'
+  }
 ];
 
 export function ProductShowcase() {
@@ -34,17 +68,19 @@ export function ProductShowcase() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center mb-16">
           <div className="flex justify-center items-center py-0">
             {productMockup && (
-              <Image 
-                src={productMockup.imageUrl} 
-                alt={productMockup.description}
-                width={600}
-                height={700}
-                className="w-full h-auto max-w-[420px] md:max-w-[500px] drop-shadow-[0_20px_50px_rgba(212,168,75,0.3)] floating-effect"
-                data-ai-hint="product showcase"
-              />
+              <div className="relative w-full flex justify-center py-0">
+                <Image 
+                  src={productMockup.imageUrl} 
+                  alt={productMockup.description}
+                  width={600}
+                  height={700}
+                  className="w-full h-auto max-w-[420px] md:max-w-[500px] drop-shadow-[0_20px_50px_rgba(212,168,75,0.3)] floating-effect"
+                  data-ai-hint="product showcase"
+                />
+              </div>
             )}
           </div>
 
@@ -55,19 +91,41 @@ export function ProductShowcase() {
             <p className="text-muted-foreground text-lg leading-relaxed text-center lg:text-left">
               Cada um dos +100 projetos foi desenhado como uma planta profissional, com medidas reais em metros, divisão das zonas produtivas, posicionamento de casa, galpões, tanques, cultivos e animais.
             </p>
-            <ul className="space-y-3">
-              {features.map((item, i) => (
-                <li key={i} className="flex items-center gap-4 text-foreground text-base border-b border-border pb-3 last:border-0">
-                  <div className="w-6 h-6 rounded-full border border-primary flex items-center justify-center flex-shrink-0">
-                    <CheckCircle2 className="text-primary" size={14} />
-                  </div>
-                  {item}
-                </li>
-              ))}
-            </ul>
           </div>
+        </div>
+
+        {/* 9 Cards Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          {showcaseCards.map((card, i) => (
+            <div 
+              key={i} 
+              className="group bg-[#0F2F1E] border border-primary/50 rounded-[16px] overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2 hover:border-primary hover:shadow-[0_10px_30px_rgba(201,169,97,0.15)] h-full"
+            >
+              {/* Image Area (60%) */}
+              <div className="relative aspect-video w-full bg-gradient-to-br from-primary/20 to-[#0F2F1E] flex items-center justify-center overflow-hidden border-b border-primary/20">
+                <span className="text-primary/40 font-black uppercase tracking-[0.2em] text-[10px] animate-pulse">
+                  Imagem em Breve
+                </span>
+                <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors" />
+              </div>
+
+              {/* Text Area (40%) */}
+              <div className="p-6 flex flex-col items-center justify-center text-center flex-grow">
+                <div className="font-headline font-bold text-primary text-4xl md:text-[48px] mb-4 drop-shadow-[0_2px_4px_rgba(201,169,97,0.3)] leading-none">
+                  {card.number}
+                </div>
+                <h4 className="font-bold text-white text-base tracking-[1px] uppercase mb-3">
+                  {card.title}
+                </h4>
+                <p className="text-white/75 text-sm leading-relaxed max-w-[240px]">
+                  {card.description}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
 }
+
