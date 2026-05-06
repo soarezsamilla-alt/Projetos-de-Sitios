@@ -35,29 +35,24 @@ export function ProductShowcase() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="relative group">
-            <div className="absolute -inset-4 bg-primary/10 rounded-lg blur-2xl group-hover:bg-primary/20 transition duration-500" />
-            <div className="relative aspect-[6/7] bg-gradient-to-br from-card to-[#0d1f10] border-2 border-dashed border-primary/40 rounded-lg p-12 flex flex-col items-center justify-center text-center">
-              {productMockup ? (
-                <Image 
-                  src={productMockup.imageUrl} 
-                  alt={productMockup.description}
-                  width={600}
-                  height={700}
-                  className="object-contain w-full h-full shadow-2xl"
-                  data-ai-hint="open book"
-                />
-              ) : (
-                <span className="text-primary text-sm uppercase tracking-widest">📚 MOCKUP DO EBOOK</span>
-              )}
-            </div>
+          <div className="flex justify-center items-center">
+            {productMockup && (
+              <Image 
+                src={productMockup.imageUrl} 
+                alt={productMockup.description}
+                width={600}
+                height={700}
+                className="w-full h-auto max-w-[500px] drop-shadow-[0_20px_50px_rgba(212,168,75,0.2)]"
+                data-ai-hint="open book"
+              />
+            )}
           </div>
 
           <div className="space-y-8">
-            <h3 className="text-3xl md:text-4xl font-black text-foreground leading-tight text-center">
+            <h3 className="text-3xl md:text-4xl font-black text-foreground leading-tight text-center lg:text-left">
               Projetos <span className="text-primary">Altamente Dimensionados</span>,<br />Não Ideias Vagas
             </h3>
-            <p className="text-muted-foreground text-lg leading-relaxed text-center">
+            <p className="text-muted-foreground text-lg leading-relaxed text-center lg:text-left">
               Cada um dos +100 projetos foi desenhado como uma planta profissional, com medidas reais em metros, divisão das zonas produtivas, posicionamento de casa, galpões, tanques, cultivos e animais.
             </p>
             <ul className="space-y-4">
