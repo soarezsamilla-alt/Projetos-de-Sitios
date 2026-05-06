@@ -74,7 +74,7 @@ export function Pricing() {
     <section className="bg-gradient-to-b from-background to-[#0d1f10] py-24 border-t border-primary/40 scroll-mt-20" id="pricing">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-black mb-6">
+          <h2 className="text-3xl md:text-5xl font-black mb-6 text-foreground">
             Garanta Agora Com Preço Especial
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
@@ -203,94 +203,94 @@ export function Pricing() {
         </div>
 
         <Dialog open={showUpsell} onOpenChange={setShowUpsell}>
-          <DialogContent className="max-w-[90vw] md:max-w-[450px] bg-card border-2 border-primary p-0 overflow-hidden">
-            <div className="relative p-6 md:p-8">
+          <DialogContent className="max-w-[90vw] md:max-w-[420px] bg-card border-2 border-primary p-0 overflow-hidden">
+            <div className="relative p-5 md:p-6">
               <button 
                 onClick={() => setShowUpsell(false)}
-                className="absolute top-4 right-4 text-muted-foreground hover:text-primary transition-colors"
+                className="absolute top-3 right-3 text-muted-foreground hover:text-primary transition-colors z-20"
               >
-                <X size={20} />
+                <X size={18} />
               </button>
 
-              <DialogHeader className="mb-6 text-center">
-                <div className="flex justify-center mb-4">
-                  <div className="bg-primary/10 p-3 rounded-full">
-                    <Sparkles className="text-primary animate-pulse" size={32} />
+              <DialogHeader className="mb-4 text-center">
+                <div className="flex justify-center mb-2">
+                  <div className="bg-primary/10 p-2.5 rounded-full">
+                    <Sparkles className="text-primary animate-pulse" size={24} />
                   </div>
                 </div>
-                <DialogTitle className="text-2xl font-black uppercase tracking-tight leading-tight">
+                <DialogTitle className="text-xl font-black uppercase tracking-tight leading-tight">
                   ESPERE! <span className="text-primary">OFERTA ÚNICA</span>
                 </DialogTitle>
-                <DialogDescription className="text-foreground font-medium text-sm mt-2">
+                <DialogDescription className="text-foreground font-medium text-xs mt-1">
                   Por que levar apenas o básico se você pode ter a <span className="font-black text-primary">experiência completa</span> por quase o mesmo preço?
                 </DialogDescription>
               </DialogHeader>
 
-              <div className="bg-accent/10 border border-primary/30 py-2 px-4 rounded-sm flex items-center justify-center gap-3 mb-6">
-                <Timer size={16} className="text-primary animate-bounce" />
-                <span className="text-[10px] font-black uppercase tracking-widest text-foreground">A oferta expira em:</span>
-                <span className="font-mono text-primary font-black text-lg">{formatUpsellTime(upsellTime)}</span>
+              <div className="bg-accent/10 border border-primary/30 py-1.5 px-4 rounded-sm flex items-center justify-center gap-3 mb-4">
+                <Timer size={14} className="text-primary animate-bounce" />
+                <span className="text-[9px] font-black uppercase tracking-widest text-foreground">A oferta expira em:</span>
+                <span className="font-mono text-primary font-black text-base">{formatUpsellTime(upsellTime)}</span>
               </div>
 
-              <div className="space-y-4 mb-8">
-                <p className="text-xs text-muted-foreground text-center italic">
+              <div className="space-y-3 mb-5">
+                <p className="text-[10px] text-muted-foreground text-center italic leading-tight">
                   O Plano Pro é a escolha de 92% das pessoas por ser o único que entrega o planejamento financeiro e estrutural completo.
                 </p>
-                <ul className="space-y-2 bg-background/50 p-4 rounded-sm border border-border">
-                  <li className="flex items-center gap-2 text-[11px] font-bold text-foreground">
-                    <Check className="text-primary flex-shrink-0" size={14} /> Tudo do Básico
+                <ul className="space-y-1.5 bg-background/50 p-3 rounded-sm border border-border">
+                  <li className="flex items-center gap-2 text-[10px] font-bold text-foreground">
+                    <Check className="text-primary flex-shrink-0" size={12} /> Tudo do Básico
                   </li>
-                  <li className="flex items-center gap-2 text-[11px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 1:</strong> Construções Rurais
+                  <li className="flex items-center gap-2 text-[10px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={12} /> <strong>BÔNUS 1:</strong> Construções Rurais
                   </li>
-                  <li className="flex items-center gap-2 text-[11px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 2:</strong> Planilha ROI Editável
+                  <li className="flex items-center gap-2 text-[10px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={12} /> <strong>BÔNUS 2:</strong> Planilha ROI Editável
                   </li>
-                  <li className="flex items-center gap-2 text-[11px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 3:</strong> Plantas Companheiras
+                  <li className="flex items-center gap-2 text-[10px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={12} /> <strong>BÔNUS 3:</strong> Plantas Companheiras
                   </li>
-                  <li className="flex items-center gap-2 text-[11px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 4:</strong> Energia Solar Rural
+                  <li className="flex items-center gap-2 text-[10px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={12} /> <strong>BÔNUS 4:</strong> Energia Solar Rural
                   </li>
-                  <li className="flex items-center gap-2 text-[11px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={14} /> Atualizações gratuitas semanal
+                  <li className="flex items-center gap-2 text-[10px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={12} /> Atualizações gratuitas semanal
                   </li>
-                  <li className="flex items-center gap-2 text-[11px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={14} /> Acesso prioritário a novos projetos
+                  <li className="flex items-center gap-2 text-[10px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={12} /> Acesso prioritário a novos projetos
                   </li>
-                  <li className="flex items-center gap-2 text-[11px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={14} /> Suporte prioritário via WhatsApp
+                  <li className="flex items-center gap-2 text-[10px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={12} /> Suporte prioritário via WhatsApp
                   </li>
                 </ul>
               </div>
 
-              <div className="text-center mb-6">
-                <span className="text-muted-foreground line-through text-xs">De R$ 197,00</span>
+              <div className="text-center mb-5">
+                <span className="text-muted-foreground line-through text-[10px]">De R$ 197,00</span>
                 <div className="flex items-center justify-center gap-1 gold-gradient-text">
-                  <span className="text-lg font-black mt-1">POR R$</span>
-                  <span className="text-5xl font-black font-headline">19</span>
-                  <span className="text-lg font-black mt-1">,90</span>
+                  <span className="text-base font-black mt-1">POR R$</span>
+                  <span className="text-4xl font-black font-headline">19</span>
+                  <span className="text-base font-black mt-1">,90</span>
                 </div>
-                <span className="text-[9px] uppercase font-black tracking-tighter text-muted-foreground">Única oportunidade · Acesso Vitalício</span>
+                <span className="text-[8px] uppercase font-black tracking-tighter text-muted-foreground">Única oportunidade · Acesso Vitalício</span>
               </div>
 
-              <div className="flex flex-col gap-3">
-                <Button asChild className="w-full gold-gradient-bg text-black font-black uppercase tracking-widest h-14 shine-effect shadow-xl shadow-primary/20 text-xs">
+              <div className="flex flex-col gap-2">
+                <Button asChild className="w-full gold-gradient-bg text-black font-black uppercase tracking-widest h-12 shine-effect shadow-xl shadow-primary/20 text-[10px]">
                   <a href="https://pay.wiapy.com/MowpM6rdLB">
                     QUERO O PLANO PRO COM DESCONTO
                   </a>
                 </Button>
                 <a 
                   href="https://pay.wiapy.com/rtXyisd1bF"
-                  className="text-[10px] text-muted-foreground hover:text-foreground transition-colors uppercase font-bold tracking-widest underline decoration-dotted text-center block"
+                  className="text-[9px] text-muted-foreground hover:text-foreground transition-colors uppercase font-bold tracking-widest underline decoration-dotted text-center block"
                 >
                   Não, obrigado. Prefiro continuar com o Plano Básico
                 </a>
               </div>
               
-              <div className="mt-6 flex items-center justify-center gap-2 opacity-50 border-t border-border pt-4">
-                <ShieldCheck size={12} />
-                <span className="text-[9px] font-black uppercase">Garantia Blindada de 7 Dias</span>
+              <div className="mt-4 flex items-center justify-center gap-2 opacity-50 border-t border-border pt-3">
+                <ShieldCheck size={10} />
+                <span className="text-[8px] font-black uppercase">Garantia Blindada de 7 Dias</span>
               </div>
             </div>
           </DialogContent>
