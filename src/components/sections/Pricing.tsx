@@ -206,86 +206,86 @@ export function Pricing() {
 
         <Dialog open={showUpsell} onOpenChange={setShowUpsell}>
           <DialogContent className="max-w-[95vw] md:max-w-[420px] bg-card border-2 border-primary p-0 overflow-hidden">
-            <div className="relative p-4 md:p-6">
-              <DialogHeader className="mb-2 text-center">
-                <div className="flex justify-center mb-1">
+            <div className="relative p-8 md:p-10">
+              <DialogHeader className="mb-4 text-center">
+                <div className="flex justify-center mb-2">
                   <div className="bg-primary/10 p-2 rounded-full">
-                    <Sparkles className="text-primary animate-pulse" size={20} />
+                    <Sparkles className="text-primary animate-pulse" size={24} />
                   </div>
                 </div>
-                <DialogTitle className="text-lg font-black uppercase tracking-tight leading-tight">
+                <DialogTitle className="text-xl font-black uppercase tracking-tight leading-tight">
                   ESPERE! <span className="text-primary">OFERTA ÚNICA</span>
                 </DialogTitle>
-                <DialogDescription className="text-foreground font-medium text-[10px] mt-0.5 leading-tight">
+                <DialogDescription className="text-foreground font-medium text-xs mt-2 leading-tight">
                   Por que levar apenas o básico se você pode ter a <span className="font-black text-primary">experiência completa</span> por quase o mesmo preço?
                 </DialogDescription>
               </DialogHeader>
 
-              <div className="bg-accent/10 border border-primary/30 py-1 px-3 rounded-sm flex items-center justify-center gap-2 mb-3">
-                <Timer size={12} className="text-primary animate-bounce" />
-                <span className="text-[8px] font-black uppercase tracking-widest text-foreground">A oferta expira em:</span>
-                <span className="font-mono text-primary font-black text-sm">{formatUpsellTime(upsellTime)}</span>
+              <div className="bg-accent/10 border border-primary/30 py-2 px-4 rounded-sm flex items-center justify-center gap-2 mb-6">
+                <Timer size={14} className="text-primary animate-bounce" />
+                <span className="text-[9px] font-black uppercase tracking-widest text-foreground">A oferta expira em:</span>
+                <span className="font-mono text-primary font-black text-base">{formatUpsellTime(upsellTime)}</span>
               </div>
 
-              <div className="space-y-2 mb-4">
-                <p className="text-[9px] text-muted-foreground text-center italic leading-tight">
+              <div className="space-y-4 mb-8">
+                <p className="text-[10px] text-muted-foreground text-center italic leading-tight">
                   O Plano Pro é a escolha de 92% das pessoas por ser o único que entrega o planejamento financeiro e estrutural completo.
                 </p>
-                <ul className="space-y-1 bg-background/50 p-2.5 rounded-sm border border-border">
-                  <li className="flex items-center gap-2 text-[9px] font-bold text-foreground">
-                    <Check className="text-primary flex-shrink-0" size={10} /> Tudo do Básico
+                <ul className="space-y-2 bg-background/50 p-4 rounded-sm border border-border">
+                  <li className="flex items-center gap-2 text-[10px] font-bold text-foreground">
+                    <Check className="text-primary flex-shrink-0" size={12} /> Tudo do Básico
                   </li>
-                  <li className="flex items-center gap-2 text-[9px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={10} /> <strong>BÔNUS 1:</strong> Construções Rurais
+                  <li className="flex items-center gap-2 text-[10px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={12} /> <strong>BÔNUS 1:</strong> Construções Rurais
                   </li>
-                  <li className="flex items-center gap-2 text-[9px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={10} /> <strong>BÔNUS 2:</strong> Planilha ROI Editável
+                  <li className="flex items-center gap-2 text-[10px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={12} /> <strong>BÔNUS 2:</strong> Planilha ROI Editável
                   </li>
-                  <li className="flex items-center gap-2 text-[9px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={10} /> <strong>BÔNUS 3:</strong> Plantas Companheiras
+                  <li className="flex items-center gap-2 text-[10px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={12} /> <strong>BÔNUS 3:</strong> Plantas Companheiras
                   </li>
-                  <li className="flex items-center gap-2 text-[9px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={10} /> <strong>BÔNUS 4:</strong> Energia Solar Rural
+                  <li className="flex items-center gap-2 text-[10px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={12} /> <strong>BÔNUS 4:</strong> Energia Solar Rural
                   </li>
-                  <li className="flex items-center gap-2 text-[9px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={10} /> Atualizações gratuitas semanal
+                  <li className="flex items-center gap-2 text-[10px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={12} /> Atualizações gratuitas semanal
                   </li>
-                  <li className="flex items-center gap-2 text-[9px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={10} /> Acesso prioritário a novos projetos
+                  <li className="flex items-center gap-2 text-[10px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={12} /> Acesso prioritário a novos projetos
                   </li>
-                  <li className="flex items-center gap-2 text-[9px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={10} /> Suporte prioritário via WhatsApp
+                  <li className="flex items-center gap-2 text-[10px] font-bold">
+                    <Check className="text-primary flex-shrink-0" size={12} /> Suporte prioritário via WhatsApp
                   </li>
                 </ul>
               </div>
 
-              <div className="text-center mb-4">
-                <span className="text-muted-foreground line-through text-[9px]">De R$ 197,00</span>
+              <div className="text-center mb-6">
+                <span className="text-muted-foreground line-through text-[10px]">De R$ 197,00</span>
                 <div className="flex items-center justify-center gap-1 gold-gradient-text">
-                  <span className="text-sm font-black mt-1">POR R$</span>
-                  <span className="text-3xl font-black font-headline">19</span>
-                  <span className="text-sm font-black mt-1">,90</span>
+                  <span className="text-base font-black mt-1">POR R$</span>
+                  <span className="text-4xl font-black font-headline">19</span>
+                  <span className="text-base font-black mt-1">,90</span>
                 </div>
-                <span className="text-[7px] uppercase font-black tracking-tighter text-muted-foreground">Única oportunidade · Acesso Vitalício</span>
+                <span className="text-[8px] uppercase font-black tracking-tighter text-muted-foreground">Única oportunidade · Acesso Vitalício</span>
               </div>
 
-              <div className="flex flex-col gap-1.5">
-                <Button asChild className="w-full gold-gradient-bg text-black font-black uppercase tracking-widest h-10 shine-effect shadow-xl shadow-primary/20 text-[9px]">
+              <div className="flex flex-col gap-3">
+                <Button asChild className="w-full gold-gradient-bg text-black font-black uppercase tracking-widest h-12 shine-effect shadow-xl shadow-primary/20 text-xs">
                   <a href="https://pay.wiapy.com/MowpM6rdLB">
                     QUERO O PLANO PRO COM DESCONTO
                   </a>
                 </Button>
                 <a 
                   href="https://pay.wiapy.com/rtXyisd1bF"
-                  className="text-[8px] text-muted-foreground hover:text-foreground transition-colors uppercase font-bold tracking-widest underline decoration-dotted text-center block"
+                  className="text-[10px] text-muted-foreground hover:text-foreground transition-colors uppercase font-bold tracking-widest underline decoration-dotted text-center block"
                 >
                   Não, obrigado. Prefiro continuar com o Plano Básico
                 </a>
               </div>
               
-              <div className="mt-3 flex items-center justify-center gap-2 opacity-50 border-t border-border pt-2">
-                <ShieldCheck size={8} />
-                <span className="text-[7px] font-black uppercase">Garantia Blindada de 7 Dias</span>
+              <div className="mt-6 flex items-center justify-center gap-2 opacity-50 border-t border-border pt-4">
+                <ShieldCheck size={12} />
+                <span className="text-[8px] font-black uppercase">Garantia Blindada de 7 Dias</span>
               </div>
             </div>
           </DialogContent>
