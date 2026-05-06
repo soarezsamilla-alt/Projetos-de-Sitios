@@ -27,7 +27,8 @@ const showcaseCards = [
   {
     number: '5',
     title: 'BIOMAS BRASILEIROS',
-    description: 'Adaptados pra Cerrado, Mata Atlântica, Caatinga, Amazônia e Pampa'
+    description: 'Adaptados pra Cerrado, Mata Atlântica, Caatinga, Amazônia e Pampa',
+    imageUrl: 'https://www.image2url.com/r2/default/images/1778111484884-a7aaee36-8254-4670-9bb3-a76195442636.blob'
   },
   {
     number: 'R$ 15K',
