@@ -39,8 +39,8 @@ const showcaseCards = [
   {
     number: 'R$ 15K',
     title: 'ECONOMIZADOS',
-    description: 'Equivalente ao que cobraria um arquiteto rural particular',
-    imageUrl: 'https://www.image2url.com/r2/default/images/1778117419921-c3480325-a950-49e5-a644-5266477d4d20.blob'
+    description: 'Equivalente ao que cobraria um agrônomo rural particular',
+    imageUrl: 'https://www.image2url.com/r2/default/images/1778122376145-7e381033-3c3e-4899-ab1c-cb541abe4648.png'
   },
   {
     number: 'R$ 14K',
