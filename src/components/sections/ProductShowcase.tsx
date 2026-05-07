@@ -21,7 +21,7 @@ const showcaseCards = [
   {
     number: '7',
     title: 'VOCAÇÕES PRODUTIVAS',
-    description: 'Café, hortifruti, pecuária, piscicultura, agrofloresta e mais',
+    description: 'Café, hortifruti, pecuária, piscicultura, agrofloresta e more',
     imageUrl: 'https://www.image2url.com/r2/default/images/1778116512790-b6ed1167-0822-4610-ac4e-1cfd11ed51cb.blob'
   },
   {
@@ -58,7 +58,7 @@ const showcaseCards = [
     number: '∞',
     title: 'ACESSO VITALÍCIO',
     description: 'Imediato após compra + receba atualizações futuras gratuitas',
-    imageUrl: 'https://www.image2url.com/r2/default/images/1778113696375-30361478-82e0-42f7-91d3-c29fc22bf30a.blob'
+    imageUrl: 'https://www.image2url.com/r2/default/images/1778119172029-b5d17258-2e77-4116-a6eb-f9978a69592b.blob'
   }
 ];
 
@@ -98,19 +98,17 @@ export function ProductShowcase() {
               Projetos <span className="text-primary">Altamente Dimensionados</span>,<br />Não Ideias Vagas
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed text-center lg:text-left">
-              Cada um dos +100 projetos foi desenhado como uma planta profissional, with medidas reais em metros, divisão das zonas produtivas, posicionamento de casa, galpões, tanques, cultivos e animais.
+              Cada um dos +100 projetos foi desenhado como uma planta profissional, com medidas reais em metros, divisão das zonas produtivas, posicionamento de casa, galpões, tanques, cultivos e animais.
             </p>
           </div>
         </div>
 
-        {/* 9 Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {showcaseCards.map((card, i) => (
             <div 
               key={i} 
               className="group bg-[#0F2F1E] border border-primary/50 rounded-[16px] overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2 hover:border-primary hover:shadow-[0_10px_30px_rgba(201,169,97,0.15)] h-full"
             >
-              {/* Image Area (60%) */}
               <div className="relative aspect-video w-full bg-gradient-to-br from-primary/20 to-[#0F2F1E] flex items-center justify-center overflow-hidden border-b border-primary/20">
                 {card.imageUrl ? (
                   <Image 
@@ -127,7 +125,6 @@ export function ProductShowcase() {
                 <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors" />
               </div>
 
-              {/* Text Area (40%) */}
               <div className="p-6 flex flex-col items-center justify-center text-center flex-grow">
                 <div className="font-headline font-bold text-primary text-4xl md:text-[48px] mb-4 drop-shadow-[0_2px_4px_rgba(201,169,97,0.3)] leading-none">
                   {card.number}
