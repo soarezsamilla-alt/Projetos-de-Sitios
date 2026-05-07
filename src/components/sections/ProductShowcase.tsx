@@ -10,7 +10,7 @@ const showcaseCards = [
     number: '+100',
     title: 'PROJETOS COMPLETOS',
     description: 'Plantas técnicas dimensionadas prontas pra você executar',
-    imageUrl: 'https://www.image2url.com/r2/default/images/1778110068677-a8cd60cb-9894-4bcf-85d7-48e4bb87ae3a.blob'
+    imageUrl: 'https://www.image2url.com/r2/default/images/1778114621743-4a3463dc-62bf-4bed-9a04-cea15123eedc.blob'
   },
   {
     number: '0,5-5',
