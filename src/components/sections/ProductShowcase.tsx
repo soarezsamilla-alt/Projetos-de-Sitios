@@ -52,7 +52,7 @@ const showcaseCards = [
     number: 'PASSO',
     title: 'A PASSO CLARO',
     description: 'Não precisa ser técnico, é só seguir as plantas e aplicar',
-    imageUrl: 'https://www.image2url.com/r2/default/images/1778113612502-7ef562fb-0d00-4d73-b29e-6098c823b8db.blob'
+    imageUrl: 'https://www.image2url.com/r2/default/images/1778119122838-644b596c-cff4-47d7-b0c1-bb7a789518df.blob'
   },
   {
     number: '∞',
@@ -98,7 +98,7 @@ export function ProductShowcase() {
               Projetos <span className="text-primary">Altamente Dimensionados</span>,<br />Não Ideias Vagas
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed text-center lg:text-left">
-              Cada um dos +100 projetos foi desenhado como uma planta profissional, com medidas reais em metros, divisão das zonas produtivas, posicionamento de casa, galpões, tanques, cultivos e animais.
+              Cada um dos +100 projetos foi desenhado como uma planta profissional, with medidas reais em metros, divisão das zonas produtivas, posicionamento de casa, galpões, tanques, cultivos e animais.
             </p>
           </div>
         </div>
