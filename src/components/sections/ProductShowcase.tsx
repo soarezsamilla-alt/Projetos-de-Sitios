@@ -117,7 +117,7 @@ export function ProductShowcase() {
                     src={card.imageUrl}
                     alt={card.title}
                     fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="object-contain group-hover:scale-110 transition-transform duration-500"
                   />
                 ) : (
                   <span className="text-primary/40 font-black uppercase tracking-[0.2em] text-[10px] animate-pulse">
