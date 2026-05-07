@@ -51,7 +51,8 @@ const showcaseCards = [
   {
     number: 'PASSO',
     title: 'A PASSO CLARO',
-    description: 'Não precisa ser técnico, é só seguir as plantas e aplicar'
+    description: 'Não precisa ser técnico, é só seguir as plantas e aplicar',
+    imageUrl: 'https://www.image2url.com/r2/default/images/1778113612502-7ef562fb-0d00-4d73-b29e-6098c823b8db.blob'
   },
   {
     number: '∞',
