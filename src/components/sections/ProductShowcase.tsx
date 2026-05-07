@@ -22,7 +22,7 @@ const showcaseCards = [
     number: '7',
     title: 'VOCAÇÕES PRODUTIVAS',
     description: 'Café, hortifruti, pecuária, piscicultura, agrofloresta e mais',
-    imageUrl: 'https://www.image2url.com/r2/default/images/1778111072878-00a5ccee-823c-40ec-8025-1fee7c0555df.blob'
+    imageUrl: 'https://www.image2url.com/r2/default/images/1778116291369-2f28f36b-e42d-4bed-ae14-1a4f2d5c2054.blob'
   },
   {
     number: '5',
