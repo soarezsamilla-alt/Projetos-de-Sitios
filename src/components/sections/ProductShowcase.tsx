@@ -22,7 +22,7 @@ const showcaseCards = [
     number: '0,5-5',
     title: 'HECTARES COBERTOS',
     description: 'Tem projeto pro seu tamanho de terreno, não importa qual seja',
-    imageUrl: 'https://www.image2url.com/r2/default/images/1778115303412-c4496425-75d6-4729-9f56-09ca187e3617.blob'
+    imageUrl: 'https://www.image2url.com/r2/default/images/1778121987061-4e1b4182-4d64-482b-837f-65a16f7b3109.png'
   },
   {
     number: '7',
