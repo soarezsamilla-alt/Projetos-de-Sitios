@@ -46,7 +46,7 @@ const showcaseCards = [
     number: 'R$ 14K',
     title: 'RENDA MENSAL POSSÍVEL',
     description: 'Projeção realista baseada em cases validados de produtores reais',
-    imageUrl: 'https://www.image2url.com/r2/default/images/1778118031226-22b98363-3814-4ed9-8d20-180df897d7d3.blob'
+    imageUrl: 'https://www.image2url.com/r2/default/images/1778122402890-61d3344b-bbbe-4e4e-923e-b66ea9cd7a71.png'
   },
   {
     number: '100%',
