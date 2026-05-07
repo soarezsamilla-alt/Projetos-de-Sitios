@@ -64,7 +64,7 @@ const showcaseCards = [
     number: '∞',
     title: 'ACESSO VITALÍCIO',
     description: 'Imediato após compra + receba atualizações futuras gratuitas',
-    imageUrl: 'https://www.image2url.com/r2/default/images/1778119172029-b5d17258-2e77-4116-a6eb-f9978a69592b.blob'
+    imageUrl: 'https://www.image2url.com/r2/default/images/1778122478432-436e4ed3-a5c3-467f-88ef-5c624baf6804.png'
   }
 ];
 
