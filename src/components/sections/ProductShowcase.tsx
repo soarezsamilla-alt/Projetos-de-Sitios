@@ -46,13 +46,13 @@ const showcaseCards = [
     number: 'R$ 14K',
     title: 'RENDA MENSAL POSSÍVEL',
     description: 'Projeção realista baseada em cases validados de produtores reais',
-    imageUrl: 'https://www.image2url.com/r2/default/images/1778122402890-61d3344b-bbbe-4e4e-923e-b66ea9cd7a71.png'
+    imageUrl: 'https://www.image2url.com/r2/default/images/1778122402890-61d3344b-bbbe-4e4e-923e-b6ea9cd7a71.png'
   },
   {
     number: '100%',
     title: 'MEDIDAS TESTADAS',
     description: 'Validadas em campo por mais de 12 mil produtores brasileiros',
-    imageUrl: 'https://www.image2url.com/r2/default/images/1778118243634-9da61190-1bdd-4095-b0d9-d9c93ab79b22.blob'
+    imageUrl: 'https://www.image2url.com/r2/default/images/1778122424695-3a1d5aa6-a195-4553-93b7-e274942ddbcd.png'
   },
   {
     number: 'PASSO',
