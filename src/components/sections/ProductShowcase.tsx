@@ -4,6 +4,12 @@
 import React from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import AutoScroll from "embla-carousel-auto-scroll";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 
 const showcaseCards = [
   {
@@ -64,6 +70,9 @@ const showcaseCards = [
 
 export function ProductShowcase() {
   const productMockup = PlaceHolderImages.find(img => img.id === 'product-mockup');
+  const autoScrollRef = React.useRef(
+    AutoScroll({ speed: 1, stopOnInteraction: false, stopOnMouseEnter: true })
+  );
 
   return (
     <section className="bg-gradient-to-b from-background to-[#0d1f10] py-16 border-t border-border">
@@ -103,41 +112,54 @@ export function ProductShowcase() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          {showcaseCards.map((card, i) => (
-            <div 
-              key={i} 
-              className="group bg-[#0F2F1E] border border-primary/50 rounded-[16px] overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2 hover:border-primary hover:shadow-[0_10px_30px_rgba(201,169,97,0.15)] h-full"
-            >
-              <div className="relative aspect-video w-full bg-gradient-to-br from-primary/20 to-[#0F2F1E] flex items-center justify-center overflow-hidden border-b border-primary/20">
-                {card.imageUrl ? (
-                  <Image 
-                    src={card.imageUrl}
-                    alt={card.title}
-                    fill
-                    className="object-contain group-hover:scale-110 transition-transform duration-500"
-                  />
-                ) : (
-                  <span className="text-primary/40 font-black uppercase tracking-[0.2em] text-[10px] animate-pulse">
-                    Imagem em Breve
-                  </span>
-                )}
-                <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors" />
-              </div>
+        <div className="w-full max-w-7xl mx-auto">
+          <Carousel
+            plugins={[autoScrollRef.current]}
+            opts={{
+              align: "start",
+              loop: true,
+              dragFree: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-6">
+              {showcaseCards.map((card, i) => (
+                <CarouselItem key={i} className="pl-6 basis-[85%] sm:basis-1/2 lg:basis-1/3">
+                  <div 
+                    className="group bg-[#0F2F1E] border border-primary/50 rounded-[16px] overflow-hidden flex flex-col transition-all duration-300 hover:border-primary hover:shadow-[0_10px_30px_rgba(201,169,97,0.15)] h-full"
+                  >
+                    <div className="relative aspect-video w-full bg-gradient-to-br from-primary/20 to-[#0F2F1E] flex items-center justify-center overflow-hidden border-b border-primary/20">
+                      {card.imageUrl ? (
+                        <Image 
+                          src={card.imageUrl}
+                          alt={card.title}
+                          fill
+                          className="object-contain group-hover:scale-110 transition-transform duration-500"
+                        />
+                      ) : (
+                        <span className="text-primary/40 font-black uppercase tracking-[0.2em] text-[10px] animate-pulse">
+                          Imagem em Breve
+                        </span>
+                      )}
+                      <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors" />
+                    </div>
 
-              <div className="p-6 flex flex-col items-center justify-center text-center flex-grow">
-                <div className="font-headline font-bold text-primary text-4xl md:text-[48px] mb-4 drop-shadow-[0_2px_4px_rgba(201,169,97,0.3)] leading-none">
-                  {card.number}
-                </div>
-                <h4 className="font-bold text-white text-base tracking-[1px] uppercase mb-3">
-                  {card.title}
-                </h4>
-                <p className="text-white/75 text-sm leading-relaxed max-w-[240px]">
-                  {card.description}
-                </p>
-              </div>
-            </div>
-          ))}
+                    <div className="p-6 flex flex-col items-center justify-center text-center flex-grow">
+                      <div className="font-headline font-bold text-primary text-4xl md:text-[48px] mb-4 drop-shadow-[0_2px_4px_rgba(201,169,97,0.3)] leading-none">
+                        {card.number}
+                      </div>
+                      <h4 className="font-bold text-white text-base tracking-[1px] uppercase mb-3">
+                        {card.title}
+                      </h4>
+                      <p className="text-white/75 text-sm leading-relaxed max-w-[240px]">
+                        {card.description}
+                      </p>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
         </div>
       </div>
     </section>
