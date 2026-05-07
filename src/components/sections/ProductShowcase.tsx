@@ -46,7 +46,7 @@ const showcaseCards = [
     number: '100%',
     title: 'MEDIDAS TESTADAS',
     description: 'Validadas em campo por mais de 12 mil produtores brasileiros',
-    imageUrl: 'https://www.image2url.com/r2/default/images/1778113159690-3e64a257-6aaf-4b65-bb8f-1d8efcc6be1e.blob'
+    imageUrl: 'https://www.image2url.com/r2/default/images/1778118243634-9da61190-1bdd-4095-b0d9-d9c93ab79b22.blob'
   },
   {
     number: 'PASSO',
