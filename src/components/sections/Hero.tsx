@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from 'react';
@@ -27,7 +28,7 @@ export function Hero() {
           <span className="gold-gradient-text block mb-2">
             +100 Projetos de Sítios e Chácaras Produtivos
           </span>
-          que transformam terra parada em fonte de renda
+          que transforma sua terra parada em fonte de renda
         </h1>
 
         <p className="text-muted-foreground text-[16px] max-w-4xl mx-auto mb-10 leading-relaxed font-light">
