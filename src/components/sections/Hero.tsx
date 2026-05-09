@@ -26,7 +26,7 @@ export function Hero() {
 
         <h1 className="text-[24px] font-black mb-6 leading-[1.1]">
           <span className="gold-gradient-text block mb-2">
-            +100 Projetos de Sítios e Chácaras Produtivos
+            +100 Projetos de Sítios Produtivos
           </span>
           que transforma sua terra parada em fonte de renda
         </h1>
