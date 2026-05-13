@@ -30,7 +30,7 @@ export function CreatorAndDelivery() {
             <div className="relative w-[110px] h-[110px] mb-3 z-10">
               <div className="absolute inset-0 rounded-full border-[3px] border-primary shadow-[0_8px_20px_rgba(201,169,97,0.3)] overflow-hidden bg-muted">
                 <Image
-                  src="https://www.image2url.com/r2/default/images/1778701423071-d893666a-099b-4658-894f-31607dff7fb8.png"
+                  src="https://www.image2url.com/r2/default/images/1778703436805-37a36191-803e-46ec-bd61-f06804773514.png"
                   alt="Ricardo Almeida"
                   fill
                   className="object-cover"
