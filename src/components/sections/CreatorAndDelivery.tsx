@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 import { User, Mail, ShieldCheck, Download, RefreshCw } from 'lucide-react';
 
 export function CreatorAndDelivery() {
@@ -24,11 +25,15 @@ export function CreatorAndDelivery() {
             </span>
             <div className="w-12 h-[1px] bg-primary/30 mb-6" />
 
-            {/* Foto Placeholder */}
+            {/* Foto do Criador */}
             <div className="relative w-[160px] h-[160px] mb-4">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#1B4D2E] to-[#C9A961] border-[3px] border-primary shadow-[0_8px_20px_rgba(201,169,97,0.3)] flex flex-col items-center justify-center overflow-hidden">
-                <User size={60} className="text-white/60 mb-1" />
-                <span className="text-white text-[8px] font-black tracking-widest uppercase text-center px-2">FOTO DO CRIADOR</span>
+              <div className="absolute inset-0 rounded-full border-[3px] border-primary shadow-[0_8px_20px_rgba(201,169,97,0.3)] overflow-hidden bg-muted">
+                <Image
+                  src="https://www.image2url.com/r2/default/images/1778701423071-d893666a-099b-4658-894f-31607dff7fb8.png"
+                  alt="Ricardo Almeida"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
 
