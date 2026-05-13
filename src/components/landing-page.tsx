@@ -1,19 +1,19 @@
+
 "use client";
 
-import React from 'react';
-import { Hero } from './sections/Hero';
-import { Problem } from './sections/Problem';
-import { ProductShowcase } from './sections/ProductShowcase';
-import { Samples } from './sections/Samples';
-import { ContentBreakdown } from './sections/ContentBreakdown';
-import { CreatorAndDelivery } from './sections/CreatorAndDelivery';
-import { Bonus } from './sections/Bonus';
-import { Testimonials } from './sections/Testimonials';
-import { Pricing } from './sections/Pricing';
-import { Guarantee } from './sections/Guarantee';
-import { FAQ } from './sections/FAQ';
-import { Footer } from './sections/Footer';
-import { PurchaseNotification } from './PurchaseNotification';
+import {Hero} from './sections/Hero';
+import {Problem} from './sections/Problem';
+import {ProductShowcase} from './sections/ProductShowcase';
+import {Samples} from './sections/Samples';
+import {ContentBreakdown} from './sections/ContentBreakdown';
+import {CreatorAndDelivery} from './sections/CreatorAndDelivery';
+import {Bonus} from './sections/Bonus';
+import {Testimonials} from './sections/Testimonials';
+import {Pricing} from './sections/Pricing';
+import {Guarantee} from './sections/Guarantee';
+import {FAQ} from './sections/FAQ';
+import {Footer} from './sections/Footer';
+import {PurchaseNotification} from './PurchaseNotification';
 
 export function LandingPage() {
   return (
@@ -30,9 +30,9 @@ export function LandingPage() {
       <ProductShowcase />
       <ContentBreakdown />
       <Testimonials />
-      <CreatorAndDelivery />
       <Bonus />
       <Pricing />
+      <CreatorAndDelivery />
       <Guarantee />
       <FAQ />
       <Footer />
