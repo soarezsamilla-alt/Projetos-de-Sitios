@@ -18,10 +18,10 @@ export function Hero() {
       </div>
 
       <div className="container relative z-10 mx-auto px-2 md:px-6 text-center max-w-6xl">
-        <div className="shine-effect inline-flex items-center gap-4 bg-gradient-to-br from-primary to-[#b8902f] text-black px-8 py-2.5 rounded-sm font-bold text-[10px] tracking-[0.3em] uppercase mb-8 shadow-xl shadow-primary/20">
-          <div className="w-8 h-[1px] bg-black/50" />
+        <div className="shine-effect inline-flex items-center gap-2 bg-primary/10 border border-primary/30 text-primary px-5 py-1.5 rounded-full font-black text-[9px] tracking-[0.2em] uppercase mb-10 shadow-lg shadow-primary/5 backdrop-blur-sm">
+          <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
           Edição Premium 2026
-          <div className="w-8 h-[1px] bg-black/50" />
+          <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
         </div>
 
         <h1 className="text-4xl md:text-7xl font-black mb-6 leading-[1.1]">
