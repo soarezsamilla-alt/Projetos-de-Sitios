@@ -7,7 +7,7 @@ import { User, Mail, ShieldCheck, Download, RefreshCw } from 'lucide-react';
 export function CreatorAndDelivery() {
   return (
     <section className="bg-[#0d1f10] py-8 border-t border-border">
-      <div className="container mx-auto px-6 max-w-6xl">
+      <div className="container mx-auto px-6 max-2-6xl">
         <div className="text-center mb-6">
           <span className="text-primary font-bold text-[10px] tracking-[0.4em] uppercase mb-1 block">
             ★ CONHEÇA O CRIADOR ★
@@ -45,9 +45,7 @@ export function CreatorAndDelivery() {
             </p>
 
             <p className="text-[#4A4A4A] text-[11px] leading-relaxed mb-3 flex-grow">
-              Engenheiro agrônomo with more than 15 years of experience in rural planning in Brazil. 
-              Has visited more than 3,000 sites and personally assisted more than 12,000 
-              Brazilian rural producers.
+              Engenheiro agrônomo com mais de 15 anos de experiência em planejamento rural no Brasil. Já visitou mais de 3.000 sítios e chácaras atendeu pessoalmente mais de 12 mil produtores rurais brasileiros.
             </p>
 
             {/* Mini Stats */}
