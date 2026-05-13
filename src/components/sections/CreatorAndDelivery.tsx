@@ -34,6 +34,7 @@ export function CreatorAndDelivery() {
                   alt="Ricardo Almeida"
                   fill
                   className="object-cover"
+                  unoptimized
                 />
               </div>
             </div>
