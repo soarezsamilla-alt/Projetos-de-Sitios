@@ -15,9 +15,9 @@ export function CreatorAndDelivery() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
           {/* Card 1: Sobre o Criador */}
-          <div className="bg-gradient-to-b from-card to-[#0d1f10] border-2 border-primary rounded-2xl p-4 md:p-5 shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center group relative overflow-hidden">
+          <div className="bg-gradient-to-b from-card to-[#0d1f10] border-2 border-primary rounded-2xl p-4 md:p-5 shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center group relative overflow-hidden h-full">
             <div className="absolute top-0 left-0 p-4 opacity-10 pointer-events-none">
               <User size={120} className="text-primary" />
             </div>
@@ -71,27 +71,27 @@ export function CreatorAndDelivery() {
               <Download size={120} className="text-primary" />
             </div>
             
-            <div className="p-4 md:p-5 w-full flex flex-col items-center text-center md:items-start md:text-left">
+            <div className="p-3 md:p-4 w-full flex flex-col items-center text-center md:items-start md:text-left">
               <span className="text-primary font-black text-[9px] tracking-[0.2em] uppercase mb-1 relative z-10">
                 ENTREGA IMEDIATA
               </span>
-              <div className="w-10 h-[1px] bg-primary/30 mb-3 relative z-10" />
-              <h3 className="text-base font-black text-foreground font-headline mb-3 w-full relative z-10">
+              <div className="w-10 h-[1px] bg-primary/30 mb-2 relative z-10" />
+              <h3 className="text-base font-black text-foreground font-headline mb-2 w-full relative z-10">
                 Como Você <span className="text-primary">Recebe o Material</span>
               </h3>
               
-              <div className="w-full flex justify-center mb-4 md:justify-start gap-3 relative z-10">
-                <div className="bg-primary/20 p-2.5 rounded-full border border-primary/30">
-                  <Mail size={24} className="text-primary" />
+              <div className="w-full flex justify-center mb-2 md:justify-start gap-3 relative z-10">
+                <div className="bg-primary/20 p-2 rounded-full border border-primary/30">
+                  <Mail size={20} className="text-primary" />
                 </div>
-                <div className="bg-primary/20 p-2.5 rounded-full border border-primary/30">
-                  <MessageCircle size={24} className="text-primary" />
+                <div className="bg-primary/20 p-2 rounded-full border border-primary/30">
+                  <MessageCircle size={20} className="text-primary" />
                 </div>
               </div>
             </div>
 
             {/* Listras de Entrega */}
-            <div className="flex-grow w-full relative z-10 border-t border-primary/10">
+            <div className="w-full relative z-10 border-t border-primary/10">
               {[
                 {
                   id: 1,
@@ -114,19 +114,19 @@ export function CreatorAndDelivery() {
                   desc: 'Canal exclusivo para tirar suas dúvidas.',
                 }
               ].map((step) => (
-                <div key={step.id} className="flex gap-4 items-center py-3 px-5 border-b border-primary/10 group/step hover:bg-primary/5 transition-colors">
-                  <div className="flex-shrink-0 w-7 h-7 rounded-full bg-primary text-black flex items-center justify-center font-black text-[11px] shadow-lg shadow-primary/20 group-hover/step:scale-110 transition-transform">
+                <div key={step.id} className="flex gap-3 items-center py-2 px-5 border-b border-primary/10 group/step hover:bg-primary/5 transition-colors">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary text-black flex items-center justify-center font-black text-[10px] shadow-lg shadow-primary/20 group-hover/step:scale-110 transition-transform">
                     {step.id}
                   </div>
                   <div className="text-left">
-                    <h4 className="font-black text-primary text-[11px] uppercase mb-0.5 leading-tight tracking-wide">{step.title}</h4>
-                    <p className="text-muted-foreground text-[10px] leading-tight">{step.desc}</p>
+                    <h4 className="font-black text-primary text-[10px] uppercase mb-0 leading-tight tracking-wide">{step.title}</h4>
+                    <p className="text-muted-foreground text-[9px] leading-tight">{step.desc}</p>
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="p-4 w-full text-center md:text-left relative z-10">
+            <div className="p-3 w-full text-center md:text-left relative z-10">
               <div className="inline-flex items-center gap-2 text-primary font-black text-[8px] tracking-widest uppercase">
                 <ShieldCheck size={10} />
                 Sistema de Entrega 100% Seguro
