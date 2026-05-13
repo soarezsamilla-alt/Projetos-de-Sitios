@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from 'react';
@@ -95,7 +96,7 @@ export function CreatorAndDelivery() {
                 },
                 {
                   id: 2,
-                  title: 'E-mail Com Acesso',
+                  title: 'E-MAIL E WHATSAPP',
                   desc: 'Login e senha enviados automaticamente para você.',
                 },
                 {
