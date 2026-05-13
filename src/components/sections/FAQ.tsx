@@ -11,10 +11,6 @@ import {
 
 const faqs = [
   {
-    q: 'Como vou receber os materias após a compra?',
-    a: 'O acesso é liberado automaticamente após a confirmação do pagamento. Você recebe um email com le link e pode baixar tudo em formato PDF. No PIX, a liberação é em até 5 minutos. Em cartão, quase instantâneo.'
-  },
-  {
     q: 'Qual a diferença entre o Básico e o Pro?',
     a: 'Ambos os planos incluem os +100 projetos completos. A diferença está nos 4 bônus exclusivos do plano Pro: Pack de Construções Rurais, Planilha de ROI, Guia de Plantas Companheiras e Manual de Energia Solar Rural.'
   },
