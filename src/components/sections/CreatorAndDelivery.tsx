@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { User, Mail, Download, RefreshCw, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { User, Mail, ShieldCheck, Download, RefreshCw } from 'lucide-react';
 
 export function CreatorAndDelivery() {
   return (
@@ -18,13 +18,13 @@ export function CreatorAndDelivery() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
           {/* Card 1: Sobre o Criador */}
-          <div className="bg-[#F5F0E1] rounded-2xl p-8 md:p-10 border-t-4 border-primary shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center">
+          <div className="bg-[#F5F0E1] rounded-2xl p-8 md:p-10 border-t-4 border-primary shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group">
             <span className="text-primary font-black text-[10px] tracking-[0.2em] uppercase mb-2">
               SOBRE O CRIADOR
             </span>
             <div className="w-16 h-[1px] bg-primary/30 mb-8" />
 
-            {/* Placeholder Foto */}
+            {/* Foto Placeholder */}
             <div className="relative w-[200px] h-[200px] mb-6">
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#1B4D2E] to-[#C9A961] border-[3px] border-primary shadow-[0_10px_30px_rgba(201,169,97,0.3)] flex flex-col items-center justify-center overflow-hidden">
                 <User size={80} className="text-white/60 mb-2" />
@@ -50,7 +50,7 @@ export function CreatorAndDelivery() {
             <div className="w-full pt-6 border-t border-primary/20 grid grid-cols-3 gap-2">
               <div className="flex flex-col">
                 <span className="text-primary font-black text-xl font-headline">15+</span>
-                <span className="text-[#6B6B6B] text-[9px] uppercase font-bold tracking-tighter">anos de exp.</span>
+                <span className="text-[#6B6B6B] text-[9px] uppercase font-bold tracking-tighter">anos de experiência</span>
               </div>
               <div className="flex flex-col">
                 <span className="text-primary font-black text-xl font-headline">3.000+</span>
@@ -58,69 +58,63 @@ export function CreatorAndDelivery() {
               </div>
               <div className="flex flex-col">
                 <span className="text-primary font-black text-xl font-headline">12 mil</span>
-                <span className="text-[#6B6B6B] text-[9px] uppercase font-bold tracking-tighter">produtores</span>
+                <span className="text-[#6B6B6B] text-[9px] uppercase font-bold tracking-tighter">produtores atendidos</span>
               </div>
             </div>
           </div>
 
           {/* Card 2: Como Você Recebe */}
-          <div className="bg-[#F5F0E1] rounded-2xl p-8 md:p-10 border-t-4 border-primary shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col text-center md:text-left">
-            <div className="flex flex-col items-center mb-6">
-              <span className="text-primary font-black text-[10px] tracking-[0.2em] uppercase mb-2">
-                COMO VOCÊ RECEBE
-              </span>
-              <div className="w-16 h-[1px] bg-primary/30 mb-6" />
-              <h3 className="text-2xl font-black text-[#1B4D2E] font-headline mb-4">
-                Acesso Rápido e Garantido
-              </h3>
-              <div className="bg-primary/10 p-5 rounded-full mb-8">
-                <Mail size={48} className="text-primary" />
+          <div className="bg-[#F5F0E1] rounded-2xl p-8 md:p-10 border-t-4 border-primary shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center md:items-start md:text-left group">
+            <span className="text-primary font-black text-[10px] tracking-[0.2em] uppercase mb-2">
+              COMO VOCÊ RECEBE
+            </span>
+            <div className="w-16 h-[1px] bg-primary/30 mb-6" />
+            <h3 className="text-2xl font-black text-[#1B4D2E] font-headline mb-8 w-full">
+              Acesso Rápido e Garantido
+            </h3>
+            
+            <div className="w-full flex justify-center mb-10">
+              <div className="bg-primary/10 p-6 rounded-full">
+                <Mail size={56} className="text-primary" />
               </div>
             </div>
 
-            <div className="space-y-6 flex-grow">
-              <div className="flex gap-4 items-start group">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm shadow-lg shadow-primary/20">
-                  1
+            <div className="space-y-6 flex-grow w-full">
+              {[
+                {
+                  id: 1,
+                  title: 'Pagamento Confirmado Em Segundos',
+                  desc: 'Após confirmar a compra, você recebe acesso imediato.',
+                },
+                {
+                  id: 2,
+                  title: 'E-mail Com Login E Acesso',
+                  desc: 'Receba no seu e-mail o link da área de membros, login e senha gerados automaticamente.',
+                },
+                {
+                  id: 3,
+                  title: 'Acesso Vitalício Aos Materiais',
+                  desc: 'Baixe todos os PDFs em alta resolução. Acesse pelo celular, tablet ou computador.',
+                },
+                {
+                  id: 4,
+                  title: 'Atualizações Gratuitas Pra Sempre',
+                  desc: 'Receba todos os novos projetos e atualizações sem pagar nada a mais.',
+                }
+              ].map((step) => (
+                <div key={step.id} className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm shadow-lg shadow-primary/20">
+                    {step.id}
+                  </div>
+                  <div>
+                    <h4 className="font-black text-[#1B4D2E] text-[15px] uppercase mb-1 leading-tight">{step.title}</h4>
+                    <p className="text-[#6B6B6B] text-[13px] leading-relaxed">{step.desc}</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-black text-[#1B4D2E] text-sm uppercase mb-1">Pagamento Confirmado</h4>
-                  <p className="text-[#6B6B6B] text-xs leading-relaxed">Após confirmar a compra, você recebe acesso imediato ao material.</p>
-                </div>
-              </div>
-
-              <div className="flex gap-4 items-start group">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm shadow-lg shadow-primary/20">
-                  2
-                </div>
-                <div>
-                  <h4 className="font-black text-[#1B4D2E] text-sm uppercase mb-1">E-mail Com Acesso</h4>
-                  <p className="text-[#6B6B6B] text-xs leading-relaxed">Receba no seu e-mail o link da área de membros com seu login e senha exclusivos.</p>
-                </div>
-              </div>
-
-              <div className="flex gap-4 items-start group">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm shadow-lg shadow-primary/20">
-                  3
-                </div>
-                <div>
-                  <h4 className="font-black text-[#1B4D2E] text-sm uppercase mb-1">Acesso Vitalício</h4>
-                  <p className="text-[#6B6B6B] text-xs leading-relaxed">Baixe todos os PDFs em alta resolução. Acesse pelo celular, tablet ou computador.</p>
-                </div>
-              </div>
-
-              <div className="flex gap-4 items-start group">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm shadow-lg shadow-primary/20">
-                  4
-                </div>
-                <div>
-                  <h4 className="font-black text-[#1B4D2E] text-sm uppercase mb-1">Atualizações Gratuitas</h4>
-                  <p className="text-[#6B6B6B] text-xs leading-relaxed">Receba novos projetos e atualizações futuras sem pagar nada a mais por isso.</p>
-                </div>
-              </div>
+              ))}
             </div>
 
-            <div className="mt-10 pt-6 border-t border-primary/20 text-center">
+            <div className="mt-10 pt-6 border-t border-primary/20 w-full text-center">
               <div className="inline-flex items-center gap-2 text-primary font-black text-[10px] tracking-widest uppercase">
                 <ShieldCheck size={14} />
                 Compra 100% segura · Garantia de 7 dias
