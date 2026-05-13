@@ -18,15 +18,19 @@ export function CreatorAndDelivery() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch">
-          {/* Card 1: Sobre o Criador */}
-          <div className="bg-[#F5F0E1] rounded-2xl p-4 md:p-5 border-t-4 border-primary shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center group">
-            <span className="text-primary font-black text-[9px] tracking-[0.2em] uppercase mb-1">
+          {/* Card 1: Sobre o Criador - Estilo Premium Escuro */}
+          <div className="bg-gradient-to-b from-card to-[#0d1f10] border-2 border-primary rounded-2xl p-4 md:p-5 shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center group relative overflow-hidden">
+            <div className="absolute top-0 left-0 p-4 opacity-10 pointer-events-none">
+              <User size={120} className="text-primary" />
+            </div>
+
+            <span className="text-primary font-black text-[9px] tracking-[0.2em] uppercase mb-1 relative z-10">
               SOBRE O CRIADOR
             </span>
-            <div className="w-10 h-[1px] bg-primary/30 mb-3" />
+            <div className="w-10 h-[1px] bg-primary/30 mb-3 relative z-10" />
 
             {/* Foto do Criador */}
-            <div className="relative w-[110px] h-[110px] mb-3">
+            <div className="relative w-[110px] h-[110px] mb-3 z-10">
               <div className="absolute inset-0 rounded-full border-[3px] border-primary shadow-[0_8px_20px_rgba(201,169,97,0.3)] overflow-hidden bg-muted">
                 <Image
                   src="https://www.image2url.com/r2/default/images/1778701423071-d893666a-099b-4658-894f-31607dff7fb8.png"
@@ -37,49 +41,49 @@ export function CreatorAndDelivery() {
               </div>
             </div>
 
-            <h3 className="text-base font-black text-[#1B4D2E] font-headline mb-0.5">
+            <h3 className="text-base font-black text-foreground font-headline mb-0.5 relative z-10">
               Ricardo Almeida
             </h3>
-            <p className="text-primary font-medium text-[11px] italic mb-2">
+            <p className="text-primary font-medium text-[11px] italic mb-2 relative z-10">
               Fundador & Criador do planejameto +100 Projetos
             </p>
 
-            <p className="text-[#4A4A4A] text-[11px] leading-relaxed mb-3 flex-grow">
+            <p className="text-muted-foreground text-[11px] leading-relaxed mb-3 flex-grow relative z-10">
               Engenheiro agrônomo com mais de 15 anos de experiência em planejamento rural no Brasil. Já visitou mais de 3.000 sítios e chácaras atendeu pessoalmente mais de 12 mil produtores rurais brasileiros.
             </p>
 
             {/* Mini Stats */}
-            <div className="w-full pt-2 border-t border-primary/20 grid grid-cols-3 gap-1">
+            <div className="w-full pt-2 border-t border-primary/20 grid grid-cols-3 gap-1 relative z-10">
               <div className="flex flex-col">
                 <span className="text-primary font-black text-sm font-headline">15+</span>
-                <span className="text-[#6B6B6B] text-[7px] uppercase font-bold tracking-tighter">anos exp.</span>
+                <span className="text-muted-foreground text-[7px] uppercase font-bold tracking-tighter">anos exp.</span>
               </div>
               <div className="flex flex-col">
                 <span className="text-primary font-black text-sm font-headline">3.000+</span>
-                <span className="text-[#6B6B6B] text-[7px] uppercase font-bold tracking-tighter">sítios</span>
+                <span className="text-muted-foreground text-[7px] uppercase font-bold tracking-tighter">sítios</span>
               </div>
               <div className="flex flex-col">
                 <span className="text-primary font-black text-sm font-headline">12 mil</span>
-                <span className="text-[#6B6B6B] text-[7px] uppercase font-bold tracking-tighter">produtores</span>
+                <span className="text-muted-foreground text-[7px] uppercase font-bold tracking-tighter">produtores</span>
               </div>
             </div>
           </div>
 
-          {/* Card 2: Como Você Recebe - Estilo Atualizado */}
+          {/* Card 2: Como Você Recebe - Estilo Premium Escuro */}
           <div className="bg-gradient-to-b from-card to-[#0d1f10] border-2 border-primary rounded-2xl p-4 md:p-5 shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center md:items-start md:text-left group relative overflow-hidden">
-            <div className="absolute top-0 right-0 p-4 opacity-10">
+            <div className="absolute top-0 right-0 p-4 opacity-10 pointer-events-none">
               <Download size={120} className="text-primary" />
             </div>
             
-            <span className="text-primary font-black text-[9px] tracking-[0.2em] uppercase mb-1">
+            <span className="text-primary font-black text-[9px] tracking-[0.2em] uppercase mb-1 relative z-10">
               ENTREGA IMEDIATA
             </span>
-            <div className="w-10 h-[1px] bg-primary/30 mb-3" />
-            <h3 className="text-base font-black text-foreground font-headline mb-3 w-full">
+            <div className="w-10 h-[1px] bg-primary/30 mb-3 relative z-10" />
+            <h3 className="text-base font-black text-foreground font-headline mb-3 w-full relative z-10">
               Como Você <span className="text-primary">Recebe o Material</span>
             </h3>
             
-            <div className="w-full flex justify-center mb-4 md:justify-start">
+            <div className="w-full flex justify-center mb-4 md:justify-start relative z-10">
               <div className="bg-primary/20 p-2.5 rounded-full border border-primary/30">
                 <Mail size={24} className="text-primary" />
               </div>
@@ -120,7 +124,7 @@ export function CreatorAndDelivery() {
               ))}
             </div>
 
-            <div className="mt-4 pt-3 border-t border-border w-full text-center md:text-left">
+            <div className="mt-4 pt-3 border-t border-border w-full text-center md:text-left relative z-10">
               <div className="inline-flex items-center gap-2 text-primary font-black text-[8px] tracking-widest uppercase">
                 <ShieldCheck size={10} />
                 Sistema de Entrega 100% Seguro
