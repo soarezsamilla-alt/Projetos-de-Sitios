@@ -14,14 +14,13 @@ import {Guarantee} from './sections/Guarantee';
 import {FAQ} from './sections/FAQ';
 import {Footer} from './sections/Footer';
 import {PurchaseNotification} from './PurchaseNotification';
+import {ViewingUrgencyBar} from './ViewingUrgencyBar';
 
 export function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Top Urgency Bar */}
-      <div className="shine-effect bg-gradient-to-r from-[#b8902f] via-[#d4a84b] to-[#b8902f] py-3 text-center text-xs font-bold tracking-widest text-black uppercase">
-        ★ OFERTA DE LANÇAMENTO · EDIÇÃO LIMITADA 2026 ★
-      </div>
+      {/* Top Urgency Bar Dinâmica */}
+      <ViewingUrgencyBar />
 
       <Hero />
       
