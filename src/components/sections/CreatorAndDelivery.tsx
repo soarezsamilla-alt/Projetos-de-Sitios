@@ -65,61 +65,65 @@ export function CreatorAndDelivery() {
             </div>
           </div>
 
-          {/* Card 2: Como Você Recebe */}
-          <div className="bg-[#F5F0E1] rounded-2xl p-4 md:p-5 border-t-4 border-primary shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center md:items-start md:text-left group">
+          {/* Card 2: Como Você Recebe - Estilo Atualizado */}
+          <div className="bg-gradient-to-b from-card to-[#0d1f10] border-2 border-primary rounded-2xl p-4 md:p-5 shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center md:items-start md:text-left group relative overflow-hidden">
+            <div className="absolute top-0 right-0 p-4 opacity-10">
+              <Download size={120} className="text-primary" />
+            </div>
+            
             <span className="text-primary font-black text-[9px] tracking-[0.2em] uppercase mb-1">
-              COMO VOCÊ RECEBE
+              ENTREGA IMEDIATA
             </span>
             <div className="w-10 h-[1px] bg-primary/30 mb-3" />
-            <h3 className="text-base font-black text-[#1B4D2E] font-headline mb-3 w-full">
-              Acesso Rápido e Garantido
+            <h3 className="text-base font-black text-foreground font-headline mb-3 w-full">
+              Como Você <span className="text-primary">Recebe o Material</span>
             </h3>
             
-            <div className="w-full flex justify-center mb-3">
-              <div className="bg-primary/10 p-2.5 rounded-full">
-                <Mail size={28} className="text-primary" />
+            <div className="w-full flex justify-center mb-4 md:justify-start">
+              <div className="bg-primary/20 p-2.5 rounded-full border border-primary/30">
+                <Mail size={24} className="text-primary" />
               </div>
             </div>
 
-            <div className="space-y-2 flex-grow w-full">
+            <div className="space-y-3 flex-grow w-full relative z-10">
               {[
                 {
                   id: 1,
                   title: 'Pagamento Confirmado',
-                  desc: 'Acesso imediato após a confirmação.',
+                  desc: 'Acesso liberado segundos após a confirmação.',
                 },
                 {
                   id: 2,
                   title: 'E-mail Com Acesso',
-                  desc: 'Receba login e senha automaticamente.',
+                  desc: 'Login e senha enviados automaticamente para você.',
                 },
                 {
                   id: 3,
                   title: 'Acesso Vitalício',
-                  desc: 'Baixe todos os PDFs em alta resolução.',
+                  desc: 'Assista e baixe os projetos quando e onde quiser.',
                 },
                 {
                   id: 4,
-                  title: 'Atualizações Gratuitas',
-                  desc: 'Receba novos projetos sem pagar nada.',
+                  title: 'Suporte VIP',
+                  desc: 'Canal exclusivo para tirar suas dúvidas.',
                 }
               ].map((step) => (
-                <div key={step.id} className="flex gap-2.5 items-start">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center font-bold text-[9px] shadow-lg shadow-primary/20">
+                <div key={step.id} className="flex gap-3 items-start group/step">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary text-black flex items-center justify-center font-black text-[10px] shadow-lg shadow-primary/20 group-hover/step:scale-110 transition-transform">
                     {step.id}
                   </div>
                   <div>
-                    <h4 className="font-black text-[#1B4D2E] text-[11px] uppercase mb-0.5 leading-tight">{step.title}</h4>
-                    <p className="text-[#6B6B6B] text-[9px] leading-tight">{step.desc}</p>
+                    <h4 className="font-black text-primary text-[11px] uppercase mb-0.5 leading-tight tracking-wide">{step.title}</h4>
+                    <p className="text-muted-foreground text-[10px] leading-tight">{step.desc}</p>
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="mt-3 pt-2 border-t border-primary/20 w-full text-center">
-              <div className="inline-flex items-center gap-1.5 text-primary font-black text-[7px] tracking-widest uppercase">
-                <ShieldCheck size={9} />
-                Compra Segura · 7 Dias de Garantia
+            <div className="mt-4 pt-3 border-t border-border w-full text-center md:text-left">
+              <div className="inline-flex items-center gap-2 text-primary font-black text-[8px] tracking-widest uppercase">
+                <ShieldCheck size={10} />
+                Sistema de Entrega 100% Seguro
               </div>
             </div>
           </div>
