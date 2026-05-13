@@ -41,13 +41,13 @@ export function CreatorAndDelivery() {
               Ricardo Almeida
             </h3>
             <p className="text-primary font-medium text-[11px] italic mb-2">
-              Fundador & Criador do Pack +100 Projetos
+              Fundador & Criador do planejameto +100 Projetos
             </p>
 
             <p className="text-[#4A4A4A] text-[11px] leading-relaxed mb-3 flex-grow">
-              Engenheiro agrônomo com mais de 15 anos de experiência em planejamento rural no Brasil. 
-              Já visitou mais de 3.000 sítios e atendeu pessoalmente mais de 12 mil 
-              produtores rurais brasileiros.
+              Engenheiro agrônomo with more than 15 years of experience in rural planning in Brazil. 
+              Has visited more than 3,000 sites and personally assisted more than 12,000 
+              Brazilian rural producers.
             </p>
 
             {/* Mini Stats */}
