@@ -9,9 +9,6 @@ export function CreatorAndDelivery() {
     <section className="bg-[#0d1f10] py-8 border-t border-border">
       <div className="container mx-auto px-6 max-2-6xl">
         <div className="text-center mb-6">
-          <span className="text-primary font-bold text-[10px] tracking-[0.4em] uppercase mb-1 block">
-            ★ CONHEÇA O CRIADOR ★
-          </span>
           <h2 className="text-xl md:text-2xl font-black text-foreground">
             Quem está por trás do <span className="text-primary">Rural Planner</span>
           </h2>
