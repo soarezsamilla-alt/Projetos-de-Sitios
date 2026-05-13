@@ -30,7 +30,7 @@ export function CreatorAndDelivery() {
             <div className="relative w-[110px] h-[110px] mb-3 z-10">
               <div className="absolute inset-0 rounded-full border-[3px] border-primary shadow-[0_8px_20px_rgba(201,169,97,0.3)] overflow-hidden bg-muted">
                 <Image
-                  src="https://www.image2url.com/r2/default/images/1778703679498-65add934-4afc-423a-ba71-4d8f27fa9042.blob"
+                  src="https://www.image2url.com/r2/default/images/1778703933149-30289607-5d32-47cd-a029-6271f4e88964.png"
                   alt="Ricardo Almeida"
                   fill
                   className="object-cover"
@@ -66,7 +66,7 @@ export function CreatorAndDelivery() {
           </div>
 
           {/* Card 2: Como Você Recebe */}
-          <div className="bg-gradient-to-b from-card to-[#0d1f10] border-2 border-primary rounded-2xl shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center group relative overflow-hidden">
+          <div className="bg-gradient-to-b from-card to-[#0d1f10] border-2 border-primary rounded-2xl shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center group relative overflow-hidden h-auto">
             <div className="absolute top-0 right-0 p-4 opacity-10 pointer-events-none">
               <Download size={120} className="text-primary" />
             </div>
