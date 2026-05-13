@@ -41,7 +41,7 @@ export function ViewingUrgencyBar() {
   return (
     <div className="shine-effect bg-gradient-to-r from-[#b8902f] via-[#d4a84b] to-[#b8902f] py-3 text-center text-[10px] md:text-xs font-bold tracking-widest text-black uppercase flex items-center justify-center gap-2">
       <Users size={14} className="animate-pulse" />
-      <span>{count} PESSOAS ESTÃO VENDO ESSE MATERIAL AGORA</span>
+      <span>{count} PESSOAS ESTÃO ACESSANDO ESSE SITE AGORA</span>
     </div>
   );
 }
