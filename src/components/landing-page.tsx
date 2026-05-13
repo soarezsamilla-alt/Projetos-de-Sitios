@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from 'react';
@@ -7,6 +6,7 @@ import { Problem } from './sections/Problem';
 import { ProductShowcase } from './sections/ProductShowcase';
 import { Samples } from './sections/Samples';
 import { ContentBreakdown } from './sections/ContentBreakdown';
+import { CreatorAndDelivery } from './sections/CreatorAndDelivery';
 import { Bonus } from './sections/Bonus';
 import { Testimonials } from './sections/Testimonials';
 import { Pricing } from './sections/Pricing';
@@ -30,6 +30,7 @@ export function LandingPage() {
       <ProductShowcase />
       <ContentBreakdown />
       <Testimonials />
+      <CreatorAndDelivery />
       <Bonus />
       <Pricing />
       <Guarantee />
