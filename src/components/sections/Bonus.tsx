@@ -64,7 +64,7 @@ export function Bonus() {
                       alt={bonus.title}
                       width={400}
                       height={300}
-                      className="object-contain w-[80%] h-[80%] shadow-lg"
+                      className="object-contain w-[80%] h-[80%] shadow-lg floating-effect"
                       data-ai-hint={imgData.imageHint}
                     />
                   ) : (
