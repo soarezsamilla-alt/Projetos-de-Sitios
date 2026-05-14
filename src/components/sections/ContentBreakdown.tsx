@@ -21,6 +21,11 @@ const breakdown = [
     num: '10',
     title: 'Projetos Especiais',
     desc: 'Orgânico certificado, permacultura, agroturismo, agroindústria caseira, energia renovável e mais.'
+  },
+  {
+    num: '04',
+    title: 'Bônus Estratégicos',
+    desc: 'Construções Rurais, Planilha ROI, Guia de Plantas Companheiras e Manual de Energia Solar.'
   }
 ];
 
@@ -33,11 +38,11 @@ export function ContentBreakdown() {
             O Que Você <span className="text-primary">Vai Receber Hoje</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            +100 projetos organizados em 4 grandes categorias para você encontrar exatamente o que precisa, seja qual for o seu tamanho, vocação ou região.
+            +100 projetos organizados e bônus estratégicos para você encontrar exatamente o que precisa, seja qual for o seu tamanho, vocação ou região.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {breakdown.map((item, idx) => (
             <div key={idx} className="group relative bg-card border border-border p-6 text-center rounded-sm overflow-hidden hover:-translate-y-2 transition-all duration-300">
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/30 via-primary to-primary/30 scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
