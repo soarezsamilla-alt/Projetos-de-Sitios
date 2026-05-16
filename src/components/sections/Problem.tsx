@@ -49,14 +49,14 @@ export function Problem() {
                 key={prob.id} 
                 className="bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-all duration-300 group flex flex-col"
               >
-                <div className="relative w-full h-[160px] md:h-[180px] overflow-hidden bg-muted/10">
+                <div className="relative w-full h-[140px] md:h-[160px] overflow-hidden bg-muted/5">
                    {imgData ? (
                      <Image 
                        src={imgData.imageUrl} 
                        alt={imgData.description}
                        width={600}
                        height={400}
-                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 relative z-10"
+                       className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105 relative z-10 p-2"
                        data-ai-hint={imgData.imageHint}
                        unoptimized={true}
                        priority
@@ -67,11 +67,11 @@ export function Problem() {
                      </div>
                    )}
                 </div>
-                <div className="p-5 md:p-6 flex flex-col flex-grow">
-                  <h3 className="text-lg font-bold mb-2 text-foreground font-body leading-tight">
+                <div className="p-4 md:p-5 flex flex-col flex-grow">
+                  <h3 className="text-lg font-bold mb-1.5 text-foreground font-body leading-tight">
                     {prob.title}
                   </h3>
-                  <p className="text-muted-foreground text-xs leading-relaxed">
+                  <p className="text-muted-foreground text-[11px] leading-relaxed">
                     {prob.desc}
                   </p>
                 </div>
