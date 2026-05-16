@@ -1,21 +1,28 @@
 
+"use client";
+
 import React from 'react';
-import { X } from 'lucide-react';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const problems = [
   {
+    id: 'problem-1',
     title: 'Terra Subutilizada',
     desc: 'Você tem espaço, mas áreas inteiras ficam paradas porque você não sabe o que fazer com elas.'
   },
   {
+    id: 'problem-2',
     title: 'Renda Vulnerável',
     desc: 'Depender de uma única fonte de produção é arriscado — mas diversificar exige planejamento que você não tem.'
   },
   {
+    id: 'problem-3',
     title: 'Consultoria Cara',
     desc: 'Contratar um agrônomo para fazer o projeto do zero custa milhares de reais. E mesmo assim vem genérico.'
   },
   {
+    id: 'problem-4',
     title: 'Informação Dispersa',
     desc: 'Você busca referência no YouTube, fóruns e grupos — mas o que acha é raso, sem medidas e sem clareza.'
   }
@@ -34,16 +41,41 @@ export function Problem() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {problems.map((prob, idx) => (
-            <div key={idx} className="bg-card border border-border border-l-4 border-l-accent p-6 rounded-sm hover:-translate-y-2 transition-all duration-300 group hover:border-l-primary flex flex-col">
-              <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
-                <X className="text-accent group-hover:text-primary transition-colors" size={16} />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {problems.map((prob, idx) => {
+            const imgData = PlaceHolderImages.find(img => img.id === prob.id);
+            return (
+              <div 
+                key={idx} 
+                className="bg-white dark:bg-card border border-border rounded-[12px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-300 group flex flex-col"
+              >
+                <div className="relative w-full h-[200px] md:h-[240px] overflow-hidden">
+                   {imgData ? (
+                     <Image 
+                       src={imgData.imageUrl} 
+                       alt={imgData.description}
+                       width={600}
+                       height={400}
+                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                       data-ai-hint={imgData.imageHint}
+                     />
+                   ) : (
+                     <div className="w-full h-full bg-muted flex items-center justify-center">
+                       <span className="text-[10px] uppercase tracking-widest text-muted-foreground italic">Ilustração indisponível</span>
+                     </div>
+                   )}
+                </div>
+                <div className="p-6 md:p-[24px] flex flex-col flex-grow">
+                  <h3 className="text-xl font-bold mb-3 text-black dark:text-foreground font-body leading-tight">
+                    {prob.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {prob.desc}
+                  </p>
+                </div>
               </div>
-              <h3 className="text-lg font-bold mb-2 text-foreground font-body leading-tight">{prob.title}</h3>
-              <p className="text-muted-foreground text-xs leading-relaxed">{prob.desc}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
