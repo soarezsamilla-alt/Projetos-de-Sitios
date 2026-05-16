@@ -30,9 +30,9 @@ const problems = [
 
 export function Problem() {
   return (
-    <section className="bg-card/30 py-24 border-t border-border">
+    <section className="bg-background py-20 border-t border-border">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-black mb-6">
             Sua Terra Merece Um <span className="text-primary">Projeto Profissional</span>
           </h2>
@@ -41,22 +41,22 @@ export function Problem() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {problems.map((prob) => {
             const imgData = PlaceHolderImages.find(img => img.id === prob.id);
             return (
               <div 
                 key={prob.id} 
-                className="bg-white dark:bg-card border border-border rounded-[12px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-300 group flex flex-col"
+                className="bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-all duration-300 group flex flex-col"
               >
-                <div className="relative w-full h-[200px] md:h-[240px] overflow-hidden bg-muted">
+                <div className="relative w-full h-[160px] md:h-[180px] overflow-hidden bg-muted/10">
                    {imgData ? (
                      <Image 
                        src={imgData.imageUrl} 
                        alt={imgData.description}
                        width={600}
                        height={400}
-                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02] relative z-10"
+                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 relative z-10"
                        data-ai-hint={imgData.imageHint}
                        unoptimized={true}
                        priority
@@ -67,11 +67,11 @@ export function Problem() {
                      </div>
                    )}
                 </div>
-                <div className="p-6 md:p-[24px] flex flex-col flex-grow">
-                  <h3 className="text-xl font-bold mb-3 text-black dark:text-foreground font-body leading-tight">
+                <div className="p-5 md:p-6 flex flex-col flex-grow">
+                  <h3 className="text-lg font-bold mb-2 text-foreground font-body leading-tight">
                     {prob.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <p className="text-muted-foreground text-xs leading-relaxed">
                     {prob.desc}
                   </p>
                 </div>
