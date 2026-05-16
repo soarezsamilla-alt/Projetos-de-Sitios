@@ -42,25 +42,27 @@ export function Problem() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {problems.map((prob, idx) => {
+          {problems.map((prob) => {
             const imgData = PlaceHolderImages.find(img => img.id === prob.id);
             return (
               <div 
-                key={idx} 
+                key={prob.id} 
                 className="bg-white dark:bg-card border border-border rounded-[12px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-300 group flex flex-col"
               >
-                <div className="relative w-full h-[200px] md:h-[240px] overflow-hidden">
+                <div className="relative w-full h-[200px] md:h-[240px] overflow-hidden bg-muted">
                    {imgData ? (
                      <Image 
                        src={imgData.imageUrl} 
                        alt={imgData.description}
                        width={600}
                        height={400}
-                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02] relative z-10"
                        data-ai-hint={imgData.imageHint}
+                       unoptimized={true}
+                       priority
                      />
                    ) : (
-                     <div className="w-full h-full bg-muted flex items-center justify-center">
+                     <div className="w-full h-full flex items-center justify-center">
                        <span className="text-[10px] uppercase tracking-widest text-muted-foreground italic">Ilustração indisponível</span>
                      </div>
                    )}
