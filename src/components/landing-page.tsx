@@ -26,10 +26,10 @@ export function LandingPage() {
       <Hero />
       
       <Problem />
-      <Samples />
       <BeforeAfter />
-      <ProductShowcase />
+      <Samples />
       <Testimonials />
+      <ProductShowcase />
       <ContentBreakdown />
       <Bonus />
       <Pricing />
