@@ -4,6 +4,7 @@
 import React from 'react';
 import { X, Check, ArrowRight, ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 export function BeforeAfter() {
   return (
@@ -70,7 +71,13 @@ export function BeforeAfter() {
             {/* Coluna DEPOIS */}
             <div className="bg-[#0d1f10] border-2 border-primary rounded-b-lg md:rounded-r-lg md:rounded-bl-none flex flex-col shadow-2xl shadow-primary/10 overflow-hidden">
               <div className="relative w-full h-[140px] md:h-[160px] bg-primary/5 flex items-center justify-center border-b border-primary/20">
-                <span className="text-[9px] uppercase tracking-widest text-primary italic font-black opacity-40">Imagem Depois</span>
+                <Image 
+                  src="https://www.image2url.com/r2/default/images/1779499755869-73770c33-1891-40f4-b543-6a79b90aa238.blob"
+                  alt="Sítio Próspero com Projeto"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
               </div>
 
               <div className="p-4 md:p-5 flex flex-col flex-grow">
