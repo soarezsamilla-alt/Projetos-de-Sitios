@@ -27,9 +27,9 @@ export function LandingPage() {
       
       <Problem />
       <Samples />
+      <BeforeAfter />
       <ProductShowcase />
       <Testimonials />
-      <BeforeAfter />
       <ContentBreakdown />
       <Bonus />
       <Pricing />
