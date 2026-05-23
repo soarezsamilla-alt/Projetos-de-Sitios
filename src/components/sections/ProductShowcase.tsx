@@ -73,18 +73,9 @@ export function ProductShowcase() {
   );
 
   return (
-    <section className="bg-gradient-to-b from-background to-[#0d1f10] py-16 border-t border-border">
+    <section className="bg-gradient-to-b from-background to-[#0d1f10] py-12 border-t border-border">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-black mb-6">
-            Conheça o <span className="text-primary">Material +100 Projetos</span>
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-            Não é um curso. Não é um manual teórico. É uma biblioteca visual completa de projetos prontos para você escolher, imprimir e executar.
-          </p>
-        </div>
-
-        <div className="max-w-4xl mx-auto mb-16 text-center">
+        <div className="max-w-4xl mx-auto mb-12 text-center">
           <div className="space-y-6">
             <h3 className="text-3xl md:text-4xl font-black text-foreground leading-tight">
               Projetos <span className="text-primary">Altamente Dimensionados</span>,<br />Não Ideias Vagas
