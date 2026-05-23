@@ -27,7 +27,13 @@ export function BeforeAfter() {
             {/* Coluna ANTES */}
             <div className="bg-[#1a1a1a] border border-border md:border-r-0 rounded-t-lg md:rounded-l-lg md:rounded-tr-none flex flex-col overflow-hidden">
               <div className="relative w-full h-[140px] md:h-[160px] bg-muted/5 flex items-center justify-center border-b border-border">
-                <span className="text-[9px] uppercase tracking-widest text-muted-foreground italic font-black opacity-30">Imagem Antes</span>
+                <Image 
+                  src="https://www.image2url.com/r2/default/images/1779499904808-30352e5d-a0c6-40f1-a386-085153e8c875.png"
+                  alt="Terra improdutiva e desorganizada"
+                  fill
+                  className="object-cover grayscale opacity-40"
+                  unoptimized
+                />
               </div>
               
               <div className="p-4 md:p-5 flex flex-col flex-grow">
