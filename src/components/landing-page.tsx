@@ -13,6 +13,7 @@ import {Pricing} from './sections/Pricing';
 import {Guarantee} from './sections/Guarantee';
 import {FAQ} from './sections/FAQ';
 import {Footer} from './sections/Footer';
+import {BeforeAfter} from './sections/BeforeAfter';
 import {PurchaseNotification} from './PurchaseNotification';
 import {ViewingUrgencyBar} from './ViewingUrgencyBar';
 
@@ -28,6 +29,7 @@ export function LandingPage() {
       <Samples />
       <ProductShowcase />
       <Testimonials />
+      <BeforeAfter />
       <ContentBreakdown />
       <Bonus />
       <Pricing />
