@@ -102,7 +102,7 @@ export function BeforeAfter() {
           <Button 
             asChild
             size="lg"
-            className="shine-effect bg-[#1B5E20] hover:bg-primary hover:text-black text-white font-black uppercase tracking-[0.2em] h-auto py-4 px-10 rounded-sm shadow-2xl transition-all duration-300"
+            className="shine-effect bg-[#1B5E20] hover:bg-primary hover:text-black text-white font-black uppercase tracking-[0.2em] h-auto py-3 px-6 md:py-3.5 md:px-8 text-xs md:text-sm rounded-sm shadow-2xl transition-all duration-300"
           >
             <a href="#pricing">Quero Meu Projeto por R$ 9,90</a>
           </Button>
