@@ -3,7 +3,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import AutoScroll from "embla-carousel-auto-scroll";
 import {
   Carousel,
@@ -69,7 +68,6 @@ const showcaseCards = [
 ];
 
 export function ProductShowcase() {
-  const productMockup = PlaceHolderImages.find(img => img.id === 'product-mockup');
   const autoScrollRef = React.useRef(
     AutoScroll({ speed: 1, stopOnInteraction: false, stopOnMouseEnter: true })
   );
@@ -77,7 +75,7 @@ export function ProductShowcase() {
   return (
     <section className="bg-gradient-to-b from-background to-[#0d1f10] py-16 border-t border-border">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-0">
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-black mb-6">
             Conheça o <span className="text-primary">Material +100 Projetos</span>
           </h2>
@@ -86,27 +84,12 @@ export function ProductShowcase() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center mb-16">
-          <div className="flex justify-center items-center py-0">
-            {productMockup && (
-              <div className="relative w-full flex justify-center py-0">
-                <Image 
-                  src={productMockup.imageUrl} 
-                  alt={productMockup.description}
-                  width={600}
-                  height={700}
-                  className="w-full h-auto max-w-[420px] md:max-w-[500px] drop-shadow-[0_20px_50px_rgba(212,168,75,0.3)] floating-effect"
-                  data-ai-hint="product showcase"
-                />
-              </div>
-            )}
-          </div>
-
-          <div className="space-y-6 pt-8 lg:pt-0">
-            <h3 className="text-3xl md:text-4xl font-black text-foreground leading-tight text-center lg:text-left">
+        <div className="max-w-4xl mx-auto mb-16 text-center">
+          <div className="space-y-6">
+            <h3 className="text-3xl md:text-4xl font-black text-foreground leading-tight">
               Projetos <span className="text-primary">Altamente Dimensionados</span>,<br />Não Ideias Vagas
             </h3>
-            <p className="text-muted-foreground text-lg leading-relaxed text-center lg:text-left">
+            <p className="text-muted-foreground text-lg leading-relaxed">
               Cada um dos +100 projetos foi desenhado como uma planta profissional, com medidas reais em metros, divisão das zonas produtivas, posicionamento de casa, galpões, tanques, cultivos e animais.
             </p>
           </div>
