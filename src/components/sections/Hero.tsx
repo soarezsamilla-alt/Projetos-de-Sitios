@@ -56,7 +56,7 @@ export function Hero() {
             size="lg"
             className="shine-effect pulse-attention gold-gradient-bg hover:scale-105 transition-transform duration-300 text-black font-black uppercase tracking-[0.2em] h-auto py-3 px-6 md:py-3.5 md:px-8 text-xs md:text-sm shadow-2xl shadow-primary/30"
           >
-            <a href="#pricing">Garantir Meu Acesso</a>
+            <a href="#pricing">Quero Meu Projeto por R$ 9,90</a>
           </Button>
           <span className="text-muted-foreground text-[10px] tracking-widest uppercase">
             ★ Acesso imediato · 7 dias de garantia ★
