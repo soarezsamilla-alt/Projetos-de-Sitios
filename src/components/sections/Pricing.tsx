@@ -217,7 +217,7 @@ export function Pricing() {
                   ESPERE! <span className="text-primary">OFERTA ÚNICA</span>
                 </DialogTitle>
                 <DialogDescription className="text-foreground font-medium text-xs mt-2 leading-tight">
-                  Por que levar apenas o básico se você pode ter a <span className="font-black text-primary">experiência completa</span> por quase o mesmo preço?
+                  Por que levar apenas o básico se você pode ter o <span className="font-black text-primary">Plano Pro Completo</span> por um valor simbólico de upgrade?
                 </DialogDescription>
               </DialogHeader>
 
@@ -229,7 +229,7 @@ export function Pricing() {
 
               <div className="space-y-4 mb-8">
                 <p className="text-[10px] text-muted-foreground text-center italic leading-tight">
-                  O Plano Pro é a escolha de 92% das pessoas por ser o único que entrega o planejamento financeiro e estrutural completo.
+                  O Plano Pro (Regular: R$ 27,90) é a escolha de 92% das pessoas. Aproveite o desconto de upgrade agora!
                 </p>
                 <ul className="space-y-2 bg-background/50 p-4 rounded-sm border border-border">
                   <li className="flex items-center gap-2 text-[10px] font-bold text-foreground">
@@ -248,38 +248,35 @@ export function Pricing() {
                     <Check className="text-primary flex-shrink-0" size={12} /> <strong>BÔNUS 4:</strong> Energia Solar Rural
                   </li>
                   <li className="flex items-center gap-2 text-[10px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={12} /> Atualizações gratuitas semanal
-                  </li>
-                  <li className="flex items-center gap-2 text-[10px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={12} /> Acesso prioritário a novos projetos
-                  </li>
-                  <li className="flex items-center gap-2 text-[10px] font-bold">
                     <Check className="text-primary flex-shrink-0" size={12} /> Suporte prioritário via WhatsApp
                   </li>
                 </ul>
               </div>
 
               <div className="text-center mb-6">
-                <span className="text-muted-foreground line-through text-[10px]">De R$ 197,00</span>
-                <div className="flex items-center justify-center gap-1 gold-gradient-text">
-                  <span className="text-base font-black mt-1">POR R$</span>
-                  <span className="text-4xl font-black font-headline">19</span>
-                  <span className="text-base font-black mt-1">,90</span>
+                <div className="flex flex-col items-center gap-1">
+                  <span className="text-muted-foreground text-[10px] font-bold uppercase tracking-widest">Upgrade do Plano Pro:</span>
+                  <span className="text-muted-foreground line-through text-xs">De R$ 27,90</span>
+                  <div className="flex items-center justify-center gap-1 gold-gradient-text">
+                    <span className="text-base font-black mt-1">POR APENAS R$</span>
+                    <span className="text-4xl font-black font-headline">19</span>
+                    <span className="text-base font-black mt-1">,90</span>
+                  </div>
+                  <span className="text-[8px] uppercase font-black tracking-tighter text-primary animate-pulse mt-1">Economia de R$ 8,00 extra hoje!</span>
                 </div>
-                <span className="text-[8px] uppercase font-black tracking-tighter text-muted-foreground">Única oportunidade · Acesso Vitalício</span>
               </div>
 
               <div className="flex flex-col gap-3">
                 <Button asChild className="w-full gold-gradient-bg text-black font-black uppercase tracking-widest h-12 shine-effect shadow-xl shadow-primary/20 text-xs">
                   <a href="https://pay.wiapy.com/MowpM6rdLB">
-                    QUERO O PLANO PRO COM DESCONTO
+                    QUERO O PLANO PRO POR R$ 19,90
                   </a>
                 </Button>
                 <a 
                   href="https://pay.wiapy.com/rtXyisd1bF"
                   className="text-[10px] text-muted-foreground hover:text-foreground transition-colors uppercase font-bold tracking-widest underline decoration-dotted text-center block"
                 >
-                  Não, obrigado. Prefiro continuar com o Plano Básico
+                  Não, obrigado. Prefiro o Plano Básico de R$ 9,90
                 </a>
               </div>
               
