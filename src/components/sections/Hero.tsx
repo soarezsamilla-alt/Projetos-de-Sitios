@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from 'react';
@@ -43,7 +42,7 @@ export function Hero() {
                 alt={heroMockup.description}
                 width={1400}
                 height={933}
-                className="w-full h-auto drop-shadow-[0_20px_60px_rgba(212,168,75,0.2)]"
+                className="w-full h-auto drop-shadow-[0_20px_60px_rgba(212,168,75,0.2)] floating-subtle"
                 priority
               />
             </div>
