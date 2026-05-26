@@ -141,7 +141,7 @@ export function Pricing() {
             </div>
 
             <h3 className="text-2xl font-black mb-1 font-headline gold-gradient-text text-center">Pro</h3>
-            <p className="text-muted-foreground text-xs mb-4 text-center">O pack completo + 6 bônus exclusivos.</p>
+            <p className="text-muted-foreground text-xs mb-4 text-center">O material completo + 6 bônus exclusivos.</p>
 
             <div className="bg-accent/10 border border-primary/30 p-2.5 rounded-sm mb-4 shine-effect">
               <span className="text-[9px] font-black tracking-widest uppercase text-foreground/70 mb-1.5 block text-center">⚡ Oferta Expira Em:</span>
@@ -218,9 +218,9 @@ export function Pricing() {
                 <DialogTitle className="text-xl font-black uppercase tracking-tight leading-tight">
                   ESPERE! <span className="text-primary">OFERTA ÚNICA</span>
                 </DialogTitle>
-                <DialogDescription className="text-foreground font-medium text-xs mt-2 leading-tight">
+                <DialogHeader className="text-foreground font-medium text-xs mt-2 leading-tight">
                   Por que levar apenas o básico se você pode ter o <span className="font-black text-primary">Plano Pro Completo</span> por um valor simbólico de upgrade?
-                </DialogDescription>
+                </DialogHeader>
               </DialogHeader>
 
               <div className="bg-accent/10 border border-primary/30 py-2 px-4 rounded-sm flex items-center justify-center gap-2 mb-6">
