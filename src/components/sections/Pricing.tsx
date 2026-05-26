@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -185,7 +186,7 @@ export function Pricing() {
             </div>
 
             <ul className="space-y-1.5 flex-grow mb-5">
-              <li className="flex items-center gap-2 text-xs font-bold text-foreground"><Check className="text-primary flex-shrink-0" size={14} /> Tudo do Básico</li>
+              <li className="flex items-center gap-2 text-xs font-bold text-foreground"><Check className="text-primary flex-shrink-0" size={14} /> Tudo do Plano Básico</li>
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 1:</strong> Construções Rurais</li>
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 2:</strong> Planilha ROI Editável</li>
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 3:</strong> Plantas Companheiras</li>
@@ -234,7 +235,7 @@ export function Pricing() {
                 </p>
                 <ul className="space-y-2 bg-background/50 p-4 rounded-sm border border-border">
                   <li className="flex items-center gap-2 text-[10px] font-bold text-foreground">
-                    <Check className="text-primary flex-shrink-0" size={12} /> Tudo do Básico
+                    <Check className="text-primary flex-shrink-0" size={12} /> Tudo do Plano Básico
                   </li>
                   <li className="flex items-center gap-2 text-[10px] font-bold">
                     <Check className="text-primary flex-shrink-0" size={12} /> <strong>6 BÔNUS INCLUSOS</strong> (Pack Rural, ROI, Irrigação e +)
