@@ -45,7 +45,7 @@ const bonuses = [
     id: 'bonus-6',
     tag: 'BÔNUS 06',
     title: 'Guia de Água e Irrigação Rural',
-    desc: 'Galinhas, cabras, porcos e peixes: o guia completo de manejo para criar com segurança e gerar renda.',
+    desc: 'Sistemas completos de captação, armazenamento e irrigação. Garanta água para suas plantas e animais durante todo o ano, mesmo na seca.',
     val: '37,90'
   }
 ];
