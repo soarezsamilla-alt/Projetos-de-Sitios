@@ -37,7 +37,7 @@ const bonuses = [
   {
     id: 'bonus-5',
     tag: 'BÔNUS 05',
-    title: 'Manual de Energia Solar Rural',
+    title: 'Manual de Criação de Animais',
     desc: 'Dimensione sistemas solares para casas rurais, poços artesianos e irrigação. Cálculos passo a passo.',
     val: '37,90'
   }
