@@ -158,6 +158,12 @@
       "imageHint": "bonus guide"
     },
     {
+      "id": "bonus-6",
+      "description": "Novo Manual de Bônus 06",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1779839052836-49ca094e-7196-4f1a-aceb-5ffe9c77f6d4.png",
+      "imageHint": "bonus manual"
+    },
+    {
       "id": "plan-basic",
       "description": "Capa do plano básico",
       "imageUrl": "https://www.image2url.com/r2/default/images/1777782450071-a0388525-e66b-4e68-988d-b3915a6fff5b.png",
