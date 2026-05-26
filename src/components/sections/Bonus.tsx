@@ -38,7 +38,7 @@ const bonuses = [
     id: 'bonus-5',
     tag: 'BÔNUS 05',
     title: 'Manual de Criação de Animais',
-    desc: 'Dimensione sistemas solares para casas rurais, poços artesianos e irrigação. Cálculos passo a passo.',
+    desc: 'Galinhas, cabras, porcos e peixes: o guia completo de manejo para criar com segurança e gerar renda.',
     val: '37,90'
   }
 ];
