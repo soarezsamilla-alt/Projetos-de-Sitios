@@ -58,7 +58,7 @@ export function Bonus() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
           {bonuses.map((bonus) => {
-            const imgData = PlaceHolderImages.find(img => img.id === (bonus.id === 'bonus-5' ? 'bonus-4' : bonus.id));
+            const imgData = PlaceHolderImages.find(img => img.id === bonus.id);
             return (
               <div key={bonus.id} className="relative bg-card border border-border rounded-sm overflow-hidden group hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-400 flex flex-col">
                 <div className="absolute top-3 right-3 bg-primary text-black font-black text-[9px] px-2 py-1 rounded-sm z-10 tracking-widest">

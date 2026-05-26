@@ -151,6 +151,12 @@
       "imageHint": "solar panels"
     },
     {
+      "id": "bonus-5",
+      "description": "Ebook Bônus Especial de Projetos",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1779838388751-9592d115-926e-4ea1-a159-5be42170ea2c.png",
+      "imageHint": "bonus guide"
+    },
+    {
       "id": "plan-basic",
       "description": "Capa do plano básico",
       "imageUrl": "https://www.image2url.com/r2/default/images/1777782450071-a0388525-e66b-4e68-988d-b3915a6fff5b.png",
