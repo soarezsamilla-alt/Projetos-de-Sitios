@@ -1,7 +1,20 @@
 
 import type {Metadata} from 'next';
 import './globals.css';
+import { Inter, Playfair_Display } from 'next/font/google';
 import Script from 'next/script';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-playfair',
+});
 
 export const metadata: Metadata = {
   title: 'Pack +100 Projetos de Sítios Produtivos | Edição Premium 2026',
@@ -14,12 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className={`${inter.variable} ${playfair.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-        
         {/* Facebook Pixel */}
         <Script id="fb-pixel" strategy="afterInteractive">
           {`
@@ -48,7 +57,7 @@ export default function RootLayout({
         </noscript>
         
         {/* UTMify Pixel Script */}
-        <Script id="utmify-pixel" strategy="afterInteractive">
+        <Script id="utmify-pixel" strategy="lazyOnload">
           {`
             window.pixelId = "69ec34d5a9d994ff52a14798";
             var a = document.createElement("script");
@@ -64,7 +73,7 @@ export default function RootLayout({
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
           data-utmify-prevent-xcod-sck=""
           data-utmify-prevent-subids=""
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
 
         {children}
