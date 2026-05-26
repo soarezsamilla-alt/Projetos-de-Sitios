@@ -44,7 +44,7 @@ const bonuses = [
   {
     id: 'bonus-6',
     tag: 'BÔNUS 06',
-    title: 'Manual de Criação de Animais',
+    title: 'Guia de Água e Irrigação Rural',
     desc: 'Galinhas, cabras, porcos e peixes: o guia completo de manejo para criar com segurança e gerar renda.',
     val: '37,90'
   }
