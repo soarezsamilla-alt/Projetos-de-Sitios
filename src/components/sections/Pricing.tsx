@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -123,7 +122,7 @@ export function Pricing() {
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> <strong>+100 projetos completos</strong></li>
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> Acesso imediato após compra</li>
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> Garantia de 7 dias</li>
-              <li className="flex items-center gap-2 text-xs text-muted-foreground opacity-50"><X className="text-muted-foreground flex-shrink-0" size={14} /> 4 Bônus Estratégicos</li>
+              <li className="flex items-center gap-2 text-xs text-muted-foreground opacity-50"><X className="text-muted-foreground flex-shrink-0" size={14} /> 6 Bônus Estratégicos</li>
             </ul>
             <Button 
               variant="outline" 
@@ -141,7 +140,7 @@ export function Pricing() {
             </div>
 
             <h3 className="text-2xl font-black mb-1 font-headline gold-gradient-text text-center">Pro</h3>
-            <p className="text-muted-foreground text-xs mb-4 text-center">O pack completo + 4 bônus exclusivos.</p>
+            <p className="text-muted-foreground text-xs mb-4 text-center">O pack completo + 6 bônus exclusivos.</p>
 
             <div className="bg-accent/10 border border-primary/30 p-2.5 rounded-sm mb-4 shine-effect">
               <span className="text-[9px] font-black tracking-widest uppercase text-foreground/70 mb-1.5 block text-center">⚡ Oferta Expira Em:</span>
@@ -191,6 +190,8 @@ export function Pricing() {
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 2:</strong> Planilha ROI Editável</li>
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 3:</strong> Plantas Companheiras</li>
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 4:</strong> Energia Solar Rural</li>
+              <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 5:</strong> Criação de Animais</li>
+              <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> <strong>BÔNUS 6:</strong> Água e Irrigação Rural</li>
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> Atualizações gratuitas semanal</li>
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> Acesso prioritário a novos projetos</li>
               <li className="flex items-center gap-2 text-xs"><Check className="text-primary flex-shrink-0" size={14} /> Suporte prioritário via WhatsApp</li>
@@ -236,16 +237,7 @@ export function Pricing() {
                     <Check className="text-primary flex-shrink-0" size={12} /> Tudo do Básico
                   </li>
                   <li className="flex items-center gap-2 text-[10px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={12} /> <strong>BÔNUS 1:</strong> Construções Rurais
-                  </li>
-                  <li className="flex items-center gap-2 text-[10px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={12} /> <strong>BÔNUS 2:</strong> Planilha ROI Editável
-                  </li>
-                  <li className="flex items-center gap-2 text-[10px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={12} /> <strong>BÔNUS 3:</strong> Plantas Companheiras
-                  </li>
-                  <li className="flex items-center gap-2 text-[10px] font-bold">
-                    <Check className="text-primary flex-shrink-0" size={12} /> <strong>BÔNUS 4:</strong> Energia Solar Rural
+                    <Check className="text-primary flex-shrink-0" size={12} /> <strong>6 BÔNUS INCLUSOS</strong> (Pack Rural, ROI, Irrigação e +)
                   </li>
                   <li className="flex items-center gap-2 text-[10px] font-bold">
                     <Check className="text-primary flex-shrink-0" size={12} /> Suporte prioritário via WhatsApp

@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const breakdown = [
@@ -23,9 +22,9 @@ const breakdown = [
     desc: 'Orgânico certificado, permacultura, agroturismo, agroindústria caseira, energia renovável e mais.'
   },
   {
-    num: '04',
+    num: '06',
     title: 'Bônus Estratégicos',
-    desc: 'Construções Rurais, Planilha ROI, Guia de Plantas Companheiras e Manual de Energia Solar.'
+    desc: 'Construções Rurais, Planilha ROI, Guia de Plantas, Energia Solar, Criação de Animais e Irrigação.'
   }
 ];
 

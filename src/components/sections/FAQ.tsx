@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from 'react';
@@ -12,7 +11,7 @@ import {
 const faqs = [
   {
     q: 'Qual a diferença entre o Básico e o Pro?',
-    a: 'Ambos os planos incluem os +100 projetos completos. A diferença está nos 4 bônus exclusivos do plano Pro: Pack de Construções Rurais, Planilha de ROI, Guia de Plantas Companheiras e Manual de Energia Solar Rural.'
+    a: 'Ambos os planos incluem os +100 projetos completos. A diferença está nos 6 bônus exclusivos do plano Pro: Pack de Construções Rurais, Planilha de ROI, Guia de Plantas Companheiras, Manual de Energia Solar, Manual de Criação de Animais e Guia de Água/Irrigação.'
   },
   {
     q: 'Preciso ter experiência em agricultura para usar?',
