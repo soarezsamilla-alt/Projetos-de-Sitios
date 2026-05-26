@@ -40,6 +40,13 @@ const bonuses = [
     title: 'Manual de Criação de Animais',
     desc: 'Galinhas, cabras, porcos e peixes: o guia completo de manejo para criar com segurança e gerar renda.',
     val: '37,90'
+  },
+  {
+    id: 'bonus-6',
+    tag: 'BÔNUS 06',
+    title: 'Manual de Criação de Animais',
+    desc: 'Galinhas, cabras, porcos e peixes: o guia completo de manejo para criar com segurança e gerar renda.',
+    val: '37,90'
   }
 ];
 
@@ -56,7 +63,7 @@ export function Bonus() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {bonuses.map((bonus) => {
             const imgData = PlaceHolderImages.find(img => img.id === bonus.id);
             return (

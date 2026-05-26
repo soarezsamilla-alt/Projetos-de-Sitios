@@ -152,9 +152,15 @@
     },
     {
       "id": "bonus-5",
-      "description": "Ebook Bônus Especial de Projetos",
+      "description": "Manual de Criação de Animais",
       "imageUrl": "https://www.image2url.com/r2/default/images/1779838388751-9592d115-926e-4ea1-a159-5be42170ea2c.png",
-      "imageHint": "bonus guide"
+      "imageHint": "livestock manual"
+    },
+    {
+      "id": "bonus-6",
+      "description": "Manual de Criação de Animais (Cópia)",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1779838388751-9592d115-926e-4ea1-a159-5be42170ea2c.png",
+      "imageHint": "livestock manual"
     },
     {
       "id": "plan-basic",
