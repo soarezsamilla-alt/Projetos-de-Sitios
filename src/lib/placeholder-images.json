@@ -91,6 +91,24 @@
       "imageHint": "rural technical"
     },
     {
+      "id": "sample-extra-1",
+      "description": "Nova Amostra Adicional 01",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1779842876764-d1b26e85-c619-490b-86a1-7a3bd9b2d804.png",
+      "imageHint": "farm project"
+    },
+    {
+      "id": "sample-extra-2",
+      "description": "Nova Amostra Adicional 02",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1779842907944-1807a86b-776c-4e47-b8b9-35c00148152c.png",
+      "imageHint": "rural layout"
+    },
+    {
+      "id": "sample-extra-3",
+      "description": "Nova Amostra Adicional 03",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1779842982390-763cfb53-da06-4d69-842c-80e3c4631481.png",
+      "imageHint": "technical plant"
+    },
+    {
       "id": "hero-mockup",
       "description": "Capa do eBook principal mockup 3D",
       "imageUrl": "https://www.image2url.com/r2/default/images/1777782303045-ef831fc6-0261-4e78-b48a-6e2c42af9109.png",

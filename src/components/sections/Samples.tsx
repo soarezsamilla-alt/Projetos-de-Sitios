@@ -15,21 +15,24 @@ import {
 } from "@/components/ui/carousel";
 
 const samples = [
-  { id: 'sample-new-8', label: 'AMOSTRA 01', desc: 'Projeto Técnico 08' },
-  { id: 'sample-new-9', label: 'AMOSTRA 02', desc: 'Projeto Técnico 09' },
-  { id: 'sample-new-7', label: 'AMOSTRA 03', desc: 'Projeto Técnico Rural' },
-  { id: 'sample-new-6', label: 'AMOSTRA 04', desc: 'Planta de Divisão de Pastagem' },
-  { id: 'sample-new-1', label: 'AMOSTRA 05', desc: 'Projeto Detalhado de Sítio Premium' },
-  { id: 'sample-new-2', label: 'AMOSTRA 06', desc: 'Planta de Layout Rural Produtivo' },
-  { id: 'sample-new-3', label: 'AMOSTRA 07', desc: 'Layout Estratégico Rural' },
-  { id: 'sample-new-4', label: 'AMOSTRA 08', desc: 'Planta Profissional de Sítio' },
-  { id: 'sample-new-5', label: 'AMOSTRA 09', desc: 'Dimensionamento de Áreas' },
-  { id: 'sample-3', label: 'AMOSTRA 10', desc: 'Projeto amazônico açaí/cupuaçu' },
-  { id: 'sample-4', label: 'AMOSTRA 11', desc: 'Capa de divisória de seção' },
-  { id: 'sample-5', label: 'AMOSTRA 12', desc: 'Sumário organizado' },
-  { id: 'sample-6', label: 'AMOSTRA 13', desc: 'Projeto semiárido com cisternas' },
-  { id: 'sample-new-10', label: 'AMOSTRA 14', desc: 'Novo Projeto de Sítio 10' },
-  { id: 'sample-new-11', label: 'AMOSTRA 15', desc: 'Novo Projeto de Sítio 11' }
+  { id: 'sample-extra-1', label: 'AMOSTRA 01', desc: 'Projeto Adicional 01' },
+  { id: 'sample-extra-2', label: 'AMOSTRA 02', desc: 'Projeto Adicional 02' },
+  { id: 'sample-extra-3', label: 'AMOSTRA 03', desc: 'Projeto Adicional 03' },
+  { id: 'sample-new-8', label: 'AMOSTRA 04', desc: 'Projeto Técnico 08' },
+  { id: 'sample-new-9', label: 'AMOSTRA 05', desc: 'Projeto Técnico 09' },
+  { id: 'sample-new-7', label: 'AMOSTRA 06', desc: 'Projeto Técnico Rural' },
+  { id: 'sample-new-6', label: 'AMOSTRA 07', desc: 'Planta de Divisão de Pastagem' },
+  { id: 'sample-new-1', label: 'AMOSTRA 08', desc: 'Projeto Detalhado de Sítio Premium' },
+  { id: 'sample-new-2', label: 'AMOSTRA 09', desc: 'Planta de Layout Rural Produtivo' },
+  { id: 'sample-new-3', label: 'AMOSTRA 10', desc: 'Layout Estratégico Rural' },
+  { id: 'sample-new-4', label: 'AMOSTRA 11', desc: 'Planta Profissional de Sítio' },
+  { id: 'sample-new-5', label: 'AMOSTRA 12', desc: 'Dimensionamento de Áreas' },
+  { id: 'sample-3', label: 'AMOSTRA 13', desc: 'Projeto amazônico açaí/cupuaçu' },
+  { id: 'sample-4', label: 'AMOSTRA 14', desc: 'Capa de divisória de seção' },
+  { id: 'sample-5', label: 'AMOSTRA 15', desc: 'Sumário organizado' },
+  { id: 'sample-6', label: 'AMOSTRA 16', desc: 'Projeto semiárido com cisternas' },
+  { id: 'sample-new-10', label: 'AMOSTRA 17', desc: 'Novo Projeto de Sítio 10' },
+  { id: 'sample-new-11', label: 'AMOSTRA 18', desc: 'Novo Projeto de Sítio 11' }
 ];
 
 export function Samples() {
