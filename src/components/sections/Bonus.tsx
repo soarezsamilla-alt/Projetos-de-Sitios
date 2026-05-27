@@ -80,6 +80,7 @@ export function Bonus() {
                       height={300}
                       className="object-contain w-[80%] h-[80%] shadow-lg floating-effect"
                       data-ai-hint={imgData.imageHint}
+                      unoptimized
                     />
                   ) : (
                     <div className="flex flex-col gap-2">
