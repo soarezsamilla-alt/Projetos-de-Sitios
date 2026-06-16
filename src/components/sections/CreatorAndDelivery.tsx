@@ -9,25 +9,38 @@ import { Button } from '@/components/ui/button';
 export function CreatorAndDelivery() {
   return (
     <div className="flex flex-col">
-      {/* SEÇÃO: INSTAGRAM RURAL PLANNER (MODIFICADA: APENAS O CARD LARGO) */}
-      <section className="bg-[#0d1f10] pt-16 pb-16 border-t border-border overflow-hidden">
+      {/* SEÇÃO: INSTAGRAM RURAL PLANNER */}
+      <section className="bg-[#0d1f10] pt-20 pb-16 border-t border-border overflow-hidden">
         <div className="container mx-auto px-6 max-w-6xl text-center">
           
-          {/* CARD DO PERFIL DO INSTAGRAM - LARGURA AUMENTADA PARA MAX-W-2XL */}
+          {/* HEADLINE DA SEÇÃO */}
+          <div className="mb-12">
+            <span className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 text-primary px-4 py-1 rounded-full font-black text-[9px] tracking-[0.2em] uppercase mb-4 shadow-lg">
+              📲 Acompanhe de Perto
+            </span>
+            <h2 className="text-3xl md:text-5xl font-black text-foreground mb-4 leading-tight">
+              Nos siga no Instagram e veja o <span className="text-primary">Rural Planner em ação</span>
+            </h2>
+            <p className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto leading-relaxed italic">
+              Dicas de planejamento rural, projetos reais e conteúdo exclusivo toda semana. Ficou com dúvida? É só chamar por lá.
+            </p>
+          </div>
+          
+          {/* CARD DO PERFIL DO INSTAGRAM */}
           <div className="max-w-2xl mx-auto bg-[#1a1a1a] rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/5 relative group">
             {/* BORDA SUPERIOR GRADIENTE INSTAGRAM */}
-            <div className="h-1.5 w-full bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#f9ce34]" />
+            <div className="h-1 w-full bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#f9ce34]" />
             
-            <div className="p-6 md:p-8">
+            <div className="p-5 md:p-6">
               {/* Header do Perfil: Foto + Nome */}
-              <div className="flex flex-col items-center mb-6">
-                <div className="relative mb-4">
+              <div className="flex flex-col items-center mb-4">
+                <div className="relative mb-3">
                   {/* Círculo com Gradiente Instagram */}
-                  <div className="p-1.5 rounded-full bg-gradient-to-tr from-[#f9ce34] via-[#fd1d1d] to-[#833ab4]">
-                    <div className="relative w-20 h-20 rounded-full border-2 border-[#1a1a1a] overflow-hidden bg-muted">
+                  <div className="p-1 rounded-full bg-gradient-to-tr from-[#f9ce34] via-[#fd1d1d] to-[#833ab4]">
+                    <div className="relative w-16 h-16 rounded-full border-2 border-[#1a1a1a] overflow-hidden bg-muted">
                       <Image
                         src="https://www.image2url.com/r2/default/images/1781571112882-16bee3cb-0446-4fda-935a-785186b069c9.jpeg"
-                        alt="Ricardo Almeida"
+                        alt="Rural Planner Profile"
                         fill
                         className="object-cover"
                         unoptimized
@@ -35,62 +48,66 @@ export function CreatorAndDelivery() {
                     </div>
                   </div>
                   {/* Ícone de Câmera Overlay */}
-                  <div className="absolute bottom-0 right-0 w-7 h-7 bg-gradient-to-tr from-[#f9ce34] via-[#fd1d1d] to-[#833ab4] rounded-lg flex items-center justify-center border-2 border-[#1a1a1a] shadow-lg">
-                    <span className="text-xs">📸</span>
+                  <div className="absolute bottom-0 right-0 w-6 h-6 bg-gradient-to-tr from-[#f9ce34] via-[#fd1d1d] to-[#833ab4] rounded-lg flex items-center justify-center border-2 border-[#1a1a1a] shadow-lg">
+                    <span className="text-[10px]">📸</span>
                   </div>
                 </div>
 
                 <div className="text-center">
-                  <h3 className="text-white font-black text-xl leading-tight mb-0.5">Rural Planner</h3>
-                  <p className="text-primary font-bold text-base">@ruralplanner.oficial</p>
+                  <h3 className="text-white font-black text-lg leading-tight mb-0.5">Rural Planner</h3>
+                  <p className="text-primary font-bold text-sm">@ruralplanner.oficial</p>
                 </div>
               </div>
 
-              {/* BIO */}
-              <div className="text-center mb-6 space-y-1">
-                <p className="text-white/80 text-xs font-medium italic">🌾 Planejamento rural do jeito certo</p>
-                <p className="text-white/80 text-xs font-medium italic">📐 +100 projetos profissionais de sítios</p>
+              {/* BIO COMPACTA */}
+              <div className="text-center mb-4 space-y-0.5">
+                <p className="text-white/80 text-[11px] font-medium italic">🌾 Planejamento rural do jeito certo</p>
+                <p className="text-white/80 text-[11px] font-medium italic">📐 +100 projetos profissionais de sítios</p>
               </div>
 
-              {/* ESTATÍSTICAS */}
-              <div className="grid grid-cols-3 gap-4 py-4 border-y border-white/5 mb-6">
+              {/* ESTATÍSTICAS COMPACTAS */}
+              <div className="grid grid-cols-3 gap-2 py-3 border-y border-white/5 mb-4">
                 <div className="text-center">
-                  <span className="block text-primary font-black text-lg">+100</span>
-                  <span className="text-[10px] text-muted-foreground uppercase font-bold tracking-widest">Projetos</span>
+                  <span className="block text-primary font-black text-base">+100</span>
+                  <span className="text-[9px] text-muted-foreground uppercase font-bold tracking-widest">Projetos</span>
                 </div>
                 <div className="text-center border-x border-white/5">
-                  <span className="block text-primary font-black text-lg">12 mil</span>
-                  <span className="text-[10px] text-muted-foreground uppercase font-bold tracking-widest">Produtores</span>
+                  <span className="block text-primary font-black text-base">12 mil</span>
+                  <span className="text-[9px] text-muted-foreground uppercase font-bold tracking-widest">Produtores</span>
                 </div>
                 <div className="text-center">
-                  <span className="block text-primary font-black text-lg">15+</span>
-                  <span className="text-[10px] text-muted-foreground uppercase font-bold tracking-widest">Anos exp.</span>
+                  <span className="block text-primary font-black text-base">15+</span>
+                  <span className="text-[9px] text-muted-foreground uppercase font-bold tracking-widest">Anos exp.</span>
                 </div>
               </div>
 
-              {/* PRÉVIA DE POSTS 3x1 */}
-              <div className="grid grid-cols-3 gap-3 mb-6">
-                <div className="aspect-square bg-white/5 rounded-lg flex items-center justify-center text-2xl hover:bg-white/10 transition-colors cursor-pointer">🌱</div>
-                <div className="aspect-square bg-white/5 rounded-lg flex items-center justify-center text-2xl hover:bg-white/10 transition-colors cursor-pointer">📐</div>
-                <div className="aspect-square bg-white/5 rounded-lg flex items-center justify-center text-2xl hover:bg-white/10 transition-colors cursor-pointer">🌾</div>
+              {/* PRÉVIA DE POSTS 3x1 COMPACTA */}
+              <div className="grid grid-cols-3 gap-2 mb-4">
+                <div className="aspect-square bg-white/5 rounded-lg flex items-center justify-center text-xl hover:bg-white/10 transition-colors cursor-pointer">🌱</div>
+                <div className="aspect-square bg-white/5 rounded-lg flex items-center justify-center text-xl hover:bg-white/10 transition-colors cursor-pointer">📐</div>
+                <div className="aspect-square bg-white/5 rounded-lg flex items-center justify-center text-xl hover:bg-white/10 transition-colors cursor-pointer">🌾</div>
               </div>
 
               {/* BOTÃO PRINCIPAL */}
               <Button 
                 asChild
-                className="w-full shine-effect bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#f9ce34] hover:opacity-90 hover:scale-[1.01] transition-all text-white font-black uppercase tracking-widest text-[10px] h-12 shadow-xl shadow-red-900/20"
+                className="w-full shine-effect bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#f9ce34] hover:opacity-95 hover:scale-[1.01] transition-all text-white font-black uppercase tracking-widest text-[9px] h-11 shadow-xl shadow-red-900/20"
               >
                 <a href="https://www.instagram.com/ruralplanner.oficial?igsh=MWgyMGVhY29rczRzZg%3D%3D" target="_blank" rel="noopener noreferrer">
-                  <Instagram className="mr-2" size={16} />
+                  <Instagram className="mr-2" size={14} />
                   Ver @ruralplanner.oficial no Instagram
                 </a>
               </Button>
 
-              <p className="text-center text-[9px] text-muted-foreground font-medium mt-4">
+              <p className="text-center text-[9px] text-muted-foreground font-medium mt-3">
                 Ficou com dúvida? Fala com a gente direto no perfil ✓
               </p>
             </div>
           </div>
+          
+          <p className="text-center text-[10px] text-muted-foreground/60 font-medium mt-8 uppercase tracking-[0.2em]">
+            Conteúdo novo toda semana · Dicas reais de planejamento rural · Sem enrolação
+          </p>
         </div>
       </section>
 
