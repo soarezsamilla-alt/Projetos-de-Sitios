@@ -9,8 +9,8 @@ import { Button } from '@/components/ui/button';
 export function CreatorAndDelivery() {
   return (
     <div className="flex flex-col">
-      {/* SEÇÃO: INSTAGRAM RURAL PLANNER (MODIFICADA: APENAS O CARD L ARGO) */}
-      <section className="bg-[#0d1f10] pt-20 pb-20 border-t border-border overflow-hidden">
+      {/* SEÇÃO: INSTAGRAM RURAL PLANNER (MODIFICADA: APENAS O CARD LARGO) */}
+      <section className="bg-[#0d1f10] pt-16 pb-16 border-t border-border overflow-hidden">
         <div className="container mx-auto px-6 max-w-6xl text-center">
           
           {/* CARD DO PERFIL DO INSTAGRAM - LARGURA AUMENTADA PARA MAX-W-2XL */}
@@ -18,13 +18,13 @@ export function CreatorAndDelivery() {
             {/* BORDA SUPERIOR GRADIENTE INSTAGRAM */}
             <div className="h-1.5 w-full bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#f9ce34]" />
             
-            <div className="p-8 md:p-12">
+            <div className="p-6 md:p-8">
               {/* Header do Perfil: Foto + Nome */}
-              <div className="flex flex-col items-center mb-8">
-                <div className="relative mb-6">
+              <div className="flex flex-col items-center mb-6">
+                <div className="relative mb-4">
                   {/* Círculo com Gradiente Instagram */}
                   <div className="p-1.5 rounded-full bg-gradient-to-tr from-[#f9ce34] via-[#fd1d1d] to-[#833ab4]">
-                    <div className="relative w-24 h-24 rounded-full border-2 border-[#1a1a1a] overflow-hidden bg-muted">
+                    <div className="relative w-20 h-20 rounded-full border-2 border-[#1a1a1a] overflow-hidden bg-muted">
                       <Image
                         src="https://www.image2url.com/r2/default/images/1781571112882-16bee3cb-0446-4fda-935a-785186b069c9.jpeg"
                         alt="Ricardo Almeida"
@@ -35,58 +35,58 @@ export function CreatorAndDelivery() {
                     </div>
                   </div>
                   {/* Ícone de Câmera Overlay */}
-                  <div className="absolute bottom-0 right-0 w-8 h-8 bg-gradient-to-tr from-[#f9ce34] via-[#fd1d1d] to-[#833ab4] rounded-lg flex items-center justify-center border-2 border-[#1a1a1a] shadow-lg">
-                    <span className="text-sm">📸</span>
+                  <div className="absolute bottom-0 right-0 w-7 h-7 bg-gradient-to-tr from-[#f9ce34] via-[#fd1d1d] to-[#833ab4] rounded-lg flex items-center justify-center border-2 border-[#1a1a1a] shadow-lg">
+                    <span className="text-xs">📸</span>
                   </div>
                 </div>
 
                 <div className="text-center">
-                  <h3 className="text-white font-black text-2xl leading-tight mb-1">Rural Planner</h3>
-                  <p className="text-primary font-bold text-lg">@ruralplanner.oficial</p>
+                  <h3 className="text-white font-black text-xl leading-tight mb-0.5">Rural Planner</h3>
+                  <p className="text-primary font-bold text-base">@ruralplanner.oficial</p>
                 </div>
               </div>
 
               {/* BIO */}
-              <div className="text-center mb-10 space-y-2">
-                <p className="text-white/80 text-sm font-medium italic">🌾 Planejamento rural do jeito certo</p>
-                <p className="text-white/80 text-sm font-medium italic">📐 +100 projetos profissionais de sítios</p>
+              <div className="text-center mb-6 space-y-1">
+                <p className="text-white/80 text-xs font-medium italic">🌾 Planejamento rural do jeito certo</p>
+                <p className="text-white/80 text-xs font-medium italic">📐 +100 projetos profissionais de sítios</p>
               </div>
 
               {/* ESTATÍSTICAS */}
-              <div className="grid grid-cols-3 gap-4 py-6 border-y border-white/5 mb-10">
+              <div className="grid grid-cols-3 gap-4 py-4 border-y border-white/5 mb-6">
                 <div className="text-center">
-                  <span className="block text-primary font-black text-xl">+100</span>
-                  <span className="text-xs text-muted-foreground uppercase font-bold tracking-widest">Projetos</span>
+                  <span className="block text-primary font-black text-lg">+100</span>
+                  <span className="text-[10px] text-muted-foreground uppercase font-bold tracking-widest">Projetos</span>
                 </div>
                 <div className="text-center border-x border-white/5">
-                  <span className="block text-primary font-black text-xl">12 mil</span>
-                  <span className="text-xs text-muted-foreground uppercase font-bold tracking-widest">Produtores</span>
+                  <span className="block text-primary font-black text-lg">12 mil</span>
+                  <span className="text-[10px] text-muted-foreground uppercase font-bold tracking-widest">Produtores</span>
                 </div>
                 <div className="text-center">
-                  <span className="block text-primary font-black text-xl">15+</span>
-                  <span className="text-xs text-muted-foreground uppercase font-bold tracking-widest">Anos exp.</span>
+                  <span className="block text-primary font-black text-lg">15+</span>
+                  <span className="text-[10px] text-muted-foreground uppercase font-bold tracking-widest">Anos exp.</span>
                 </div>
               </div>
 
               {/* PRÉVIA DE POSTS 3x1 */}
-              <div className="grid grid-cols-3 gap-3 mb-10">
-                <div className="aspect-square bg-white/5 rounded-lg flex items-center justify-center text-3xl hover:bg-white/10 transition-colors cursor-pointer">🌱</div>
-                <div className="aspect-square bg-white/5 rounded-lg flex items-center justify-center text-3xl hover:bg-white/10 transition-colors cursor-pointer">📐</div>
-                <div className="aspect-square bg-white/5 rounded-lg flex items-center justify-center text-3xl hover:bg-white/10 transition-colors cursor-pointer">🌾</div>
+              <div className="grid grid-cols-3 gap-3 mb-6">
+                <div className="aspect-square bg-white/5 rounded-lg flex items-center justify-center text-2xl hover:bg-white/10 transition-colors cursor-pointer">🌱</div>
+                <div className="aspect-square bg-white/5 rounded-lg flex items-center justify-center text-2xl hover:bg-white/10 transition-colors cursor-pointer">📐</div>
+                <div className="aspect-square bg-white/5 rounded-lg flex items-center justify-center text-2xl hover:bg-white/10 transition-colors cursor-pointer">🌾</div>
               </div>
 
               {/* BOTÃO PRINCIPAL */}
               <Button 
                 asChild
-                className="w-full shine-effect bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#f9ce34] hover:opacity-90 hover:scale-[1.02] transition-all text-white font-black uppercase tracking-widest text-xs h-14 shadow-xl shadow-red-900/20"
+                className="w-full shine-effect bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#f9ce34] hover:opacity-90 hover:scale-[1.01] transition-all text-white font-black uppercase tracking-widest text-[10px] h-12 shadow-xl shadow-red-900/20"
               >
                 <a href="https://www.instagram.com/ruralplanner.oficial?igsh=MWgyMGVhY29rczRzZg%3D%3D" target="_blank" rel="noopener noreferrer">
-                  <Instagram className="mr-2" size={18} />
+                  <Instagram className="mr-2" size={16} />
                   Ver @ruralplanner.oficial no Instagram
                 </a>
               </Button>
 
-              <p className="text-center text-[10px] text-muted-foreground font-medium mt-6">
+              <p className="text-center text-[9px] text-muted-foreground font-medium mt-4">
                 Ficou com dúvida? Fala com a gente direto no perfil ✓
               </p>
             </div>
