@@ -95,7 +95,7 @@ export function CreatorAndDelivery() {
                 asChild
                 className="w-full bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#f9ce34] hover:opacity-90 text-white font-black uppercase tracking-widest text-[10px] h-12 shadow-xl shadow-red-900/20"
               >
-                <a href="https://www.instagram.com/ruralplanner.oficial" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/ruralplanner.oficial?igsh=MWgyMGVhY29rczRzZg%3D%3D" target="_blank" rel="noopener noreferrer">
                   <Instagram className="mr-2" size={14} />
                   Ver @ruralplanner.oficial no Instagram
                 </a>
