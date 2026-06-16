@@ -41,7 +41,7 @@ export function CreatorAndDelivery() {
                   <div className="p-1 rounded-full bg-gradient-to-tr from-[#f9ce34] via-[#fd1d1d] to-[#833ab4]">
                     <div className="relative w-20 h-20 rounded-full border-2 border-[#1a1a1a] overflow-hidden bg-muted">
                       <Image
-                        src="https://www.image2url.com/r2/default/images/1778703933149-30289607-5d32-47cd-a029-6271f4e88964.png"
+                        src="https://www.image2url.com/r2/default/images/1781571112882-16bee3cb-0446-4fda-935a-785186b069c9.jpeg"
                         alt="Ricardo Almeida"
                         fill
                         className="object-cover"
