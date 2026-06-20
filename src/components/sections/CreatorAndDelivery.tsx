@@ -9,82 +9,8 @@ import { Button } from '@/components/ui/button';
 export function CreatorAndDelivery() {
   return (
     <div className="flex flex-col">
-      {/* SEÇÃO: COMO VOCÊ RECEBE O MATERIAL (TOPO) */}
-      <section className="bg-[#0d1f10] pt-16 pb-12 border-t border-border">
-        <div className="container mx-auto px-6 max-w-6xl">
-          <div className="max-w-2xl mx-auto">
-            <div className="bg-gradient-to-b from-card to-[#0d1f10] border-2 border-primary rounded-2xl shadow-2xl flex flex-col items-center group relative overflow-hidden h-auto">
-              <div className="absolute top-0 right-0 p-4 opacity-10 pointer-events-none">
-                <Download size={100} className="text-primary" />
-              </div>
-              
-              <div className="p-5 md:p-6 w-full flex flex-col items-center text-center md:items-start md:text-left">
-                <span className="text-primary font-black text-[10px] tracking-[0.3em] uppercase mb-1 relative z-10">
-                  ENTREGA IMEDIATA
-                </span>
-                <div className="w-12 h-[1px] bg-primary/30 mb-3 relative z-10" />
-                <h3 className="text-2xl font-black text-foreground font-headline mb-3 w-full relative z-10">
-                  Como Você <span className="text-primary">Recebe o Material</span>
-                </h3>
-                
-                <div className="w-full flex justify-center mb-4 md:justify-start gap-4 relative z-10">
-                  <div className="bg-primary/20 p-2.5 rounded-full border border-primary/30">
-                    <Mail size={20} className="text-primary" />
-                  </div>
-                  <div className="bg-primary/20 p-2.5 rounded-full border border-primary/30">
-                    <MessageCircle size={20} className="text-primary" />
-                  </div>
-                </div>
-              </div>
-
-              <div className="w-full relative z-10 border-t border-primary/10">
-                {[
-                  {
-                    id: 1,
-                    title: 'Pagamento Confirmado',
-                    desc: 'Acesso liberado segundos após a confirmação.',
-                  },
-                  {
-                    id: 2,
-                    title: 'E-MAIL E WHATSAPP',
-                    desc: 'Enviados automaticamente no seu E-mail e Whatsapp para você.',
-                  },
-                  {
-                    id: 3,
-                    title: 'Acesso Vitalício',
-                    desc: 'Assista e baixe os projetos quando e onde quiser.',
-                  },
-                  {
-                    id: 4,
-                    title: 'Suporte VIP',
-                    desc: 'Canal exclusivo para tirar suas dúvidas.',
-                  }
-                ].map((step) => (
-                  <div key={step.id} className="flex gap-4 items-center py-2.5 px-8 border-b border-primary/10 group/step hover:bg-primary/5 transition-colors">
-                    <div className="flex-shrink-0 w-7 h-7 rounded-full bg-primary text-black flex items-center justify-center font-black text-[10px] shadow-lg shadow-primary/20 group-hover/step:scale-110 transition-transform">
-                      {step.id}
-                    </div>
-                    <div className="text-left">
-                      <h4 className="font-black text-primary text-[10px] uppercase mb-0.5 leading-tight tracking-wide">{step.title}</h4>
-                      <p className="text-muted-foreground text-[10px] leading-tight">{step.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="p-4 w-full text-center md:text-left relative z-10">
-                <div className="inline-flex items-center gap-2 text-primary font-black text-[9px] tracking-widest uppercase">
-                  <ShieldCheck size={12} />
-                  Sistema de Entrega 100% Seguro
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SEÇÃO: INSTAGRAM RURAL PLANNER (ABAIXO) */}
-      <section className="bg-[#0d1f10] pb-16 border-b border-border overflow-hidden">
+      {/* SEÇÃO: INSTAGRAM RURAL PLANNER (AGORA NO TOPO) */}
+      <section className="bg-[#0d1f10] pt-16 pb-12 border-t border-border overflow-hidden">
         <div className="container mx-auto px-6 max-w-6xl text-center">
           
           <div className="mb-12">
@@ -172,6 +98,80 @@ export function CreatorAndDelivery() {
           <p className="text-center text-[10px] text-muted-foreground/60 font-medium mt-8 uppercase tracking-[0.2em]">
             Conteúdo novo toda semana · Dicas reais de planejamento rural · Sem enrolação
           </p>
+        </div>
+      </section>
+
+      {/* SEÇÃO: COMO VOCÊ RECEBE O MATERIAL (MOVIDO PARA BAIXO) */}
+      <section className="bg-[#0d1f10] pb-16 border-b border-border">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-gradient-to-b from-card to-[#0d1f10] border-2 border-primary rounded-2xl shadow-2xl flex flex-col items-center group relative overflow-hidden h-auto">
+              <div className="absolute top-0 right-0 p-4 opacity-10 pointer-events-none">
+                <Download size={100} className="text-primary" />
+              </div>
+              
+              <div className="p-5 md:p-6 w-full flex flex-col items-center text-center md:items-start md:text-left">
+                <span className="text-primary font-black text-[10px] tracking-[0.3em] uppercase mb-1 relative z-10">
+                  ENTREGA IMEDIATA
+                </span>
+                <div className="w-12 h-[1px] bg-primary/30 mb-3 relative z-10" />
+                <h3 className="text-2xl font-black text-foreground font-headline mb-3 w-full relative z-10">
+                  Como Você <span className="text-primary">Recebe o Material</span>
+                </h3>
+                
+                <div className="w-full flex justify-center mb-4 md:justify-start gap-4 relative z-10">
+                  <div className="bg-primary/20 p-2.5 rounded-full border border-primary/30">
+                    <Mail size={20} className="text-primary" />
+                  </div>
+                  <div className="bg-primary/20 p-2.5 rounded-full border border-primary/30">
+                    <MessageCircle size={20} className="text-primary" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="w-full relative z-10 border-t border-primary/10">
+                {[
+                  {
+                    id: 1,
+                    title: 'Pagamento Confirmado',
+                    desc: 'Acesso liberado segundos após a confirmação.',
+                  },
+                  {
+                    id: 2,
+                    title: 'E-MAIL E WHATSAPP',
+                    desc: 'Enviados automaticamente no seu E-mail e Whatsapp para você.',
+                  },
+                  {
+                    id: 3,
+                    title: 'Acesso Vitalício',
+                    desc: 'Assista e baixe os projetos quando e onde quiser.',
+                  },
+                  {
+                    id: 4,
+                    title: 'Suporte VIP',
+                    desc: 'Canal exclusivo para tirar suas dúvidas.',
+                  }
+                ].map((step) => (
+                  <div key={step.id} className="flex gap-4 items-center py-2.5 px-8 border-b border-primary/10 group/step hover:bg-primary/5 transition-colors">
+                    <div className="flex-shrink-0 w-7 h-7 rounded-full bg-primary text-black flex items-center justify-center font-black text-[10px] shadow-lg shadow-primary/20 group-hover/step:scale-110 transition-transform">
+                      {step.id}
+                    </div>
+                    <div className="text-left">
+                      <h4 className="font-black text-primary text-[10px] uppercase mb-0.5 leading-tight tracking-wide">{step.title}</h4>
+                      <p className="text-muted-foreground text-[10px] leading-tight">{step.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="p-4 w-full text-center md:text-left relative z-10">
+                <div className="inline-flex items-center gap-2 text-primary font-black text-[9px] tracking-widest uppercase">
+                  <ShieldCheck size={12} />
+                  Sistema de Entrega 100% Seguro
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
