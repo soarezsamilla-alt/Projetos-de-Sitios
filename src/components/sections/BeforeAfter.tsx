@@ -63,13 +63,13 @@ export function BeforeAfter() {
             </div>
 
             {/* Seta Central - Desktop */}
-            <div className="hidden md:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 bg-background border-2 border-primary w-10 h-10 rounded-full items-center justify-center shadow-[0_0_15px_rgba(212,168,75,0.2)]">
+            <div className="hidden md:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 bg-background border-2 border-primary w-10 h-10 rounded-full items-center justify-center shadow-[0_0_15px_rgba(212,168,75,0.2)] pulse-attention">
               <ArrowRight className="text-primary" size={20} />
             </div>
 
             {/* Seta Central - Mobile */}
             <div className="md:hidden flex justify-center -my-3 relative z-20">
-              <div className="bg-background border-2 border-primary w-8 h-8 rounded-full flex items-center justify-center shadow-xl">
+              <div className="bg-background border-2 border-primary w-8 h-8 rounded-full flex items-center justify-center shadow-xl pulse-attention">
                 <ArrowDown className="text-primary" size={16} />
               </div>
             </div>
