@@ -34,7 +34,7 @@ export function Problem() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-black mb-6">
-            Sua Terra Merece Um <span className="text-primary">Projeto Profissional</span>
+            Você Conhece Bem Essa Sensação...
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             A maior parte dos pequenos produtores rurais no Brasil opera muito abaixo do potencial por falta de um mapa claro.
