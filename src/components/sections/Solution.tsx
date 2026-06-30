@@ -56,10 +56,10 @@ export function Solution() {
                 unoptimized
               />
               
-              {/* Overlay do Badge de Exemplo */}
-              <div className="absolute bottom-6 left-6 bg-background/90 text-white p-4 rounded-xl border border-primary/30 shadow-2xl backdrop-blur-md">
-                <span className="block text-[9px] font-black uppercase tracking-[0.3em] text-primary mb-1.5">EXEMPLO REAL</span>
-                <span className="text-sm font-bold tracking-tight">Agrofloresta • 5ha • Mata Atlântica</span>
+              {/* Overlay do Badge de Exemplo (Reduzido conforme solicitado) */}
+              <div className="absolute bottom-4 left-4 bg-background/90 text-white p-2.5 rounded-lg border border-primary/30 shadow-2xl backdrop-blur-md">
+                <span className="block text-[7px] font-black uppercase tracking-[0.3em] text-primary mb-1">EXEMPLO REAL</span>
+                <span className="text-[10px] font-bold tracking-tight">Agrofloresta • 5ha • Mata Atlântica</span>
               </div>
             </div>
             
