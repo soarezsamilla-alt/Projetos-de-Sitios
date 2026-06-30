@@ -7,7 +7,6 @@ import {ViewingUrgencyBar} from './ViewingUrgencyBar';
 
 // Carregamento dinâmico de seções abaixo da dobra para otimizar o tempo inicial de carregamento
 const Problem = dynamic(() => import('./sections/Problem').then(mod => mod.Problem));
-const Solution = dynamic(() => import('./sections/Solution').then(mod => mod.Solution));
 const Samples = dynamic(() => import('./sections/Samples').then(mod => mod.Samples));
 const BeforeAfter = dynamic(() => import('./sections/BeforeAfter').then(mod => mod.BeforeAfter));
 const Testimonials = dynamic(() => import('./sections/Testimonials').then(mod => mod.Testimonials));
@@ -29,7 +28,6 @@ export function LandingPage() {
       <Hero />
       
       <Problem />
-      <Solution />
       <Samples />
       <BeforeAfter />
       <Testimonials />
