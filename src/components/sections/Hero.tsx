@@ -51,17 +51,17 @@ export function Hero() {
           )}
         </div>
 
-        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 mt-8">
-          <div className="flex items-center gap-2 text-primary font-bold text-[10px] md:text-xs tracking-widest uppercase">
-            <Zap size={14} className="text-primary" />
+        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 mt-8 opacity-80">
+          <div className="flex items-center gap-1.5 text-primary font-bold text-[9px] md:text-[10px] tracking-widest uppercase">
+            <Zap size={12} className="text-primary" />
             <span>Acesso imediato</span>
           </div>
-          <div className="flex items-center gap-2 text-primary font-bold text-[10px] md:text-xs tracking-widest uppercase">
-            <ShieldCheck size={14} className="text-primary" />
+          <div className="flex items-center gap-1.5 text-primary font-bold text-[9px] md:text-[10px] tracking-widest uppercase">
+            <ShieldCheck size={12} className="text-primary" />
             <span>Garantia de 7 dias</span>
           </div>
-          <div className="flex items-center gap-2 text-primary font-bold text-[10px] md:text-xs tracking-widest uppercase">
-            <Check size={14} className="text-primary" />
+          <div className="flex items-center gap-1.5 text-primary font-bold text-[9px] md:text-[10px] tracking-widest uppercase">
+            <Check size={12} className="text-primary" />
             <span>A partir de R$ 9,90</span>
           </div>
         </div>
