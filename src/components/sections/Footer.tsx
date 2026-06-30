@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="bg-background py-20 border-t border-border text-center">
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="text-primary font-headline text-2xl font-black mb-6 uppercase tracking-widest">
-          SítioProJetos
+          RURAL PLANNER
         </div>
         <p className="text-muted-foreground text-sm mb-6">Edição Premium 2026 · Todos os direitos reservados</p>
         
