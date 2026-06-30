@@ -36,9 +36,6 @@ export function Problem() {
           <h2 className="text-3xl md:text-5xl font-black mb-6">
             Você Conhece Bem Essa <span className="text-primary">Sensação...</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A maior parte dos pequenos produtores rurais no Brasil opera muito abaixo do potencial por falta de um mapa claro.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
