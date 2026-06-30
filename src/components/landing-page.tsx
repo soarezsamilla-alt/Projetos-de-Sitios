@@ -10,7 +10,6 @@ const Problem = dynamic(() => import('./sections/Problem').then(mod => mod.Probl
 const Samples = dynamic(() => import('./sections/Samples').then(mod => mod.Samples));
 const BeforeAfter = dynamic(() => import('./sections/BeforeAfter').then(mod => mod.BeforeAfter));
 const Testimonials = dynamic(() => import('./sections/Testimonials').then(mod => mod.Testimonials));
-const ProductShowcase = dynamic(() => import('./sections/ProductShowcase').then(mod => mod.ProductShowcase));
 const ContentBreakdown = dynamic(() => import('./sections/ContentBreakdown').then(mod => mod.ContentBreakdown));
 const Bonus = dynamic(() => import('./sections/Bonus').then(mod => mod.Bonus));
 const Pricing = dynamic(() => import('./sections/Pricing').then(mod => mod.Pricing));
@@ -31,7 +30,6 @@ export function LandingPage() {
       <Samples />
       <BeforeAfter />
       <Testimonials />
-      <ProductShowcase />
       <ContentBreakdown />
       <Bonus />
       <Pricing />
