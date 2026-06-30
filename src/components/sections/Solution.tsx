@@ -32,9 +32,6 @@ export function Solution() {
               <p>
                 O Rural Planner não é curso, não é livro, não é consultoria. <span className="font-black text-foreground border-b-2 border-primary/30">É um artefato executável.</span> Um projeto visual com medidas reais, zonas identificadas e layouts profissionais — pronto para você olhar, entender e executar no campo.
               </p>
-              <p>
-                Você não precisa aprender, estudar ou interpretar. Pega o projeto, olha as medidas e começa a fazer. Como se um agrônomo experiente tivesse visitado o seu sítio — por <span className="font-bold text-primary">R$ 9,90 em vez de R$ 15.000.</span>
-              </p>
             </div>
             
             <div className="bg-card border-l-[6px] border-primary p-6 rounded-r-xl shadow-2xl shadow-black/20 max-w-xl">
