@@ -17,18 +17,18 @@ export function Solution() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           {/* Coluna da Esquerda: Conteúdo de Texto */}
-          <div className="lg:w-1/2 space-y-8 animate-in fade-in slide-in-from-left-8 duration-1000">
+          <div className="lg:w-1/2 space-y-8 animate-in fade-in slide-in-from-left-8 duration-1000 flex flex-col items-center lg:items-start">
             <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 text-primary px-4 py-1.5 rounded-full font-black text-[10px] tracking-[0.2em] uppercase shadow-sm">
               <Lightbulb size={14} className="animate-pulse" />
               A SOLUÇÃO
             </div>
             
-            <h2 className="text-4xl md:text-6xl font-black text-foreground leading-[1.1] font-headline">
+            <h2 className="text-4xl md:text-6xl font-black text-foreground leading-[1.1] font-headline text-center lg:text-left">
               O Projeto que a Sua<br />
               <span className="gold-gradient-text">Terra Estava Esperando</span>
             </h2>
             
-            <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
+            <div className="space-y-6 text-muted-foreground text-lg leading-relaxed text-center lg:text-left">
               <p>
                 O Rural Planner não é curso, não é livro, não é consultoria. <span className="font-black text-foreground border-b-2 border-primary/30">É um artefato executável.</span> Um projeto visual com medidas reais, zonas identificadas e layouts profissionais — pronto para você olhar, entender e executar no campo.
               </p>
