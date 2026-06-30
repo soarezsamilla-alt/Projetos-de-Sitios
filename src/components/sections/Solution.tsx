@@ -34,8 +34,8 @@ export function Solution() {
               </p>
             </div>
             
-            <div className="bg-card border-l-[6px] border-primary p-6 rounded-r-xl shadow-2xl shadow-black/20 max-w-xl">
-              <p className="text-foreground font-bold text-xl leading-snug italic">
+            <div className="bg-card border-l-[6px] border-primary p-4 rounded-r-xl shadow-2xl shadow-black/20 max-w-md">
+              <p className="text-foreground font-bold text-lg leading-snug italic">
                 “Não é teoria. É um mapa. Com medidas. Pronto para executar.”
               </p>
             </div>
