@@ -1,9 +1,11 @@
+
 "use client";
 
 import React from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
+import { Zap, ShieldCheck, Check } from 'lucide-react';
 
 export function Hero() {
   const heroMockup = PlaceHolderImages.find(img => img.id === 'hero-mockup');
@@ -49,10 +51,19 @@ export function Hero() {
           )}
         </div>
 
-        <div className="flex flex-col items-center gap-4 mt-8">
-          <span className="text-muted-foreground text-[10px] tracking-widest uppercase">
-            ★ Acesso imediato · 7 dias de garantia ★
-          </span>
+        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 mt-8">
+          <div className="flex items-center gap-2 text-primary font-bold text-[10px] md:text-xs tracking-widest uppercase">
+            <Zap size={14} className="text-primary" />
+            <span>Acesso imediato</span>
+          </div>
+          <div className="flex items-center gap-2 text-primary font-bold text-[10px] md:text-xs tracking-widest uppercase">
+            <ShieldCheck size={14} className="text-primary" />
+            <span>Garantia de 7 dias</span>
+          </div>
+          <div className="flex items-center gap-2 text-primary font-bold text-[10px] md:text-xs tracking-widest uppercase">
+            <Check size={14} className="text-primary" />
+            <span>A partir de R$ 9,90</span>
+          </div>
         </div>
       </div>
     </section>
