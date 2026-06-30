@@ -94,12 +94,12 @@ export function Samples() {
           </Carousel>
         </div>
 
-        <div className="mt-12 p-8 bg-[#0d1f10] border-l-4 border-primary rounded-sm shadow-xl max-w-5xl mx-auto">
+        <div className="mt-8 p-5 bg-[#0d1f10] border-l-4 border-primary rounded-sm shadow-xl max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-2">
-            <Star className="text-primary fill-primary" size={18} />
-            <h4 className="text-primary font-bold uppercase tracking-widest text-sm">Observação Importante</h4>
+            <Star className="text-primary fill-primary" size={16} />
+            <h4 className="text-primary font-bold uppercase tracking-widest text-xs">Observação Importante</h4>
           </div>
-          <p className="text-muted-foreground text-sm leading-relaxed">
+          <p className="text-muted-foreground text-[11px] leading-relaxed">
             Todos os +100 projetos seguem o mesmo padrão editorial premium que você vê nas amostras acima — com medidas visíveis, zonas identificadas e layouts profissionais.
           </p>
         </div>
