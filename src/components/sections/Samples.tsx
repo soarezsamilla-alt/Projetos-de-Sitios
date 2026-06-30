@@ -48,7 +48,7 @@ export function Samples() {
             Um Pouco do Material Que <span className="text-primary">Você Vai Receber</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Cada um dos +100 projetos segue padrão editorial profissional — com medidas em metros, zonas identificadas e layouts prontos para execução no campo.
+            Cada um dos +100 projetos segue padrão editorial profissional com medidas em metros, zonas identificadas e layouts prontos para execução no campo.
           </p>
         </div>
 
