@@ -4,7 +4,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Button } from '@/components/ui/button';
 import { Zap, ShieldCheck, Check } from 'lucide-react';
 
 export function Hero() {
@@ -27,7 +26,7 @@ export function Hero() {
 
         <h1 className="text-4xl md:text-7xl font-black mb-6 leading-[1.1]">
           <span className="gold-gradient-text block mb-2">
-            +100 Projetos de Sítios Produtivos
+            +100 Projetos de Sítios e Chácaras Produtivas
           </span>
           que transforma sua terra parada em fonte de renda
         </h1>
@@ -52,16 +51,16 @@ export function Hero() {
         </div>
 
         <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 mt-8 opacity-80">
-          <div className="flex items-center gap-1.5 text-primary font-bold text-[9px] md:text-[10px] tracking-widest uppercase">
-            <Zap size={12} className="text-primary" />
+          <div className="flex items-center gap-1 text-primary font-bold text-[8px] md:text-[9px] tracking-widest uppercase">
+            <Zap size={10} className="text-primary" />
             <span>Acesso imediato</span>
           </div>
-          <div className="flex items-center gap-1.5 text-primary font-bold text-[9px] md:text-[10px] tracking-widest uppercase">
-            <ShieldCheck size={12} className="text-primary" />
+          <div className="flex items-center gap-1 text-primary font-bold text-[8px] md:text-[9px] tracking-widest uppercase">
+            <ShieldCheck size={10} className="text-primary" />
             <span>Garantia de 7 dias</span>
           </div>
-          <div className="flex items-center gap-1.5 text-primary font-bold text-[9px] md:text-[10px] tracking-widest uppercase">
-            <Check size={12} className="text-primary" />
+          <div className="flex items-center gap-1 text-primary font-bold text-[8px] md:text-[9px] tracking-widest uppercase">
+            <Check size={10} className="text-primary" />
             <span>A partir de R$ 9,90</span>
           </div>
         </div>
