@@ -48,7 +48,7 @@ export function Samples() {
             Um Pouco do Material Que <span className="text-primary">Você Vai Receber</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Veja abaixo exemplos reais das páginas que você vai receber, cada projeto entregue com padrão editorial profissional.
+            Cada um dos +100 projetos segue padrão editorial profissional — com medidas em metros, zonas identificadas e layouts prontos para execução no campo.
           </p>
         </div>
 
@@ -94,12 +94,12 @@ export function Samples() {
           </Carousel>
         </div>
 
-        <div className="mt-8 p-5 bg-[#0d1f10] border-l-4 border-primary rounded-sm shadow-xl max-w-4xl mx-auto">
+        <div className="mt-6 p-4 bg-[#0d1f10] border-l-4 border-primary rounded-sm shadow-xl max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-2">
             <Star className="text-primary fill-primary" size={16} />
-            <h4 className="text-primary font-bold uppercase tracking-widest text-xs">Observação Importante</h4>
+            <h4 className="text-primary font-bold uppercase tracking-widest text-[10px]">Observação Importante</h4>
           </div>
-          <p className="text-muted-foreground text-[11px] leading-relaxed">
+          <p className="text-muted-foreground text-[10px] leading-relaxed">
             Todos os +100 projetos seguem o mesmo padrão editorial premium que você vê nas amostras acima — com medidas visíveis, zonas identificadas e layouts profissionais.
           </p>
         </div>
