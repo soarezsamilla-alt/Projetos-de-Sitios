@@ -48,7 +48,7 @@ export function Solution() {
           <div className="lg:w-1/2 relative group animate-in fade-in slide-in-from-right-8 duration-1000">
             <div className="relative rounded-2xl overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] border-4 border-primary/20 bg-card">
               <Image 
-                src="https://www.image2url.com/r2/default/images/1777314500499-28a7bc78-e06d-4b72-9ac3-e978958f98f6.blob" 
+                src="https://www.image2url.com/r2/default/images/1782780560710-53c5afee-0f8f-4bd9-9b67-ef2d7670583f.jpg" 
                 alt="Exemplo de Projeto Rural"
                 width={1000}
                 height={750}
